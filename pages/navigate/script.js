@@ -39,7 +39,7 @@ load_json_data().then(
     const locationName = locationData.name;
     locationNameElement.textContent = locationName;
     
-    const nextPage = getQueryParam('nextPage');
+    const nextPage = locationData.nextPage;
     
     // sla gegevens op in localStorage om later de draad terug op te kunnen pikken
     localStorage.setItem('coordinates', coordinatesParam);

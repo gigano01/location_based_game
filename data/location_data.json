@@ -2,7 +2,7 @@
     "test": {
         "name": "testlocatie1",
         "distance": 1234,
-        "coordinates": {"latitude": 123.32, "longtitude": 14.24},
+        "coordinates": {"latitude": 51.22245352642213, "longtitude": 4.414333407277695},
         "nextPage": "stop1"
     }
 }

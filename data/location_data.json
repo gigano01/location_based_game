@@ -2,7 +2,22 @@
     "test": {
         "name": "testlocatie1",
         "distance": 1234,
+        "minimumRadius": 4,
         "coordinates": {"latitude": 51.22245352642213, "longtitude": 4.414333407277695},
-        "nextPage": "stop1"
+        "nextPage": "start"
+    },
+    "begijnhof-01": {
+        "name": "Begijnhof",
+        "distance": 1234,
+        "minimumRadius": 20,
+        "coordinates": {"latitude": 51.22245352642213, "longtitude": 4.414333407277695},
+        "nextPage": "VULIN"
+    },
+    "begijnhof-02": {
+        "name": "Begijnhof",
+        "distance": 1234,
+        "minimumRadius": 20,
+        "coordinates": {"latitude": 51.22245352642213, "longtitude": 4.414333407277695},
+        "nextPage": "VULIN"
     }
 }

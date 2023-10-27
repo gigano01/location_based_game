@@ -27,7 +27,7 @@ load_json_data().then(
     const distanceElement = document.querySelector('#distance');
     
     // definieer radius waarbinnen doelen gevonden mogen worden
-    const successRadiusInMeter = 20;
+    const successRadiusInMeter = locationData.minimumRadius;
     
     // haal alle query parameters op
     const coordinatesParam = locationData.coordinates;

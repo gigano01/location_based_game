@@ -1,6 +1,31 @@
-//laad ze, maar weet dat de controle wordt overgedragen aan de dialogue manager
-let dialogueContainer = document.getElementById("dialogue-container")
-let dialogueText = document.getElementById("dialogue-text")
+function endHandler(dialogue) {
+    console.log("activated")
 
-//dit creëert een nieuw dialoguemanager, deze neemt de volledige controle over van de twee elementen.
-newDialogue("dialogue_data.json",dialogueContainer,dialogueText)
+    removeDialogueFromContainer(dialogue)
+
+    let dlContainer = document.getElementById("dialogue-container")
+    let dlText = document.getElementById("dialogue-text")
+    dialogue.container.removeEventListener("click", endHandler)
+
+    createDialogueObject("dialogue_test_2.json").then((dialogue2) => {
+        assignDialogueToContainer(dialogue2,dlContainer,dlText)
+    })
+}
+
+
+//we creëeren een object en wachten tot deze klaar is.
+createDialogueObject("dialogue_data.json").then((dialogue) => {
+    let dlContainer = document.getElementById("dialogue-container")
+    let dlText = document.getElementById("dialogue-text")
+
+    //deze code gebeurt vanaf dat ons dialogue object geladen is.
+    console.log(dialogue)
+    //link de container aan de dialogue
+    assignDialogueToContainer(dialogue,dlContainer,dlText)
+
+    //zet het dialoog op zichtbaar
+    dlContainer.classList.remove("invisible")
+
+    //het eind protocol is om een tweede dialoog venster te openen
+    setDialogueEndHandler(dialogue, endHandler)
+})

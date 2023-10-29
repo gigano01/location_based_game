@@ -1,5 +1,8 @@
 #dialogue-container {
     background-color: rgb(117, 173, 117);
-    padding: 20px;;
+    padding: 20px;
+    border: 3px solid black;
+    margin: 30px;
+    user-select: none; /* dit zet interactie met de tekst uit */
 }
 

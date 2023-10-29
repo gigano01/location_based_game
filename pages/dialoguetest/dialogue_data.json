@@ -1,11 +1,21 @@
 {
-    "count": 1,
+    "count": 5,
     "prompts": [
         {
-            "text":"testing testing"
+            "text":"dit is de eerste tekst in dit dialoog"
         },
         {
-            "text":"testing 2 testing2"
+            "text":"dit is de tweede tekst in het dialoog"
+        },
+        {
+            "text":"en het derde"
+        },
+        {
+            "text":"en natuurlijk het vierde, al begin ik wel al dooor te hebben dat je het begrijpt"
+        },
+        {
+            "text":"dit is de laatste, hierna wordt de tekst leeg weergegeven"
         }
+
     ]
 }

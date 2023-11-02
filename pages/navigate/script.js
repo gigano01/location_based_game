@@ -18,7 +18,7 @@ load_json_data().then(
       location.assign("../error/index.html?error=locationID-invalid")
     }
 
-    console.log(`De geladen locatiedata is`)
+    console.log(`De geladen locatiedata is:`)
     console.log(locationData)
     
     
@@ -42,9 +42,7 @@ load_json_data().then(
     const nextPage = locationData.nextPage;
     
     // sla gegevens op in localStorage om later de draad terug op te kunnen pikken
-    localStorage.setItem('coordinates', coordinatesParam);
-    localStorage.setItem('locationName', locationName);
-    localStorage.setItem('nextPage', nextPage);
+    localStorage.setItem('locationID', getQueryParam("locationID"));
     
     // deze functie wordt opgeroepen elke keer een nieuwe locatie doorkomt
     function success(position) {

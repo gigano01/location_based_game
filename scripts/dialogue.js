@@ -37,6 +37,12 @@ function removeDialogueFromContainer(dialogue){
     dialogue.container.removeEventListener("click", dialogue.clickaction)
 }
 
+/*
+function findDialogueMaximum(dialogue){
+    const fontSize = dialogue.get
+}
+*/
+
 async function createDialogueObject(jsonLocation){
     const fetched = await fetch(jsonLocation)
     const data = await fetched.json()

@@ -1,0 +1,27 @@
+#test-object {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(11, 197, 214);
+    border: 3px solid black;
+    left: calc(50vw - 50px); /*om het ware midden te bekomen*/
+    bottom: calc(50vh - 50px);
+}
+
+#vallend-object {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(45, 145, 5);
+    border: 3px solid rgb(11, 164, 154);
+    left: calc(50vw - 50px); /*om het ware midden te bekomen*/
+    bottom: calc(50vh - 50px);
+}
+
+body {
+    /* contain overscroll behaviour only in vertical direction */
+    overscroll-behavior-y: contain;
+    overscroll-behavior-x: contain;
+    touch-action: none;
+    overflow: hidden;
+}

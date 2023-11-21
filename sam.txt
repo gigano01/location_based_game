@@ -8,3 +8,8 @@ ico_ (icoon)
 chrt_ (character)
 prop_ (prop)
 splr_ (gekleurde speler icoontjes)
+
+--Achtergronden--
+Specifiek aan locatie -> bg_locatienaam_sch1
+Op meerder plekken gebruikt -> bg_kenmerk
+

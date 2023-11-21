@@ -1,0 +1,10 @@
+bg_locatienaam_sch1_01
+
+bg_begijnhof_sch1_01
+bg_begijnhof_sch1_02
+bg_kraan_01
+
+ico_ (icoon)
+chrt_ (character)
+prop_ (prop)
+splr_ (gekleurde speler icoontjes)

@@ -1,9 +1,33 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+}
+
 body {
-  color: var(--text-color);
-  background-color: var(--white);
-  font-family: sans-serif;
+	color: var(--text-color);
+	background-color: var(--white);
+	font-family: sans-serif;
 }
 
 .invisible {
-  display: none;
+	display: none;
+}
+
+.positioned {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+/* stopt de pagina's met scrollen*/
+body {
+	overflow-y: hidden;
+	overflow-x: hidden;
 }

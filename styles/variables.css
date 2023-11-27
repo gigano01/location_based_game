@@ -1,12 +1,24 @@
 :root {
-  --white: #FFFFFF;
+	--white: #FFFFFF;
 
-  --text-color: #494949;
-  --button-color: #52AAE2;
+	--text-color: #494949;
+	--button-color: #52AAE2;
+	--white: white;
 
-  --margin-textbox: 16px;
-  --margin-header: 16px;
-  --margin-general: 16px;
+	/*textbox*/
+	--margin-textbox-ver: 45px;
+	--margin-textbox-hor: 32px;
+
+	--radius-box: 20px; /* afronding */
+  	
+	--text-size: 1.75rem;
+	--text-font: font-family: 'Signika Negative', sans-serif;
+	--text-weight-bold: 700;
+	--text-weight-light: 300;
+
+
+	--margin-header: 16px;
+	--margin-general: 16px;
 }
 
 

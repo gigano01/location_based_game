@@ -1,0 +1,59 @@
+/*
+.spraak-bubbel {
+	background-color: var(--white);
+	padding-top: var(--margin-textbox-ver);
+	padding-bottom: var(--margin-textbox-ver);
+	padding-left: var(--margin-textbox-hor);
+	padding-right: var(--margin-textbox-hor);
+
+	border-radius: var(--radius-box);
+
+	top: 0;
+
+
+}
+
+.spraak-bubbel:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: #f9f9f9;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -10px;
+    margin-bottom: -20px;
+}*/
+
+
+.spraak-bubbel {
+    position: relative;
+    background: #f9f9f9;
+    border-radius: .4em;
+    padding: 20px;
+    color: var(--text-color);
+}
+
+.spraak-bubbel:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: #f9f9f9;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -10px;
+    margin-bottom: -20px;
+}
+
+.spraak-bubbel-text {
+	font-family: var(--text-font);
+	font-size: var(--text-size);
+	font-weight: var(--text-weight-bold);
+}

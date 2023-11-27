@@ -1,0 +1,27 @@
+#background {
+	width: 100%;
+	animation: zoomin-background 2s ease-in-out 1s 1 normal forwards;
+}
+
+#kluis {
+	top: 50%;
+	left: 50%;
+	
+	transform: translate3d(-50%, -50%, 0);
+	width: 100%;
+}
+
+.zoomin-op-numpad {
+	animation: zoomin 2s ease-in-out 1s 1 normal forwards;
+}
+
+@keyframes zoomin {
+	0% {
+		transform: translate3d(-50%, -50%, 0) scale(100%);
+	}
+
+	100% {
+		transform: translate3d(-335%, -72%, 0) scale(900%);
+	}
+}
+

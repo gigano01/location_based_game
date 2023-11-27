@@ -17,5 +17,5 @@
 	min-height: 5px;
 	background-color: white;
 	border-radius: 12px;
-	box-shadow: 2px;
+	box-shadow: var(--box-shaddow);
 }

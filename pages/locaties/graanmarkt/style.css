@@ -1,6 +1,5 @@
 /* scherm 1 */
-#eekhoorntje1{
-    position: fixed;
+#eekhoorntje-1{
     top: 85%;
 	left: 80%;
 	
@@ -8,14 +7,13 @@
 }
 
 /* scherm 2 */
-#eekhoorntje2{
-    position: fixed;
+#eekhoorntje-2{
     top: 80%;
     left: 50%;
     
     transform: translate3d(-50%, -50%, 0);
 }
-#eekhoorntjetekst2{
+#eekhoorntjetekst-2{
     position: fixed;
     top: 20%;
     left: 50%;
@@ -25,24 +23,21 @@
 
 /* scherm 3 */
 /* scherm 4 */
-#bord1{
-    position: fixed;
+#bord-1{
     width: 264px;
     height: 248px;
     top: 30%;
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
 }
-#eekhoorntje4{
-    position: fixed;
+#eekhoorntje-4{
     top: 90%;
     left: 70%;
     
     transform: translate3d(-50%, -50%, 0);
 
 }
-#eekhoorntjetekst4{
-    position: fixed;
+#eekhoorntjetekst-4{
     top: 50%;
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
@@ -50,10 +45,32 @@
 }
 
 /* scherm 5 */
-#spelomhoog{
-    position: fixed;
-    top: 0%;
+#omhoog{
+    top: 10%;
+    left: 20%;
+    transform: translate3d(-50%, -50%, 0);
+}
+#omlaag{
+    top: 5%;
+    left: 25%;
+    transform: translate3d(-50%, -50%, 0);
+    transform: rotate(180deg);
+}
+#rechts{
+    top: 5%;
+    left: 45%;
+    transform: translate3d(-50%, -50%, 0);
+    transform: rotate(90deg);
+}
+#links{
+    top: 5%;
+    left: 65%;
+    transform: translate3d(-50%, -50%, 0);
+    transform: rotate(270deg);
+}
+/* scherm 6 */
+#bord-2{
+    top: 50%;
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
 }
-

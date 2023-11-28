@@ -1,31 +1,31 @@
 /* scherm 2 */
-#eendje2{
+#eendje-2{
 position: fixed;
 top: 75%;
 left: 30%;
 transform: translate(-50%, -50%);
 }
-#eendjetekst2{
+#eendjetekst-2{
 position: fixed;
 top: 20%;
 left: 55%;
 transform: translate(-50%, -50%);
 }
 /* scherm 3 */
-#eendje3{
+#eendje-3{
 position: fixed;
 top: 75%;
 left: 30%;
 transform: translate(-50%, -50%);
 }
-#eendjetekst3{
+#eendjetekst-3{
 position: fixed;
 top: 20%;
 left: 55%;
 transform: translate(-50%, -50%);
 }
 /* spel */
-#vraag1{
+#vraag-1{
     position: fixed;
     top: 15%;
     left: 50%;
@@ -66,7 +66,7 @@ transform: translate(-50%, -50%);
 
 }
 /* scherm4 */
- #eendje4{
+ #eendje-4{
     width: 307px;
     height: 484px;
     position:fixed;
@@ -74,7 +74,7 @@ transform: translate(-50%, -50%);
     left: 20%;
     transform: translate(-50%, -50%);
  }
-#eendjetekst4{
+#eendjetekst-4{
     position: fixed;
     top: 20%;
     left: 55%;

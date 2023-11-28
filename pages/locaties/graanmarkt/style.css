@@ -1,0 +1,59 @@
+/* scherm 1 */
+#eekhoorntje1{
+    position: fixed;
+    top: 85%;
+	left: 80%;
+	
+	transform: translate3d(-50%, -50%, 0);
+}
+
+/* scherm 2 */
+#eekhoorntje2{
+    position: fixed;
+    top: 80%;
+    left: 50%;
+    
+    transform: translate3d(-50%, -50%, 0);
+}
+#eekhoorntjetekst2{
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    
+    transform: translate3d(-50%, -50%, 0);
+}
+
+/* scherm 3 */
+/* scherm 4 */
+#bord1{
+    position: fixed;
+    width: 264px;
+    height: 248px;
+    top: 30%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+#eekhoorntje4{
+    position: fixed;
+    top: 90%;
+    left: 70%;
+    
+    transform: translate3d(-50%, -50%, 0);
+
+}
+#eekhoorntjetekst4{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+
+}
+
+/* scherm 5 */
+#spelomhoog{
+    position: fixed;
+    top: 0%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+

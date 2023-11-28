@@ -10,13 +10,15 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;700&display=swap" rel="stylesheet">
 
-    <link href="../../styles/reset.css" type="text/css" rel="stylesheet">
-    <link href="../../styles/variables.css" type="text/css" rel="stylesheet">
-    <link href="../../styles/general.css" type="text/css" rel="stylesheet">
-    <link href="../../styles/components/button.css" type="text/css" rel="stylesheet">
-	<link href="../../styles/components/hamburger.css" type="text/css" rel="stylesheet">
-	<link href="../../styles/components/background.css" type="text/css" rel="stylesheet">
-	<!--VERGEET NIET OM TE CHECKEN OF DEZE LINKJES WERKEN-->
+	<link href="../../../styles/reset.css" type="text/css" rel="stylesheet">
+    <link href="../../../styles/variables.css" type="text/css" rel="stylesheet">
+    <link href="../../../styles/general.css" type="text/css" rel="stylesheet">
+    <link href="../../../styles/components/button.css" type="text/css" rel="stylesheet">
+	<link href="../../../styles/components/hamburger.css" type="text/css" rel="stylesheet">
+	<link href="../../../styles/components/background.css" type="text/css" rel="stylesheet">
+  <link href="../../../styles/components/locatiebord.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="../../../styles/components/spraak-bubbel.css">
+  <link href="../../../styles/components/groenvaktekst.css" type="text/css" rel="stylesheet">
     <link href="style.css" type="text/css" rel="stylesheet">
 	
     <script defer src="script.js"></script>
@@ -35,8 +37,44 @@
 	</header>
 
 	<main>
-		<div id="scherm1">
-			<img src="/media/bg/bg_graanmarkt_sch1.png" alt="begijnenhof" class="positioned background">
+		<div id="scherm1" class="invisible">
+			<img src="/media/bg/bg_graanmarkt_sch1.png" alt="graanmarkt" class="positioned background">
+			<div class="naambord">Graanmarkt</div>
+		</div>
+		<div id="scherm2" class="invisible" >
+			<img src="/media/bg/bg_graanmarkt_sch1.png" alt="graanmarkt" class="positioned background">
+			<img src="/media/chrt/chrt_eekhoorn_kijkend.svg" id="eekhoorntje1" class="positioned">
+		</div>
+		<div id="scherm3" class="invisible">
+			<img src="/media/bg/bg_graanmarkt_sch1.png" alt="graanmarkt" class="positioned background">
+			<img src="/media/chrt/chrt_eekhoorn_blij.svg" id="eekhoorntje2" class="positioned">
+			<div id="eekhoorntjetekst2" class="spraak-bubbel positioned">
+				<span class="spraak-bubbel-text">unfilled data</span>
+			</div>
+		</div>
+		<div id="scherm4" class="invisible">
+			<img src="/media/bg/bg_graanmarkt_sch1.png" alt="graanmarkt" class="positioned background">
+			<img src="/media/chrt/chrt_eekhoorn_zittend.svg" id="eekhoorntje2" class="positioned">
+			<div id="eekhoorntjetekst2" class="spraak-bubbel positioned">
+				<span class="spraak-bubbel-text">unfilled data</span>
+			</div>
+		</div>
+		<div id="scherm5" class="invisible">
+			<img src="/media/bg/bg_graanmarkt_blurry.jpg" alt="graanmarkt" class="positioned background">
+			<img src="/media/prop/prop_bord.svg" id="bord1" class="positioned">
+			<img src="/media/chrt/chrt_eekhoorn_les.svg" id="eekhoorntje4" class="positioned">
+			<div id="eekhoorntjetekst4" class="spraak-bubbel positioned">
+				<span class="spraak-bubbel-text">unfilled data</span>
+			</div>
+		</div>
+		<div id="scherm6" >
+			<img src="/media/bg/bg_graanmarkt_blurry.jpg" alt="graanmarkt" class="positioned background">
+			<img src="/media/prop/prop_bord.svg" id="bord1" class="positioned">
+			<img src="/media/chrt/chrt_eekhoorn_les.svg" id="eekhoorntje4" class="positioned">
+			<div id="eekhoorntjetekst4" class="spraak-bubbel positioned invisible">
+				<span class="spraak-bubbel-text">unfilled data</span>
+			</div>
+			<img src="/media/ico/ico_up.svg" alt="spelomhoog" class="positioned">
 		</div>
 	</main>
 

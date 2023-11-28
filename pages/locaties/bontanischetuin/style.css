@@ -84,16 +84,11 @@
     
     transform: translate3d(-50%, -50%, 0); 
 }
-/* scherm 6 */
-#beloningen{
-    display: flex;
-    width: 356px;
-    height: 169px;
-    justify-content: center;
-    align-items: center;
-    top: 30%;
+/* scherm 8 */
+#uiltekst-3{
+    top: 0%;
     left: 50%;
     
-    transform: translate3d(-50%, -50%, 0); 
-    box-shadow: 4px 8px 32.6px 0px #FFF, 12px -11px 50.2px 0px #FFF, -9px 1px 32px 0px #FFF; 
+    transform: translate3d(-50%, -50%, 0);  
+}
 

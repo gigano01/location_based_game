@@ -1,0 +1,99 @@
+/* scherm 1 */
+#muis-1{
+    top: 70%;
+    left: 70%;
+    
+    transform: translate3d(-50%, -50%, 0);
+}
+#muistekst-1{
+    top: 10%;
+    left: 50%;
+    
+    transform: translate3d(-50%, -50%, 0);
+}
+/* scherm 2 */
+#uil-1{
+    height: 110px;
+    top: 33%;
+    left: 75%;
+    
+    transform: translate3d(-50%, -50%, 0);  
+}
+/* scherm 3 */
+#uil-2{
+    top: 70%;
+    left: 75%;
+    
+    transform: translate3d(-50%, -50%, 0);  
+}
+#uiltekst-2{
+    top: 0%;
+    left: 50%;
+    
+    transform: translate3d(-50%, -50%, 0);  
+}
+/* scherm 3 */
+/* scherm 6 */
+#uil-3{
+    top: 70%;
+    left: 50%;
+    
+    transform: translate3d(-50%, -50%, 0);  
+}
+/* scherm 7 */
+#gefeliciteerd{
+    font-size: 28px;
+    font-family: var(--text-font);
+    font-weight: var(--text-weight-bold);
+    color: var(--white);
+    top: 43%;
+    left: 50%;
+    z-index: 9999;
+    
+    transform: translate3d(-50%, -50%, 0);  
+    
+
+}
+#beloningen{
+    display: flex;
+    width: 356px;
+    height: 169px;
+    justify-content: center;
+    align-items: center;
+    top: 30%;
+    left: 50%;
+    
+    transform: translate3d(-50%, -50%, 0); 
+    box-shadow: 4px 8px 32.6px 0px #FFF, 12px -11px 50.2px 0px #FFF, -9px 1px 32px 0px #FFF; 
+}
+#bloem-1{
+    top: 52%;
+    left: 48%;
+    
+    transform: translate3d(-50%, -50%, 0); 
+}
+#bloem-2{
+    top: 52%;
+    left: 80%;
+    
+    transform: translate3d(-50%, -50%, 0); 
+}
+#bloem-3{
+    top: 52%;
+    left: 15%;
+    
+    transform: translate3d(-50%, -50%, 0); 
+}
+/* scherm 6 */
+#beloningen{
+    display: flex;
+    width: 356px;
+    height: 169px;
+    justify-content: center;
+    align-items: center;
+    top: 30%;
+    left: 50%;
+    
+    transform: translate3d(-50%, -50%, 0); 
+    box-shadow: 4px 8px 32.6px 0px #FFF, 12px -11px 50.2px 0px #FFF, -9px 1px 32px 0px #FFF; 
+

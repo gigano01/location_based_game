@@ -1,11 +1,23 @@
 let __pageI = 1
-let __amountOfPages = 1
+let __amountOfPages = 0
 
-function setPageCount(x) {
-	__amountOfPages = x
+function findScreenNumber() {
+	if (__amountOfPages === 0) {
+		let found = false
+		let i = 1
+		while (!found) {
+			if (document.getElementById(`scherm-${i}`) === null) {
+				__amountOfPages = i - 1
+				console.log(`this page has ${i-1} screens`)
+				return
+			}
+			i++
+		}
+	}
 }
 
 function nextScreen() {
+	//findScreenNumber()
 	if (document.getElementById(`scherm-${__pageI+1}`) === null) {
 		console.error(`Er is geen volgende scherm na ID ${__pageI}`)
 		return
@@ -19,6 +31,7 @@ function nextScreen() {
 }
 
 function gotoScreen(screenID) {
+	//findScreenNumber()
 	 let schermDiv = document.getElementById(`scherm-${screenID}`)
 	 if (schermDiv != null) {
 		 for (let i = 1; i<=__amountOfPages; i++) {
@@ -30,3 +43,5 @@ function gotoScreen(screenID) {
 		console.error(`Scherm met ID ${screenID} bestaat niet.`)
 	 }
 }
+
+findScreenNumber()

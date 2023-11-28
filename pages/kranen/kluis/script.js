@@ -2,7 +2,7 @@ let textBox = document.getElementById("bubbel")
 let vault = document.getElementById("kluis")
 let mouse = document.getElementById("muisje")
 
-setPageCount(2)
+//setPageCount(2)
 
 async function onEnd() {
 	textBox.classList.add("invisible")

@@ -6,7 +6,12 @@ function setPageCount(x) {
 }
 
 function nextScreen() {
+	if (document.getElementById(`scherm-${__pageI+1}`) === null) {
+		console.error(`Er is geen volgende scherm na ID ${__pageI}`)
+		return
+	}
 	__pageI++
+
 	for (let i = 1; i<__amountOfPages; i++) {
 		document.getElementById(`scherm-${i}`).classList.add("invisible")
 	}
@@ -14,9 +19,14 @@ function nextScreen() {
 }
 
 function gotoScreen(screenID) {
-	for (let i = 1; i<=__amountOfPages; i++) {
-		document.getElementById(`scherm-${i}`).classList.add("invisible")
-	}
-	document.getElementById(`scherm-${screenID}`).classList.remove("invisible")
-	__pageI = screenID
+	 let schermDiv = document.getElementById(`scherm-${screenID}`)
+	 if (schermDiv != null) {
+		 for (let i = 1; i<=__amountOfPages; i++) {
+			 document.getElementById(`scherm-${i}`).classList.add("invisible")
+		 }
+		 schermDiv.classList.remove("invisible")
+		 __pageI = screenID
+	 } else {
+		console.error(`Scherm met ID ${screenID} bestaat niet.`)
+	 }
 }

@@ -30,17 +30,20 @@
 
 
 .spraak-bubbel {
-    position: relative;
+    position: fixed;
+	left: 50%;
+	transform: translate3d(-50%, 0, 0);
     background: #f9f9f9;
     border-radius: .4em;
     padding: 20px;
     color: var(--text-color);
+	width: 80%;
 }
 
-.spraak-bubbel:after {
+.spraak-bubbel::after {
     content: '';
     position: absolute;
-    left: 50%;
+    left: 30%;
     bottom: 0;
     width: 0;
     height: 0;

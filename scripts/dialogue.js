@@ -12,7 +12,12 @@ function __dialogueClickAction(){}
 
 function assignDialogueToContainer(dialogue, container, textContainer) {
 	dialogue.container = container
-	dialogue.textContainer = textContainer
+	if(textContainer != null) {
+		dialogue.textContainer = textContainer
+	}else{
+		dialogue.textContainer = container.getElementsByClassName("spraak-bubbel-text")[0]
+	}
+	
 	
 	dialogue.textContainer.textContent = dialogue.prompts[dialogue.promptNumber].text
 

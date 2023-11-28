@@ -1,18 +1,30 @@
-#background {
+#kluis {
 	width: 100%;
-	animation: zoomin-background 2s ease-in-out 1s 1 normal forwards;
 }
 
-#kluis {
-	top: 50%;
-	left: 50%;
-	
-	transform: translate3d(-50%, -50%, 0);
-	width: 100%;
+#muisje2 {
+	top:0;
+}
+
+#bubbel{
+	bottom:32vh;
 }
 
 .zoomin-op-numpad {
 	animation: zoomin 2s ease-in-out 1s 1 normal forwards;
+}
+
+.verlaatscherm {
+	animation: verlaat 0.5s ease-in 0s 1 normal forwards;
+}
+
+@keyframes verlaat {
+	0% {
+		transform: translate3d(0,0,0);
+	}
+	100% {
+		transform: translate3d(0,400px,0);
+	}
 }
 
 @keyframes zoomin {

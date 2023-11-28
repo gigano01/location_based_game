@@ -26,6 +26,13 @@ body {
 	left: 0;
 }
 
+.centered {
+	top: 50%;
+	left: 50%;
+	
+	transform: translate3d(-50%, -50%, 0);
+}
+
 /* stopt de pagina's met scrollen*/
 body {
 	overflow-y: hidden;

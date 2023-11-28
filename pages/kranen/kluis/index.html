@@ -14,10 +14,13 @@
     <link href="../../../styles/variables.css" type="text/css" rel="stylesheet">
     <link href="../../../styles/general.css" type="text/css" rel="stylesheet">
     <link href="../../../styles/components/button.css" type="text/css" rel="stylesheet">
+	<link href="../../../styles/components/background.css" type="text/css" rel="stylesheet">
 	<link rel="stylesheet" href="../../../styles/components/spraak-bubbel.css">
 	<link rel="stylesheet" href="../../../styles/components/hamburger.css">
     <link href="style.css" type="text/css" rel="stylesheet">
 
+	<script defer src="../../../scripts/dialogue.js"></script>
+	<script defer src="../../../scripts/page-manager.js"></script>
     <script defer src="script.js"></script>
 
   </head>
@@ -36,16 +39,16 @@
 
     <div>
 		<div id="scherm-1">
-			<img src="../../../media/bg/bg_riool_sch1.jpg" alt="" id="background" class="positioned">
-			<img src="../../../media/prop/prop_riool_sch1.svg" alt="" id="kluis" class="positioned">
-			<img src="../../../media/chrt/chrt_muis_blij.svg" alt="" class="positioned">
-			<div class="spraak-bubbel positioned invisible">
+			<img src="../../../media/bg/bg_riool_sch1.jpg" alt="" class="positioned background">
+			<img src="../../../media/prop/prop_riool_sch1.svg" alt="" id="kluis" class="positioned centered">
+			<img src="../../../media/chrt/chrt_muis_vraag.png" alt="" id="muisje" class="positioned">
+			<div id="bubbel" class="spraak-bubbel positioned invisible">
 				<span class="spraak-bubbel-text">unfilled data</span>
 			</div>
 		</div>
 
 		<div id="scherm-2" class="invisible">
-			
+			<img src="../../../media/chrt/chrt_muis_vraag.png" alt="" id="muisje2" class="positioned">
 		</div>
 	</div>
 

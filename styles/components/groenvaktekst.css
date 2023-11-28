@@ -11,8 +11,10 @@
     font-size: var(--text-size);
     font-weight: var(--text-size);
     font-weight: var(--text-weight-bold);
-    color: var(--white);
     text-align: center;
-    padding-top: 20px;
-    box-shadow: var(--box-shaddow);  
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

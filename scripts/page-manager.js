@@ -18,7 +18,7 @@ function findScreenNumber() {
 
 function nextScreen() {
 	//findScreenNumber()
-	if (document.getElementById(`scherm-${__pageI+1}`) === null) {
+	if (__pageI+1 > __amountOfPages) {
 		console.error(`Er is geen volgende scherm na ID ${__pageI}`)
 		return
 	}

@@ -1,31 +1,22 @@
-#kluis {
+.kluis {
 	width: 100%;
-}
-
-#muisje2 {
-	top:0;
-}
-
-#bubbel{
-	bottom:32vh;
 }
 
 .zoomin-op-numpad {
 	animation: zoomin 2s ease-in-out 1s 1 normal forwards;
 }
 
-.verlaatscherm {
-	animation: verlaat 0.5s ease-in 0s 1 normal forwards;
+
+#muisje-s1 {
+	bottom: 207px;
+	left: 240px;
 }
 
-@keyframes verlaat {
-	0% {
-		transform: translate3d(0,0,0);
-	}
-	100% {
-		transform: translate3d(0,400px,0);
-	}
+#muisje-s1-tekstbubbel {
+	bottom: 430px;
 }
+
+
 
 @keyframes zoomin {
 	0% {

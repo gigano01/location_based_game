@@ -1,0 +1,13 @@
+#eendje2{
+position: fixed;
+top: 75%;
+left: 30%;
+transform: translate(-50%, -50%);
+}
+#eendjetekst2{
+position: fixed;
+top: 20%;
+left: 55%;
+transform: translate(-50%, -50%);
+}
+

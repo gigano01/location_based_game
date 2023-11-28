@@ -1,0 +1,31 @@
+/* scherm 1 */
+#wasbeer-1{
+    top: 75%;
+	left: 70%;
+	
+	transform: translate3d(-50%, -50%, 0);
+}
+/* scherm 2 */
+#wasbeer-2{
+    top: 75%;
+	left: 30%;
+	
+	transform: translate3d(-50%, -50%, 0);
+}
+#wasbeertekst-2{
+    top: 30%;
+	left: 50%;
+	
+	transform: translate3d(-50%, -50%, 0);
+}
+/* scherm 4 */
+#kader-1{
+    width: 305px;
+    height: 323px;
+
+    top: 25%;
+	left: 50%;
+	
+	transform: translate3d(-50%, -50%, 0);
+}
+

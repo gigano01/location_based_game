@@ -13,7 +13,8 @@
     
     transform: translate3d(-50%, -50%, 0);
 }
-#eekhoorntjetekst-2{
+
+#eekhoorntjetekst-1, #eekhoorntjetekst-2, #eekhoorntjetekst-7{
     position: fixed;
     top: 20%;
     left: 50%;
@@ -37,7 +38,7 @@
     transform: translate3d(-50%, -50%, 0);
 
 }
-#eekhoorntjetekst-4{
+#eekhoorentjetekst-5, #eekhoorntjetekst-4{
     top: 50%;
     left: 50%;
     transform: translate3d(-50%, -50%, 0);

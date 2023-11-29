@@ -55,6 +55,14 @@
     margin-bottom: -20px;
 }
 
+.sb-flipped::after {
+    left: 70%;
+    border: 20px solid transparent;
+    border-top-color: #f9f9f9;
+    border-bottom: 0;
+	border-right:0;
+}
+
 .spraak-bubbel-text {
 	font-family: var(--text-font);
 	font-size: var(--text-size);

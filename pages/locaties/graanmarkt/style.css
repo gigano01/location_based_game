@@ -1,20 +1,28 @@
 /* scherm 1 */
-#eekhoorntje-1{
+#eekhoorntje-s2{
     top: 85%;
 	left: 80%;
 	
 	transform: translate3d(-50%, -50%, 0);
 }
+#eekhoorntjetekst-s2{
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    
+    transform: translate3d(-50%, -50%, 0);
+}
+
 
 /* scherm 2 */
-#eekhoorntje-2{
+#eekhoorntje-s2{
     top: 80%;
     left: 50%;
     
     transform: translate3d(-50%, -50%, 0);
 }
 
-#eekhoorntjetekst-1, #eekhoorntjetekst-2, #eekhoorntjetekst-7{
+#eekhoorntjetekst-s2{
     position: fixed;
     top: 20%;
     left: 50%;
@@ -23,6 +31,8 @@
 }
 
 /* scherm 3 */
+
+
 /* scherm 4 */
 #bord-1{
     width: 264px;

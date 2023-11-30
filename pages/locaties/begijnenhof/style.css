@@ -1,31 +1,31 @@
 /* scherm 2 */
-#eendje-2{
+#eendje-s2{
 position: fixed;
 top: 75%;
 left: 30%;
 transform: translate(-50%, -50%);
 }
-#eendjetekst-2{
+#eendjetekst-s2{
 position: fixed;
 top: 20%;
 left: 55%;
 transform: translate(-50%, -50%);
 }
 /* scherm 3 */
-#eendje-3{
+#eendje-s3{
 position: fixed;
 top: 75%;
 left: 30%;
 transform: translate(-50%, -50%);
 }
-#eendjetekst-3{
+#eendjetekst-s3{
 position: fixed;
 top: 20%;
 left: 55%;
 transform: translate(-50%, -50%);
 }
 /* scherm 4 */
-#vraag-1{
+#vraag-s4{
     position: fixed;
     top: 15%;
     left: 50%;
@@ -33,14 +33,14 @@ transform: translate(-50%, -50%);
     width: 358px;
     height: 88px; 
 }
-#up-1{
+#up-s4{
     position: fixed;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 140px;
 }
-#cijfer-1{
+#cijfer-s4{
     width: 171px;
     height: 168px;
     flex-shrink: 0;
@@ -48,7 +48,7 @@ transform: translate(-50%, -50%);
 	left: 50%;
 	transform: translate3d(-50%, -50%, 0);
 }
-#down-1{
+#down-s4{
     position: fixed;
     top: 65%;
     left: 35%;
@@ -58,7 +58,7 @@ transform: translate(-50%, -50%);
 
 }
 
-#indienen-1{
+#indienen-s4{
     top: 90%;
 	left: 50%;
     width: 169px;
@@ -66,7 +66,7 @@ transform: translate(-50%, -50%);
 
 }
 /* scherm5 */
- #eendje-4{
+ #eendje-s5{
     width: 307px;
     height: 484px;
     position:fixed;
@@ -74,13 +74,13 @@ transform: translate(-50%, -50%);
     left: 20%;
     transform: translate(-50%, -50%);
  }
-#eendjetekst-4{
+#eendjetekst-s4{
     position: fixed;
     top: 20%;
     left: 55%;
     transform: translate(-50%, -50%);
 }   
-#vraag-2{
+#vraag-s4{
     position: fixed;
     top: 15%;
     left: 50%;
@@ -88,14 +88,14 @@ transform: translate(-50%, -50%);
     width: 358px;
     height: 88px; 
 }
-#up-2{
+#up-s4{
     position: fixed;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 140px;
 }
-#cijfer-2{
+#cijfer-s4{
     width: 171px;
     height: 168px;
     flex-shrink: 0;
@@ -103,7 +103,7 @@ transform: translate(-50%, -50%);
 	left: 50%;
 	transform: translate3d(-50%, -50%, 0);
 }
-#down-2{
+#down-s4{
     position: fixed;
     top: 65%;
     left: 35%;
@@ -113,7 +113,7 @@ transform: translate(-50%, -50%);
 
 }
 
-#indienen-2{
+#indienen-s4{
     top: 90%;
 	left: 50%;
     width: 169px;
@@ -122,7 +122,7 @@ transform: translate(-50%, -50%);
 }
 /* scherm 6 */
 /* scherm 7 */
-#eendje-5{
+#eendje-s7{
     width: 307px;
     height: 484px;
     position:fixed;
@@ -130,7 +130,7 @@ transform: translate(-50%, -50%);
     left: 20%;
     transform: translate(-50%, -50%);
  }
-#eendjetekst-5{
+#eendjetekst-s7{
     position: fixed;
     top: 20%;
     left: 55%;

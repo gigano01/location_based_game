@@ -1,45 +1,39 @@
 /* scherm 2 */
 #muis-s2{
-    top: 70%;
+    top: 70dvh;
     left: 70%;
-    
     transform: translate3d(-50%, -50%, 0);
 }
 #muistekst-s2{
-    top: 10%;
+    top: 10dvh;
     left: 50%;
-    
     transform: translate3d(-50%, -50%, 0);
 }
 
 /* scherm 3 */
 #uil-s3{
     height: 110px;
-    top: 33%;
+    top: 33dvh;
     left: 75%;
-    
     transform: translate3d(-50%, -50%, 0);  
 }
 /* scherm 4 */
 #uil-s4{
-    top: 70%;
+    top: 70dvh;
     left: 75%;
-    
     transform: translate3d(-50%, -50%, 0);  
 }
 #uiltekst-s4{
-    top: 0%;
+    top: 0dvh;
     left: 50%;
-    
     transform: translate3d(-50%, -50%, 0);  
 }
 /* scherm 5 */
 
 /* scherm 6 */
 #uil-s6{
-    top: 70%;
+    top: 70dvh;
     left: 50%;
-    
     transform: translate3d(-50%, -50%, 0);  
 }
 #gefeliciteerd-s6{
@@ -47,13 +41,10 @@
     font-family: var(--text-font);
     font-weight: var(--text-weight-bold);
     color: var(--white);
-    top: 43%;
+    top: 43dvh;
     left: 50%;
     z-index: 9999;
-    
     transform: translate3d(-50%, -50%, 0);  
-    
-
 }
 #beloningen-s6{
     display: flex;
@@ -61,41 +52,35 @@
     height: 169px;
     justify-content: center;
     align-items: center;
-    top: 30%;
+    top: 30dvh;
     left: 50%;
-    
     transform: translate3d(-50%, -50%, 0); 
     box-shadow: 4px 8px 32.6px 0px #FFF, 12px -11px 50.2px 0px #FFF, -9px 1px 32px 0px #FFF; 
 }
 #bloem-1-s6{
-    top: 52%;
+    top: 52dvh;
     left: 48%;
-    
     transform: translate3d(-50%, -50%, 0); 
 }
 #bloem-2-s6{
-    top: 52%;
+    top: 52dvh;
     left: 80%;
-    
     transform: translate3d(-50%, -50%, 0); 
 }
 #bloem-s6{
-    top: 52%;
+    top: 52dvh;
     left: 15%;
-    
     transform: translate3d(-50%, -50%, 0); 
 }
 /* scherm 7 */
 #uil-s7{
-    top: 70%;
+    top: 70dvh;
     left: 50%;
-    
     transform: translate3d(-50%, -50%, 0);  
 }
 #uiltekst-s7{
-    top: 0%;
+    top: 0dvh;
     left: 50%;
-    
     transform: translate3d(-50%, -50%, 0);  
 }
 #gefeliciteerd-s7{
@@ -103,10 +88,9 @@
     font-family: var(--text-font);
     font-weight: var(--text-weight-bold);
     color: var(--white);
-    top: 43%;
+    top: 43dvh;
     left: 50%;
     z-index: 9999;
-    
     transform: translate3d(-50%, -50%, 0);  
 }
 #beloningen-s7{
@@ -115,22 +99,19 @@
     height: 169px;
     justify-content: center;
     align-items: center;
-    top: 30%;
+    top: 30dvh;
     left: 50%;
-    
     transform: translate3d(-50%, -50%, 0); 
     box-shadow: 4px 8px 32.6px 0px #FFF, 12px -11px 50.2px 0px #FFF, -9px 1px 32px 0px #FFF; 
 }
 /* scherm 8 */
 #uil-s8{
-    top: 70%;
+    top: 70dvh;
     left: 50%;
-    
     transform: translate3d(-50%, -50%, 0);  
 }
 #uiltekst-s8{
-    top: 0%;
+    top: 0dvh;
     left: 50%;
-    
     transform: translate3d(-50%, -50%, 0);  
 }

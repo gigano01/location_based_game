@@ -41,10 +41,8 @@
     height: 288px;  
 }
 #fontijnspel-s4{
-    top: 0dvh;
-    left: 50%;
+    top: 50dvh;
+    left: 20%;
     transform: translate3d(-50%, -50%, 0);
-    height: 160px;
-    
-
+ 
 }

@@ -1,0 +1,50 @@
+/* scherm2 */
+#muisje-s2{
+    top: 80dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+/* scherm3 */
+#muisje-s3{
+    top: 80dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 460px;
+
+}
+#muisjetekst-s3{
+    top: 10dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 460px;
+
+}
+/* scherm4 */
+#muisje-s4{
+    top: 80dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 460px;
+
+}
+#muisjetekst-s4{
+    top: 10dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 460px;
+}
+#vlak-s4{
+    top: 23dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 350px;
+    height: 288px;  
+}
+#fontijnspel-s4{
+    top: 0dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    height: 160px;
+    
+
+}

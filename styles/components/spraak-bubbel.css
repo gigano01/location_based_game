@@ -38,6 +38,8 @@
     padding: 20px;
     color: var(--text-color);
 	width: 80%;
+
+	box-shadow: var(--box-shadow);
 }
 
 .spraak-bubbel::after {
@@ -53,6 +55,7 @@
     border-left: 0;
     margin-left: -10px;
     margin-bottom: -20px;
+	box-shadow: var(--box-shadow);
 }
 
 .sb-flipped::after {

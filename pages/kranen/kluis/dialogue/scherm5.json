@@ -1,0 +1,11 @@
+{
+    "count": 2,
+    "prompts": [
+        {
+            "text":"Met deze code zullen jullie het slot op de kraan kunnen openen."
+        },
+		{
+			"text":"Als de vraag fout is zullen jullie een tip krijgen en nog eens mogen proberen!"
+		}
+    ]
+}

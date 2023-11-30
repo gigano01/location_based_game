@@ -17,12 +17,13 @@
 	<link href="../../../styles/components/background.css" type="text/css" rel="stylesheet">
 	<link rel="stylesheet" href="../../../styles/components/spraak-bubbel.css">
 	<link rel="stylesheet" href="../../../styles/components/hamburger.css">
+	<link rel="stylesheet" href="../../../styles/components/tekstblok.css">
     <link href="style.css" type="text/css" rel="stylesheet">
 
 	<script defer src="../../../scripts/dialogue.js"></script>
 	<script defer src="../../../scripts/page-manager.js"></script>
     <script defer src="script.js"></script>
-
+	
   </head>
   <body>
 
@@ -42,12 +43,16 @@
 			<!--Aankomst riool-->
 			<img src="../../../media/bg/bg_aankomstkraan_02.jpg" alt="" class="positioned background">
 			<img src="../../../media/chrt/chrt_muis_vraag.svg" alt="" id="muisje-s1" class="positioned">
-			<div id="muisje-s1-tekstbubbel" class="spraak-bubbel sb-flipped invissible positioned">
+			<div id="muisje-s1-tekstbubbel" class="spraak-bubbel sb-flipped invisible positioned">
 				<span class="spraak-bubbel-text">unfilled data</span>
 			</div>
 		</div>
 		<div id="scherm-2" class="invisible">
 			<!--Binnenkomst riool-->
+			<img src="../../../media/bg/bg_riool_sch2.jpg" alt="" class="positioned background">
+			<div id="muisje-s2-mask">
+				<img src="../../../media/chrt/chrt_muis_lopen.svg" alt="" id="muisje-s2" class="positioned">
+			</div>
 		</div>
 		<div id="scherm-3" class="invisible">
 			<!--Beeld op kluis-->
@@ -57,32 +62,78 @@
 		<section id="quiz">
 			<div id="scherm-4" class="invisible">
 				<!--Uitleg quiz-->
+				<img src="../../../media/bg/bg_riool_sch1.jpg" alt="" class="positioned background">
+				<img src="../../../media/chrt/chrt_muisje_vraag_geen_vraagteken.svg" alt="" id="muisje-s4" class="positioned">
+				<div id="muisje-s4-tekstbubbel" class="spraak-bubbel invisible positioned">
+					<span class="spraak-bubbel-text">unfilled data</span>
+				</div>
 			</div>
 			<div id="scherm-5" class="invisible">
-				<!--Vraag-->
+				<!--Uitleg quiz2-->
+				<img src="../../../media/bg/bg_riool_sch1.jpg" alt="" class="positioned background">
+				<img src="../../../media/chrt/chrt_muisje_vraag_geen_vraagteken.svg" alt="" id="muisje-s5" class="positioned">
+				<img src="../../../media/prop/prop_riool_sch1.svg" alt="" id="kluis-s5" class="kluis positioned centered">
+				<div id="muisje-s5-tekstbubbel" class="spraak-bubbel sb-flipped invisible positioned">
+					<span class="spraak-bubbel-text">unfilled data</span>
+				</div>
 			</div>
 			<div id="scherm-6" class="invisible">
-				<!--Fout antwoord & Fout antwoord + tip-->
+				<!--vraag-->
+				<img src="../../../media/bg/bg_riool_sch1.jpg" alt="" class="positioned background">
+				<img src="../../../media/prop/prop_riool_sch1.svg" alt="" id="kluis-s6" class="kluis positioned centered">
+				<div class="tekst-blok positioned centered" id="vraag"><h1>Vraag</h1><p>INHOUD VOLGT</p></div>
+				<div class="positioned centered" id="inhoud">
+					<div class="tekst-blok antwoord" id="antwoord-1"><h1>A</h1><p>INHOUD VOLGT 1</p></div>
+					<div class="tekst-blok antwoord" id="antwoord-2"><h1>B</h1><p>INHOUD VOLGT 2</p></div>
+					<div class="tekst-blok antwoord" id="-antwoord-3"><h1>C</h1><p>INHOUD VOLGT 3</p></div>
+				</div>
 			</div>
 			<div id="scherm-7" class="invisible">
+				<!--fout antwoord-->
+				<img src="../../../media/bg/bg_riool_sch1.jpg" alt="" class="positioned background">
+				<img src="../../../media/prop/prop_riool_sch1.svg" alt="" id="kluis-s7" class="kluis positioned centered">
+				<img src="../../../media/chrt/chrt_muisje_vraag_geen_vraagteken.svg" alt="" id="muisje-s7" class="positioned">
+				<div id="muisje-s7-tekstbubbel" class="spraak-bubbel sb-flipped invisible positioned">
+					<span class="spraak-bubbel-text">unfilled data</span>
+				</div>
+				<div class="tekst-blok positioned centered" id="rood-vak"><h1>Inhoud volgt</h1><p>inhoud volg</p></div>
+			</div>
+			<div id="scherm-8" class="invisible">
 				<!--uitleg + code-->
+				<img src="../../../media/bg/bg_riool_sch1.jpg" alt="" class="positioned background">
+				<img src="../../../media/prop/prop_riool_sch1.svg" alt="" id="kluis-s8" class="kluis positioned centered">
+				<img src="../../../media/chrt/chrt_muisje_vraag_geen_vraagteken.svg" alt="" id="muisje-s8" class="positioned">
+				<div id="muisje-s8-tekstbubbel" class="spraak-bubbel invisible positioned">
+					<span class="spraak-bubbel-text">unfilled data</span>
+					<div id="code-visibility" class="invisible">
+						<h1>de code</h1>
+						<div id="code-div">
+							<p id="code-1" class="code-nr">1</p>
+							<p id="code-2" class="code-nr">2</p>
+							<p id="code-3" class="code-nr">3</p>
+							<p id="code-4" class="code-nr">4</p>
+						</div>
+					</div>
+				</div>
+
 			</div>
 		</section>
-		<div id="scherm-8" class="invisible">
-			<!--Zoomin op kluis-->
-			<img src="../../../media/bg/bg_riool_sch1.jpg" alt="" class="positioned background zoomin-op-numpad">
-			<img src="../../../media/prop/prop_riool_sch1.svg" alt="" id="kluis-s8" class=" kluis positioned centered">
-		</div>
 		<div id="scherm-9" class="invisible">
-			<!--Slot input-->
+			<!--Zoomin op kluis-->
+			<img src="../../../media/bg/bg_riool_sch1.jpg" alt="" class="positioned background">
+			<img src="../../../media/prop/prop_riool_sch1.svg" alt="" id="kluis-s8" class=" kluis positioned centered zoomin-op-numpad">
 		</div>
 		<div id="scherm-10" class="invisible">
-			<!--Open Kluis-->
+			<img src="../../../media/bg/bg_kraan_slotzoem.jpg" alt="" class="positioned background">
+
 		</div>
 		<div id="scherm-11" class="invisible">
-			<!--Draaien kraan-->
+			<!--Open Kluis-->
 		</div>
 		<div id="scherm-12" class="invisible">
+			<!--Draaien kraan-->
+		</div>
+		<div id="scherm-13" class="invisible">
 			<!--Yaaaay kraan toe, 20/20 eindscore, fantastisch-->
 		</div>
 	</div>

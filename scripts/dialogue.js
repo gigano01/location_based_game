@@ -11,6 +11,7 @@ function setDialogueEndHandler(dialogue, handler) {
 function __dialogueClickAction(){}
 
 function assignDialogueToContainer(dialogue, container, textContainer) {
+	container.classList.remove("invisible")
 	dialogue.container = container
 	if(textContainer != null) {
 		dialogue.textContainer = textContainer

@@ -1,5 +1,16 @@
 let __pageI = 1
 let __amountOfPages = 0
+let __onScreenEventHandlers = []
+
+function onScreen(pgnumber, handler) {
+	__onScreenEventHandlers[pgnumber] = handler
+}
+
+function callForScreenEventHandler() {
+	if (typeof __onScreenEventHandlers[__pageI] === "function") {
+		__onScreenEventHandlers[__pageI]()
+	}
+}
 
 function findScreenNumber() {
 	if (__amountOfPages === 0) {
@@ -28,6 +39,7 @@ function nextScreen() {
 		document.getElementById(`scherm-${i}`).classList.add("invisible")
 	}
 	document.getElementById(`scherm-${__pageI}`).classList.remove("invisible")
+	callForScreenEventHandler()
 }
 
 function gotoScreen(screenID) {
@@ -39,6 +51,7 @@ function gotoScreen(screenID) {
 		 }
 		 schermDiv.classList.remove("invisible")
 		 __pageI = screenID
+		 callForScreenEventHandler()
 	 } else {
 		console.error(`Scherm met ID ${screenID} bestaat niet.`)
 	 }

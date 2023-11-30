@@ -60,4 +60,17 @@ onScreen(9, ()=>{
 	setTimeout(nextScreen,3800)
 })
 
-gotoScreen(9)
+onScreen(11, ()=>{
+	setTimeout(nextScreen,1500)
+})
+
+onScreen(12, ()=>{
+	createDialogueObject("dialogue/scherm12.json").then((dialogue)=>{
+		assignDialogueToContainer(dialogue,document.getElementById("muisje-s12-tekstbubbel"))
+		setDialogueEndHandler(dialogue,()=>{
+			nextScreen() //TEMPORARY
+		})
+	})
+})
+
+gotoScreen(11)

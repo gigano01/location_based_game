@@ -18,14 +18,24 @@
 	<link rel="stylesheet" href="../../../styles/components/spraak-bubbel.css">
 	<link rel="stylesheet" href="../../../styles/components/hamburger.css">
 	<link rel="stylesheet" href="../../../styles/components/tekstblok.css">
+	<link rel="stylesheet" href="../../../styles/components/loading.css">
     <link href="style.css" type="text/css" rel="stylesheet">
 
+	<script defer src="../../../scripts/docReady.js"></script>
 	<script defer src="../../../scripts/dialogue.js"></script>
 	<script defer src="../../../scripts/page-manager.js"></script>
+	<script defer src="../../../scripts/get-query-param.js"></script>
     <script defer src="script.js"></script>
 	
   </head>
   <body>
+
+	<div id="loading-div">
+		<img src="../../../media/ico/ico_laden.svg" alt="">
+		<h1 class="loading positioned centered">
+			loading
+		</h1>
+	</div>
 
 	<header>
 		<a href="../menu" class="hamburger-a positioned">
@@ -39,7 +49,7 @@
 
 
     <div>
-		<div id="scherm-1">
+		<div id="scherm-1" class="invisible">
 			<!--Aankomst riool-->
 			<img src="../../../media/bg/bg_aankomstkraan_02.jpg" alt="" class="positioned background">
 			<img src="../../../media/chrt/chrt_muis_vraag.svg" alt="" id="muisje-s1" class="positioned">
@@ -85,7 +95,7 @@
 				<div class="positioned centered" id="inhoud">
 					<div class="tekst-blok antwoord" id="antwoord-1"><h1>A</h1><p>INHOUD VOLGT 1</p></div>
 					<div class="tekst-blok antwoord" id="antwoord-2"><h1>B</h1><p>INHOUD VOLGT 2</p></div>
-					<div class="tekst-blok antwoord" id="-antwoord-3"><h1>C</h1><p>INHOUD VOLGT 3</p></div>
+					<div class="tekst-blok antwoord" id="antwoord-3"><h1>C</h1><p>INHOUD VOLGT 3</p></div>
 				</div>
 			</div>
 			<div id="scherm-7" class="invisible">

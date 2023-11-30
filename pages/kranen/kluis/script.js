@@ -1,10 +1,19 @@
+let quizData = {}
 //SCHERM 1
 //TODO MAAK DIT DYNAMISCH
-let firstdialogue = "dialogue/dialogue01.json"
-createDialogueObject(firstdialogue).then((dialogue)=>{
-	assignDialogueToContainer(dialogue,document.getElementById("muisje-s1-tekstbubbel"))
-	setDialogueEndHandler(dialogue,()=>{
-		nextScreen()
+
+onScreen(1, ()=>{
+	let firstdialogue
+	if(quizData["eerste-keer"]){
+		firstdialogue = "dialogue/dialogue01.json"
+	} else {
+		firstdialogue = "dialogue/dialogue_repeat.json"
+	}
+	createDialogueObject(firstdialogue).then((dialogue)=>{
+		assignDialogueToContainer(dialogue,document.getElementById("muisje-s1-tekstbubbel"))
+		setDialogueEndHandler(dialogue,()=>{
+			nextScreen()
+		})
 	})
 })
 
@@ -15,7 +24,12 @@ onScreen(2, ()=>{
 
 //SCHERM 3
 onScreen(3, ()=>{
-	setTimeout(nextScreen, 1200)
+	if(quizData["eerste-keer"]){
+		setTimeout(nextScreen, 1200)
+	} else {
+		setTimeout(()=>{gotoScreen(5)}, 1200)
+	}
+	
 })
 
 //SCHERM 4
@@ -29,12 +43,58 @@ onScreen(4, ()=>{
 })
 
 onScreen(5, ()=>{
-	createDialogueObject("dialogue/scherm5.json").then((dialogue)=>{
+	let firstdialogue
+	if(quizData["eerste-keer"]){
+		firstdialogue = "dialogue/scherm5.json"
+	} else {
+		firstdialogue = "dialogue/scherm5_repeat.json"
+	}
+	createDialogueObject(firstdialogue).then((dialogue)=>{
 		assignDialogueToContainer(dialogue,document.getElementById("muisje-s5-tekstbubbel"))
 		setDialogueEndHandler(dialogue,()=>{
 			nextScreen()
 		})
 	})
+})
+
+onScreen(6, ()=>{
+	let question = document.querySelector("#vraag p")
+	let answer1 = document.querySelector("#antwoord-1 p")
+	let answer2 = document.querySelector("#antwoord-2 p")
+	let answer3 = document.querySelector("#antwoord-3 p")
+
+	question.textContent = quizData["vraag"]
+
+	let ansArray = JSON.parse(localStorage.getItem("answer-array"))
+	let correctAnswer = localStorage.getItem("correct-answer")
+
+	if(ansArray === null){
+		//antwoorden willekeurig sorteren
+		let wrongAnwserCount = quizData["foute-antwoorden"].length
+		let random1 = Math.round(Math.random() * 2 + 1) //willeukeurig nummer voor locatie juist antwoord
+		let random2 = Math.round(Math.random() * wrongAnwserCount + 1) // willekeurig nummer voor startpositie selectie foute antwoorden
+
+		//steek alle foute antwoorden in de array
+		ansArray = []
+		for (let i = 0; i < 3; i++) {
+			ansArray[i] = quizData["foute-antwoorden"][(i + random2) % wrongAnwserCount]
+		}
+		//steek nu het juiste antwoord er bij
+		ansArray[random1 - 1] = quizData["juist-antwoord"]
+
+		//log het want waarom niet
+		console.log(ansArray)
+		localStorage.setItem("correct-answer", random1)
+		localStorage.setItem("answer-array",JSON.stringify(ansArray))
+	}
+
+	answer1.textContent = ansArray[0]
+	answer2.textContent = ansArray[1]
+	answer3.textContent = ansArray[2]
+
+	
+
+
 })
 
 onScreen(7, ()=>{
@@ -73,4 +133,18 @@ onScreen(12, ()=>{
 	})
 })
 
-gotoScreen(11)
+
+
+docReady(async ()=>{
+	const fetched = await fetch("../../../data/vault_data.json")
+	const vaultData = await fetched.json()
+	const locationID = getQueryParam("id")
+
+	//console.log(vaultData)
+	quizData = vaultData[locationID]
+	//console.log(quizData)
+	if (quizData === undefined) {
+		console.error("invalid location id")
+	}
+	gotoScreen(6)
+})

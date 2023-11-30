@@ -1,0 +1,9 @@
+{
+	"begijnhof": {
+		"eerste-keer": true,
+		"vraag": "Is dit een testvraag?",
+		"juist-antwoord":"u mama",
+		"foute-antwoorden": ["foutief","fout","fouter dan fout", "rood licht"],
+		"tip": "het is een persoon"
+	}
+}

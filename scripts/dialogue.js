@@ -1,4 +1,6 @@
-
+function makeDialogueInvisible(dialogue){
+	dialogue.container.classList.add("invisible")
+}
 
 function setDialogueEndHandler(dialogue, handler) {
 	if (typeof handler !== "function") {

@@ -6,10 +6,7 @@
     transform: translate(-50%, -50%);
 }
 #eendjetekst-s2{
-    position: fixed;
-    top: 20dvh;
-    left: 55%;
-    transform: translate(-50%, -50%);
+    bottom: 40dvh;
 }
 /* scherm 3 */
 #eendje-s3{
@@ -19,10 +16,7 @@
     transform: translate(-50%, -50%);
 }
 #eendjetekst-s3{
-    position: fixed;
-    top: 20%;
-    left: 55%;
-    transform: translate(-50%, -50%);
+    bottom: 40dvh;
 }
 /* scherm 4 */
 #vraag-s4{
@@ -72,11 +66,14 @@
     transform: translate(-50%, -50%);
 }
 #eendjetekst-s5{
-    position: fixed;
-    top: 20%;
-    left: 55%;
-    transform: translate(-50%, -50%);
-}   
+
+    bottom: 30dvh;
+} 
+
+#eendjetekst-s7{
+	bottom: 25dvh;
+}
+
 #vraag-s5{
     position: fixed;
     top: 15dvh;

@@ -18,16 +18,25 @@
 	<link href="../../../styles/components/background.css" type="text/css" rel="stylesheet">
   <link href="../../../styles/components/locatiebord.css" type="text/css" rel="stylesheet">
   <link rel="stylesheet" href="../../../styles/components/spraak-bubbel.css">
+  <link rel="stylesheet" href="../../../styles/components/loading.css">
   <link href="../../../styles/components/groenvaktekst.css" type="text/css" rel="stylesheet">
     <link href="style.css" type="text/css" rel="stylesheet">
 
+	<script defer src="../../../scripts/docReady.js"></script>
 	<script defer src="../../../scripts/dialogue.js"></script>
 	<script defer src="../../../scripts/page-manager.js"></script>
+	<!-- <script defer src="../../../scripts/get-query-param.js"></script> -->
+	<script defer src="../../../scripts/movement.js"></script>
     <script defer src="script.js"></script>
 
   </head>
   <body>
-
+	<div id="loading-div">
+		<!-- <img src="../../../media/ico/ico_laden.svg" alt=""> -->
+		<h1 class="loading positioned centered">
+			loading
+		</h1>
+	</div>
 	<header>
 		<a href="../menu" class="hamburger-a positioned">
 			<div class="hamburger">
@@ -45,8 +54,8 @@
 		</div>
 		<div id="scherm-2" class="invisible">
 			<img src="/media/bg/bg_botanischetuin_sch2.jpg" alt="botanischetuin" class="positioned background">
-			<img src="/media/chrt/chrt_muis_vraag.svg" class="positioned" id="muis-s2">
-			<div id="muistekst-s2" class="spraak-bubbel  positioned">
+			<img src="/media/chrt/chrt_muisje_vraag_geen_vraagteken.svg" class="positioned" id="muis-s2">
+			<div id="muistekst-s2" class="spraak-bubbel sb-flipped positioned">
 				<span class="spraak-bubbel-text">unfilled data</span>
 			</div>
 		</div>
@@ -57,13 +66,13 @@
 		<div id="scherm-4" class="invisible">
 			<img src="/media/bg/bg_botanischetuin_sch1.jpg" alt="botanischetuin" class="positioned background">
 			<img src="/media/chrt/chrt_uil_staand.svg" class="positioned" id="uil-s4">
-			<div id="uiltekst-s4" class="spraak-bubbel positioned">
+			<div id="uiltekst-s4" class="spraak-bubbel sb-flipped positioned">
 				<span class="spraak-bubbel-text">unfilled data</span>
 			</div>
 		</div>
 		<div id="scherm-5" class="invisible">
 			<!--spel met scannen-->
-			</div>
+			
 		</div>
 		<div id="scherm-6" class="invisible">
 			<img src="/media/bg/bg_botanischetuin_sch1.jpg" alt="botanischetuin" class="positioned background">
@@ -83,14 +92,14 @@
 				<img src="/media/prop/prop_antigif.png">
 			</div>
 		</div>
-		<div id="scherm-8" >
+		<div id="scherm-8" class="invisible">
 			<img src="/media/bg/bg_botanischetuin_sch1.jpg" alt="botanischetuin" class="positioned background">
 			<img src="/media/chrt/chrt_uil_staand.svg" class="positioned" id="uil-s8">
 			<div id="uiltekst-s8" class="spraak-bubbel positioned">
 				<span class="spraak-bubbel-text">unfilled data</span>
 			</div>
 		</div>
-		<div id="scherm-9" >
+		<div id="scherm-9" class="invisible">
 			<img src="/media/bg/bg_botanischetuin_sch1.jpg" alt="botanischetuin" class="positioned background">
 		</div>
 

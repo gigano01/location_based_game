@@ -37,7 +37,7 @@ onScreen(6, ()=>{
 	createDialogueObject("dialogue/scherm6.json").then((dialogue)=>{
 		assignDialogueToContainer(dialogue,document.getElementById("eekhoorntjetekst-s6"))
 		setDialogueEndHandler(dialogue,()=>{
-			gotoScreen(8)
+			gotoScreen(10)
 		})
 	})
 })

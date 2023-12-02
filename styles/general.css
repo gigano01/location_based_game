@@ -38,3 +38,14 @@ body {
 	overflow-y: hidden;
 	overflow-x: hidden;
 }
+
+.vanboventitel{
+    left: 50%;
+    bottom: 94dvh;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    font-family: var(--text-font);
+    font-size: var(--text-size);
+    font-weight: var(--text-weight-bold);	
+}
+

@@ -10,13 +10,16 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;700&display=swap" rel="stylesheet">
 
-    <link href="../../../styles/reset.css" type="text/css" rel="stylesheet">
+
+	<link href="../../../styles/reset.css" type="text/css" rel="stylesheet">
     <link href="../../../styles/variables.css" type="text/css" rel="stylesheet">
     <link href="../../../styles/general.css" type="text/css" rel="stylesheet">
     <link href="../../../styles/components/button.css" type="text/css" rel="stylesheet">
 	<link href="../../../styles/components/hamburger.css" type="text/css" rel="stylesheet">
 	<link href="../../../styles/components/background.css" type="text/css" rel="stylesheet">
-	<!--VERGEET NIET OM TE CHECKEN OF DEZE LINKJES WERKEN-->
+  <link href="../../../styles/components/locatiebord.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="../../../styles/components/spraak-bubbel.css">
+  <link href="../../../styles/components/groenvaktekst.css" type="text/css" rel="stylesheet">
     <link href="style.css" type="text/css" rel="stylesheet">
 
 	<script defer src="../../../scripts/dialogue.js"></script>
@@ -34,13 +37,21 @@
 				<div class="hamburger-line"></div>
 			</div>
 		</a>
+			
 	</header>
 
-	<div id="scherm-1">
-		<img src="../../../media/bg/bg_riool_sch1.jpg" alt="" class="positioned background">
-	</div>
-    <h1>Welkom!</h1>
-    <button id="start-button">Start</button>
+	<div id="scherm-1" class="">
+		<img src="/media/bg/bg_menu.jpg" class="positioned background">
+		<p id="headertitel-s1" class="positioned vanboventitel">Menu</p>
+		<img src="/media/ico/ico_info.svg" class="positioned" id="info-s1">
+		<div class="positioned centered " id="flexbox-s1">
+			<button class="tekst-s1"><img src="/media/ico/ico_return.svg" id="return-s1">reset dialoog</button>
+			<button class="tekst-s1" id="hoofdmenu-s1">Hoofdmenu</button>
+			<button class="tekst-s1" id="instellingen-s1">Instellingen</button>
+			<button class="tekst-s1" id="verlaatgame-s1">Verlaat game</button>
+		</div>
+		<button class="positioned tekst-s1" id="hervatten-s1">hervatten </button>
 
+	</div>
   </body>
 </html>

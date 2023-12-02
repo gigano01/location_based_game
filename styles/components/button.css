@@ -5,4 +5,9 @@ button {
   border: 0;
   border-radius: var(--radius-box);
   box-shadow: var(--box-shadow);
+  font-family: var(--text-font);
+  font-size: var(--text-size);
+  font-weight: var(--text-weight-bold);
+  font-size: 20px;
+  width: 209px; 
 }

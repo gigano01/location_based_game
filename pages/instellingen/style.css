@@ -39,7 +39,7 @@
 /* scherm 2 - informatie */
 #muisje-s2{
     left: 10%;
-    bottom: -10dvh;
+    bottom: 0dvh;
     transform: translate(-50%, -50%);
     height: 162px;
 }
@@ -58,12 +58,135 @@
     text-align: center;
     padding-bottom: 40px;
 }
-#spraak-bubbel-text{
-display: flex;
-width: 358px;
-height: 800px;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-
+#infobubbel-s2{
+    height: 510px;
+    bottom: 0dvh;
+}
+#info-s2{
+    height: 50px;
+    align-self: flex-start;
+}
+#tekstbubbel-s2{
+    padding: 40px;
+    text-align: center;
+}
+/* scherm 3 - gsm doorgeven */
+#infobubbel-s3{
+    height: 303px;
+    bottom: 20dvh;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+}
+#muisje-s3{
+    left: 5%;
+    bottom: 10dvh;
+    transform: translate(-50%, -50%);
+    height: 162px;
+}
+#tekstbubbel-s3{
+    padding: 20px;
+    text-align: center;
+}
+/* scherm 4 - geen verbinding */
+#infobubbel-s4{
+    height: 303px;
+    bottom: 20dvh;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+#info-s4{
+    height: 50px;
+    align-self: flex-start;
+}
+#muisje-s4{
+    left: 5%;
+    bottom: 10dvh;
+    transform: translate(-50%, -50%);
+    height: 162px;
+}
+/* scherm 5 - geen gps locatie */
+#infobubbel-s5{
+    height: 303px;
+    bottom: 20dvh;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+#info-s5{
+    height: 50px;
+    align-self: flex-start;
+}
+#muisje-s5{
+    left: 5%;
+    bottom: 10dvh;
+    transform: translate(-50%, -50%);
+    height: 162px;
+}
+/* scherm 6 - geen netwerk */
+#infobubbel-s6{
+    height: 303px;
+    bottom: 20dvh;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+#info-s6{
+    height: 50px;
+    align-self: flex-start;
+}
+#muisje-s6{
+    left: 5%;
+    bottom: 10dvh;
+    transform: translate(-50%, -50%);
+    height: 162px;
+}
+/* scherm 7 - zaadjes schudden */
+#infobubbel-s7{
+    height: 303px;
+    bottom: 20dvh;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+#info-s7{
+    align-self: flex-start;
+}
+#uil-s7{
+    left: -2%;
+    bottom: 5dvh;
+    rotate: 20deg;
+    transform: translate(-50%, -50%);
+    height: 162px;
+}
+#zak-s7{
+    left: 30%;
+    bottom: 5dvh;
+    z-index: 999;
+}
+#zaadjes-s7{
+    left: 10%;
+    bottom: 5dvh;
+}
+/* scherm 8 - gsm doorgeven */
+#infobubbel-s8{
+    height: 303px;
+    bottom: 20dvh;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+#info-s8{
+    align-self: flex-start;
+}
+#eekhoorn-s8{
+    left: 30%;
+    bottom: 5dvh;
+    transform: translate(-50%, -50%);
+    height: 162px;
 }

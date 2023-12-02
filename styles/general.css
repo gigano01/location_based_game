@@ -15,6 +15,9 @@ body {
 	background-color: var(--white);
 	font-family: sans-serif;
 }
+img {
+	color: var(--white);
+}
 
 .invisible {
 	display: none !important;
@@ -48,4 +51,9 @@ body {
     font-size: var(--text-size);
     font-weight: var(--text-weight-bold);	
 }
-
+.titel{
+    color: var(--white);
+    font-family: var(--text-font);
+    font-size: var(--text-size);
+    font-weight: var(--text-weight-bold);	
+}

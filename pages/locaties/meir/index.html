@@ -10,13 +10,15 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;700&display=swap" rel="stylesheet">
 
-    <link href="../../../styles/reset.css" type="text/css" rel="stylesheet">
+	<link href="../../../styles/reset.css" type="text/css" rel="stylesheet">
     <link href="../../../styles/variables.css" type="text/css" rel="stylesheet">
     <link href="../../../styles/general.css" type="text/css" rel="stylesheet">
     <link href="../../../styles/components/button.css" type="text/css" rel="stylesheet">
 	<link href="../../../styles/components/hamburger.css" type="text/css" rel="stylesheet">
 	<link href="../../../styles/components/background.css" type="text/css" rel="stylesheet">
-	<!--VERGEET NIET OM TE CHECKEN OF DEZE LINKJES WERKEN-->
+  <link href="../../../styles/components/locatiebord.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="../../../styles/components/spraak-bubbel.css">
+  <link href="../../../styles/components/groenvaktekst.css" type="text/css" rel="stylesheet">
     <link href="style.css" type="text/css" rel="stylesheet">
 
 	<script defer src="../../../scripts/dialogue.js"></script>
@@ -36,11 +38,24 @@
 		</a>
 	</header>
 
-	<div id="scherm-1">
-		<img src="../../../media/bg/bg_riool_sch1.jpg" alt="" class="positioned background">
+	<div id="scherm-1" class="invisible">
+		<img src="../../../media/bg/bg_meir_sch1.jpg" alt="" class="positioned background">
+		<img src="/media/chrt/chrt_muis_verrast.svg" al="" class="positioned" id="muisje-s1">
 	</div>
-    <h1>Welkom!</h1>
-    <button id="start-button">Start</button>
+	<div id="scherm-2" class="invisible">
+		<img src="../../../media/bg/bg_meir_sch1.jpg" alt="" class="positioned background">
+		<img src="/media/chrt/chrt_muisje_vraag_geen_vraagteken.svg" al="" class="positioned" id="muisje-s2">
+		<div id="muisjetekst-s2" class="spraak-bubbel positioned">
+			<span class="spraak-bubbel-text">unfilled data</span>
+		</div>
+	</div>
+	<div id="scherm-3">
+		<img src="../../../media/bg/bg_meir_sch2.jpg" alt="" class="positioned background">
+		<img src="/media/chrt/chrt_muis_ballon.png" al="" class="positioned" id="muisje-s3">
+		<p class="positioned" id="timer-s3">0:00</p>
+		<div class="positioned groenvaktekst" id="tekst-s3">Ontsnap aan de contractor voor hij jou ziet</div>
+	</div>
+
 
   </body>
 </html>

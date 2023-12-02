@@ -2,12 +2,10 @@
 #muis-s2{
     top: 70dvh;
     left: 70%;
-    transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0) scaleX(-1);
 }
 #muistekst-s2{
-    top: 10dvh;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);
+    bottom: 40dvh;
 }
 
 /* scherm 3 */
@@ -24,9 +22,7 @@
     transform: translate3d(-50%, -50%, 0);  
 }
 #uiltekst-s4{
-    top: 0dvh;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);  
+    bottom: 49dvh;
 }
 /* scherm 5 */
 
@@ -111,7 +107,5 @@
     transform: translate3d(-50%, -50%, 0);  
 }
 #uiltekst-s8{
-    top: 0dvh;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);  
+    bottom: 49dvh;
 }

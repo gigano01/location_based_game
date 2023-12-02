@@ -1,0 +1,14 @@
+{
+	"count":3,
+	"prompts":[
+		{
+			"text": "Ik ga met pijlen aanduiden welke stappen jullie moeten doen. Deze zien jullie hierboven staan."
+		},
+		{
+			"text":"Als jullie denken op de juiste plaats te zijn, dan zullen jullie kunnen klikken op het juiste vakje."
+		},
+		{
+			"text":"Dit is jullie startpunt."
+		}
+	]
+}

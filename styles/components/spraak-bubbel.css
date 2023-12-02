@@ -66,6 +66,10 @@
 	border-right:0;
 }
 
+.sb-middle::after {
+    left: 52%;
+}
+
 .spraak-bubbel-text {
 	font-family: var(--text-font);
 	font-size: var(--text-size);

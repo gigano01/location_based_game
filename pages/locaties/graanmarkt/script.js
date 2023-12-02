@@ -1,6 +1,46 @@
-const startButton = document.querySelector('#start-button');
+onScreen(1, ()=>{
+	setTimeout(nextScreen,3000)
+})
 
-startButton.onclick = () => {
-	const locationID = "test"
-	location.assign(`../navigate/index.html?locationID=${locationID}`)
-}
+onScreen(2, ()=>{
+	setTimeout(nextScreen,800)
+})
+
+onScreen(3, ()=>{
+	createDialogueObject("dialogue/scherm3.json").then((dialogue)=>{
+		assignDialogueToContainer(dialogue,document.getElementById("eekhoorntjetekst-s3"))
+		setDialogueEndHandler(dialogue,()=>{
+			nextScreen()
+		})
+	})
+})
+
+onScreen(4, ()=>{
+	createDialogueObject("dialogue/scherm4.json").then((dialogue)=>{
+		assignDialogueToContainer(dialogue,document.getElementById("eekhoorntjetekst-s4"))
+		setDialogueEndHandler(dialogue,()=>{
+			nextScreen()
+		})
+	})
+})
+
+onScreen(5, ()=>{
+	createDialogueObject("dialogue/scherm5.json").then((dialogue)=>{
+		assignDialogueToContainer(dialogue,document.getElementById("eekhoorntjetekst-s5"))
+		setDialogueEndHandler(dialogue,()=>{
+			nextScreen()
+		})
+	})
+})
+
+onScreen(6, ()=>{
+	createDialogueObject("dialogue/scherm6.json").then((dialogue)=>{
+		assignDialogueToContainer(dialogue,document.getElementById("eekhoorntjetekst-s6"))
+		setDialogueEndHandler(dialogue,()=>{
+			gotoScreen(10)
+		})
+	})
+})
+docReady(async ()=>{
+	gotoScreen(1)
+})

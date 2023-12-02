@@ -32,22 +32,32 @@
 
 /* scherm 3 */
 
+#eekhoorntje-s3{
+	top: 75dvh;
+}
+
+#eekhoorntjetekst-s3{
+    bottom: 44dvh;
+
+}
 
 /* scherm 4 */
-#bord-1{
+#bord-s1{
     width: 264px;
     height: 248px;
     top: 30%;
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
 }
-#eekhoorntje-4{
-    top: 90%;
-    left: 70%;
-    
-    transform: translate3d(-50%, -50%, 0);
+#eekhoorntje-s4{
+	top: 75dvh;
 
 }
+
+#eekhoorntjetekst-s4{
+	bottom: 41dvh;
+}
+
 #eekhoorentjetekst-5, #eekhoorntjetekst-4{
     top: 50%;
     left: 50%;

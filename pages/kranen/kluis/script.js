@@ -1,10 +1,20 @@
+let quizData = {}
+let wrongCount = 0
 //SCHERM 1
 //TODO MAAK DIT DYNAMISCH
-let firstdialogue = "dialogue/dialogue01.json"
-createDialogueObject(firstdialogue).then((dialogue)=>{
-	assignDialogueToContainer(dialogue,document.getElementById("muisje-s1-tekstbubbel"))
-	setDialogueEndHandler(dialogue,()=>{
-		nextScreen()
+
+onScreen(1, ()=>{
+	let firstdialogue
+	if(quizData["eerste-keer"]){
+		firstdialogue = "dialogue/dialogue01.json"
+	} else {
+		firstdialogue = "dialogue/dialogue_repeat.json"
+	}
+	createDialogueObject(firstdialogue).then((dialogue)=>{
+		assignDialogueToContainer(dialogue,document.getElementById("muisje-s1-tekstbubbel"))
+		setDialogueEndHandler(dialogue,()=>{
+			nextScreen()
+		})
 	})
 })
 
@@ -15,7 +25,12 @@ onScreen(2, ()=>{
 
 //SCHERM 3
 onScreen(3, ()=>{
-	setTimeout(nextScreen, 1200)
+	if(quizData["eerste-keer"]){
+		setTimeout(nextScreen, 1200)
+	} else {
+		setTimeout(()=>{gotoScreen(5)}, 1200)
+	}
+	
 })
 
 //SCHERM 4
@@ -29,7 +44,13 @@ onScreen(4, ()=>{
 })
 
 onScreen(5, ()=>{
-	createDialogueObject("dialogue/scherm5.json").then((dialogue)=>{
+	let firstdialogue
+	if(quizData["eerste-keer"]){
+		firstdialogue = "dialogue/scherm5.json"
+	} else {
+		firstdialogue = "dialogue/scherm5_repeat.json"
+	}
+	createDialogueObject(firstdialogue).then((dialogue)=>{
 		assignDialogueToContainer(dialogue,document.getElementById("muisje-s5-tekstbubbel"))
 		setDialogueEndHandler(dialogue,()=>{
 			nextScreen()
@@ -37,11 +58,94 @@ onScreen(5, ()=>{
 	})
 })
 
+onScreen(6, ()=>{
+	let question = document.querySelector("#vraag p")
+	let answer1 = document.querySelector("#antwoord-1 p")
+	let answer2 = document.querySelector("#antwoord-2 p")
+	let answer3 = document.querySelector("#antwoord-3 p")
+	let buttons = document.getElementsByClassName("antwoord")
+
+	question.textContent = quizData["vraag"]
+
+	let ansArray = JSON.parse(localStorage.getItem("answer-array"))
+	let correctAnswer = localStorage.getItem("correct-answer")
+
+	if(ansArray === null){
+		//antwoorden willekeurig sorteren
+		let wrongAnwserCount = quizData["foute-antwoorden"].length
+		let random1 = Math.round(Math.random() * 2 + 1) //willeukeurig nummer voor locatie juist antwoord
+		let random2 = Math.round(Math.random() * wrongAnwserCount + 1) // willekeurig nummer voor startpositie selectie foute antwoorden
+
+		//steek alle foute antwoorden in de array
+		ansArray = []
+		for (let i = 0; i < 3; i++) {
+			ansArray[i] = quizData["foute-antwoorden"][(i + random2) % wrongAnwserCount]
+		}
+		//steek nu het juiste antwoord er bij
+		ansArray[random1 - 1] = quizData["juist-antwoord"]
+
+		//log het want waarom niet
+		console.log(ansArray)
+		localStorage.setItem("correct-answer", random1)
+		localStorage.setItem("answer-array",JSON.stringify(ansArray))
+	}
+
+	answer1.textContent = ansArray[0]
+	answer2.textContent = ansArray[1]
+	answer3.textContent = ansArray[2]
+
+	for (let i = 0; i < buttons.length; i++) {
+		 buttons[i].onclick = ()=>{
+			if(buttons[i].id == `antwoord-${correctAnswer}`){
+				localStorage.removeItem("correct-answer")
+				localStorage.removeItem("answer-array")
+				gotoScreen(8)
+			} else {
+				wrongCount++ //voeg eentje toe aan het aantal keren fout gegokt
+				nextScreen()
+			}
+		}
+	}
+
+
+})
+
 onScreen(7, ()=>{
-	createDialogueObject("dialogue/temp_scherm7.json").then((dialogue)=>{
+	let dialogueloc, aftertext
+	if(wrongCount === 1) {
+		dialogueloc = "dialogue/scherm7.json"
+		aftertext = ""
+	} else if (wrongCount === 2) {
+		dialogueloc = "dialogue/scherm7_tip.json"
+		aftertext = quizData["tip"]
+	} else {
+		dialogueloc = "dialogue/scherm7_fout.json"
+		aftertext = `Het juiste antwoord is "${quizData["juist-antwoord"]}"`
+	}
+
+	createDialogueObject(dialogueloc).then((dialogue)=>{
 		assignDialogueToContainer(dialogue,document.getElementById("muisje-s7-tekstbubbel"))
+		let i = 0
+		console.log(i)
+		console.log(aftertext)
 		setDialogueEndHandler(dialogue,()=>{
-			nextScreen()
+			if(aftertext === "" && i === 0){
+				gotoScreen(6)
+			} else {
+				dialogue.textContainer.textContent = aftertext
+				dialogue.container.onclick = ()=>{
+					dialogue.container.onclick = null //supper hacky lol
+					if (wrongCount >= 3){
+						console.log("lol")
+						nextScreen()
+					} else {
+						gotoScreen(6)
+					}
+					
+				}
+				i++
+			}
+			removeDialogueFromContainer(dialogue)
 		})
 	})
 })
@@ -58,6 +162,61 @@ onScreen(8, ()=>{
 
 onScreen(9, ()=>{
 	setTimeout(nextScreen,3800)
+
+})
+onScreen(10, nextScreen) //we skippen dees effe
+
+onScreen(11, ()=>{
+	setTimeout(nextScreen,1500)
 })
 
-gotoScreen(9)
+onScreen(12, ()=>{
+	createDialogueObject("dialogue/scherm12.json").then((dialogue)=>{
+		assignDialogueToContainer(dialogue,document.getElementById("muisje-s12-tekstbubbel"))
+		setDialogueEndHandler(dialogue,()=>{
+			makeDialogueInvisible(dialogue)
+			removeDialogueFromContainer(dialogue)
+			document.getElementById("tekstblok-s12").classList.remove("invisible")
+		})
+	})
+
+	let img = document.getElementById('kraan-s12')
+	let accum = 0
+	onDragHandler= () => {
+		//console.log(getCurrentDrag().x)
+		//console.log(__DX)
+		accum = accum + getCurrentDrag().x
+		let rotation = (accum / 1400) * 180 / Math.PI
+		//console.log(rotation)
+		img.style.transform = 'rotate(' + rotation + 'deg)'
+
+		if(rotation > 800) {
+			onDragHandler = () => {}
+			nextScreen()
+		}
+	}
+})
+
+onScreen(13, ()=>{
+	createDialogueObject("dialogue/scherm13.json").then((dialogue)=>{
+		assignDialogueToContainer(dialogue,document.getElementById("muisje-s13-tekstbubbel"))
+		setDialogueEndHandler(dialogue,()=>{
+			location.assign(`../../navigate/index.html?locationID=${quizData["mapLocationID"]}`)
+		})
+	})
+})
+
+docReady(async ()=>{
+	const fetched = await fetch("../../../data/vault_data.json")
+	const vaultData = await fetched.json()
+	const locationID = getQueryParam("id")
+
+	//console.log(vaultData)
+	quizData = vaultData[locationID]
+	//console.log(quizData)
+	if (quizData === undefined) {
+		console.error("invalid location id")
+	}
+	gotoScreen(1)
+})
+

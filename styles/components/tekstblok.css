@@ -22,3 +22,8 @@
 	font-family: var(--text-family);
 	font-weight: var(--text-weight-light);
 }
+
+.tekst-blok p.bold{
+	font-weight: var(--text-weight-bold);
+	font-size: calc(var(--text-size) + 1rem);
+}

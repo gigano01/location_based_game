@@ -15,6 +15,32 @@ onScreen(3, ()=>{
 	})
 })
 
+onScreen(4, ()=>{
+	createDialogueObject("dialogue/scherm4.json").then((dialogue)=>{
+		assignDialogueToContainer(dialogue,document.getElementById("eekhoorntjetekst-s4"))
+		setDialogueEndHandler(dialogue,()=>{
+			nextScreen()
+		})
+	})
+})
+
+onScreen(5, ()=>{
+	createDialogueObject("dialogue/scherm5.json").then((dialogue)=>{
+		assignDialogueToContainer(dialogue,document.getElementById("eekhoorntjetekst-s5"))
+		setDialogueEndHandler(dialogue,()=>{
+			nextScreen()
+		})
+	})
+})
+
+onScreen(6, ()=>{
+	createDialogueObject("dialogue/scherm6.json").then((dialogue)=>{
+		assignDialogueToContainer(dialogue,document.getElementById("eekhoorntjetekst-s6"))
+		setDialogueEndHandler(dialogue,()=>{
+			gotoScreen(8)
+		})
+	})
+})
 docReady(async ()=>{
 	gotoScreen(1)
 })

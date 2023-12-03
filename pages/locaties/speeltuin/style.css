@@ -11,9 +11,7 @@
     transform: translate3d(-50%, -50%, 0);
 }
 #wasbeertekst-s3{
-    top: 30dvh;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);
+    bottom: 34dvh;
 }
 /* scherm 4 */
 #kader-s4{
@@ -29,9 +27,7 @@
     transform: translate3d(-50%, -50%, 0);
 }
 #wasbeertekst-s4{
-    top: 30dvh;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);
+    bottom: 33dvh;
 }
 #kapstok-s4{
     top: 10dvh;
@@ -130,9 +126,8 @@
     z-index: 999;
 }
 #wasbeertekst-s6{
-    top: 15dvh;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);   
+    bottom: 40dvh;
+	z-index: 300; 
 }
 /* scherm 7 */
 #compostpot-s7{

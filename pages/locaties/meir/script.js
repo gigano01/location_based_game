@@ -26,5 +26,5 @@ onScreen(4, ()=>{
 })
 
 docReady(async ()=>{
-	gotoScreen(4)
+	gotoScreen(1)
 })

@@ -10,36 +10,36 @@
 
 	"theaterplein": {
 		"eerste-keer": false,
-		"vraag": "dit is een tweede testvraag?",
-		"juist-antwoord":"deze is juist",
-		"foute-antwoorden": ["foutiefaa","fouta","fouteraa dan fouta", "rood lichtaaa"],
+		"vraag": "Welke van deze acties kan helpen om de biodiversiteit in een stad te vergroten? ",
+		"juist-antwoord":"Verschillende habitats creëren zoals bossen, bloemen velden",
+		"foute-antwoorden": ["Het gebruik van pesticiden om onkruid te bestrijden","Het planten van één soort plant","fouteraa dan fouta", "rood lichtaaa"],
 		"tip": "het zegt letterlijk welke juist is",
 		"mapLocationID": "theaterplein-02"
 	},
 
 	"botanischetuin": {
 		"eerste-keer": false,
-		"vraag": "dit is een tweede testvraag?",
-		"juist-antwoord":"deze is juist",
-		"foute-antwoorden": ["foutiefaa","fouta","fouteraa dan fouta", "rood lichtaaa"],
+		"vraag": "Welk gas wordt door bomen opgenomen tijdens het fotosyntheseproces?",
+		"juist-antwoord":"Koolstofdioxide",
+		"foute-antwoorden": ["Zuurstof","Stikstof","fouteraa dan fouta", "rood lichtaaa"],
 		"tip": "het zegt letterlijk welke juist is",
 		"mapLocationID": "botanischetuin-02"
 	},
 
 	"speeltuin": {
 		"eerste-keer": false,
-		"vraag": "dit is een tweede testvraag?",
-		"juist-antwoord":"deze is juist",
-		"foute-antwoorden": ["foutiefaa","fouta","fouteraa dan fouta", "rood lichtaaa"],
+		"vraag": "Welk afval kan worden omgezet in compost?",
+		"juist-antwoord":"Voedselresten",
+		"foute-antwoorden": ["Plastic flessen","Aluminium blikjes","fouteraa dan fouta", "rood lichtaaa"],
 		"tip": "het zegt letterlijk welke juist is",
 		"mapLocationID": "speeltuin-02"
 	},
 
 	"KMSKA": {
 		"eerste-keer": false,
-		"vraag": "dit is een tweede testvraag?",
-		"juist-antwoord":"deze is juist",
-		"foute-antwoorden": ["foutiefaa","fouta","fouteraa dan fouta", "rood lichtaaa"],
+		"vraag": "Welke factor draagt bij aan het behoud van groene ruimtes in de stad?",
+		"juist-antwoord":" Het creëren van stedelijke parken en groene zones",
+		"foute-antwoorden": ["Het verwijderen van bomen om ruimte te maken voor gebouwen","Het gebruik van kunstgras in alle buitenruimtes","fouteraa dan fouta", "rood lichtaaa"],
 		"tip": "het zegt letterlijk welke juist is",
 		"mapLocationID": "KMSKA-02"
 	}

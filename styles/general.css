@@ -35,8 +35,7 @@ body {
 
 /* stopt de pagina's met scrollen*/
 body {
-	overflow-y: hidden;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 .vanboventitel{

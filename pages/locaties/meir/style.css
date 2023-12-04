@@ -1,0 +1,44 @@
+/* scherm1 */
+/* scherm2 */
+#muisje-s2{
+    top: 80dvh;
+    left: 40%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 460px;
+}
+#muisjetekst-s2{
+    bottom: 38dvh;
+}
+/* scherm3 */
+#muisje-s3{
+    top: 40dvh;
+    left: 70%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 90px;
+
+}
+#timer-s3{
+    top: 40dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+
+}
+#tekst-s3{
+    top: 90dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 400px;
+    height: 88px;
+}
+#timer-s3{
+    top:45dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    font-size: 96px;
+    font-family: var(--text-font);
+    font-weight: var(--text-weight-bold);
+    color: var(--white);
+}
+#muisjetekst-s4{
+	bottom: 34dvh;
+}

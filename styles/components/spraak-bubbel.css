@@ -30,17 +30,22 @@
 
 
 .spraak-bubbel {
-    position: relative;
+    position: fixed;
+	left: 50%;
+	transform: translate3d(-50%, 0, 0);
     background: #f9f9f9;
     border-radius: .4em;
     padding: 20px;
     color: var(--text-color);
+	width: 80%;
+
+	box-shadow: var(--box-shadow);
 }
 
-.spraak-bubbel:after {
+.spraak-bubbel::after {
     content: '';
     position: absolute;
-    left: 50%;
+    left: 30%;
     bottom: 0;
     width: 0;
     height: 0;
@@ -50,6 +55,19 @@
     border-left: 0;
     margin-left: -10px;
     margin-bottom: -20px;
+	box-shadow: var(--box-shadow);
+}
+
+.sb-flipped::after {
+    left: 70%;
+    border: 20px solid transparent;
+    border-top-color: #f9f9f9;
+    border-bottom: 0;
+	border-right:0;
+}
+
+.sb-middle::after {
+    left: 52%;
 }
 
 .spraak-bubbel-text {

@@ -1,0 +1,144 @@
+/* scherm 2 */
+#wasbeer-s2{
+    top: 75dvh;
+    left: 70%;
+    transform: translate3d(-50%, -50%, 0);
+}
+/* scherm 3 */
+#wasbeer-s3{
+    top: 75dvh;
+    left: 30%;
+    transform: translate3d(-50%, -50%, 0);
+}
+#wasbeertekst-s3{
+    bottom: 34dvh;
+}
+/* scherm 4 */
+#kader-s4{
+    width: 305px;
+    height: 323px;
+    top: 25dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+#wasbeer-s4{
+    top: 75dvh;
+    left: 30%;
+    transform: translate3d(-50%, -50%, 0);
+}
+#wasbeertekst-s4{
+    bottom: 33dvh;
+}
+#kapstok-s4{
+    top: 10dvh;
+    left: 15%;
+    transform: translate3d(-50%, -50%, 0);
+}
+#fles-1-s4{
+    top: 20dvh;
+    left: 33%;
+    transform: translate3d(-50%, -50%, 0);  
+}
+#fles-2-s4{
+    top: 40dvh;
+    left: 30%;
+    transform: translate3d(-50%, -50%, 0);  
+}
+#tandpasta-s4{
+    top: 35dvh;
+    left: 15%;
+    transform: translate3d(-50%, -50%, 0);  
+}
+#beker-s4{
+    top: 55dvh;
+    left: 15%;
+    transform: translate3d(-50%, -50%, 0);  
+}
+#vis-s4{
+    top: 15dvh;
+    left: 85%;
+    transform: translate3d(-50%, -50%, 0);  
+}
+#kaas-s4{
+    top: 30dvh;
+    left: 70%;
+    transform: translate3d(-50%, -50%, 0);  
+}
+#brood-s4{
+    top: 45dvh;
+    left: 80%;
+    transform: translate3d(-50%, -50%, 0);  
+}
+#broccoli-s4{
+    top:55dvh;
+    left:70%;
+    transform: translate3d(-50%, -50%, 0);  
+}
+#vuilbakgroen-s4{
+    top:80dvh;
+    left:75%;
+    transform: translate3d(-50%, -50%, 0);  
+}
+#vuilbakgrijs-s4{
+    top:80dvh;
+    left:20%;
+    transform: translate3d(-50%, -50%, 0);  
+}
+/* scherm 5 */
+#kader-s5{
+    width: 180px;
+    height: 88px;
+    font-size: 64px;
+}
+#compostpot-s5{
+    top: 93dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);  
+}
+#vuilbakgroen-s5{
+    top: 50dvh;
+    left: 50%;
+    height: 133px;
+    transform: translate3d(-50%, -50%, 0);  
+}
+/* scherm 6 */
+#kader-s6{
+    width: 180px;
+    height: 88px;
+    font-size: 64px;
+}
+#compostpot-s6{
+    top: 93dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);   
+}
+#vuilbakgroen-s6{
+    top: 50dvh;
+    left: 50%;
+    height: 133px;
+    transform: translate3d(-50%, -50%, 0);   
+}
+#wasbeer-s6{
+    width: 318px;
+    top: 75dvh;
+    left: 60%;
+    transform: translate3d(-50%, -50%, 0);   
+    z-index: 999;
+}
+#wasbeertekst-s6{
+    bottom: 40dvh;
+	z-index: 300; 
+}
+/* scherm 7 */
+#compostpot-s7{
+    top: 93dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);   
+}
+#wasbeer-s7{
+    width: 318px;
+    top: 75dvh;
+    left: 60%;
+    transform: translate3d(-50%, -50%, 0);   
+    z-index: 999;
+}

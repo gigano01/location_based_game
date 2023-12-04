@@ -17,7 +17,7 @@ body {
 }
 
 .invisible {
-	display: none;
+	display: none !important;
 }
 
 .positioned {
@@ -26,8 +26,47 @@ body {
 	left: 0;
 }
 
+.centered {
+	top: 50%;
+	left: 50%;
+	
+	transform: translate3d(-50%, -50%, 0);
+}
+
 /* stopt de pagina's met scrollen*/
 body {
-	overflow-y: hidden;
-	overflow-x: hidden;
+	overflow: hidden;
+}
+
+.vanboventitel{
+    left: 50%;
+    bottom: 94dvh;
+    transform: translate(-50%, -50%);
+    color: var(--white);
+    font-family: var(--text-font);
+    font-size: var(--text-size);
+    font-weight: var(--text-weight-bold);	
+}
+.titel{
+    color: var(--white);
+    font-family: var(--text-font);
+    font-size: var(--text-size);
+    font-weight: var(--text-weight-bold);	
+}
+.infobubbel{
+	left: 50%;
+    font-family: var(--text-font);
+    font-weight: var(--text-weight-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px
+}
+.errorbutton{
+    width: 209px;
+    height: 36px;
+    text-align: center;
+    padding-bottom: 40px;
+    background-color: var(--groen);
 }

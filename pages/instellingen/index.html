@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;700&display=swap" rel="stylesheet">
+
+
+	<link href="../../../styles/reset.css" type="text/css" rel="stylesheet">
+    <link href="../../../styles/variables.css" type="text/css" rel="stylesheet">
+    <link href="../../../styles/general.css" type="text/css" rel="stylesheet">
+    <link href="../../../styles/components/button.css" type="text/css" rel="stylesheet">
+	<link href="../../../styles/components/hamburger.css" type="text/css" rel="stylesheet">
+	<link href="../../../styles/components/background.css" type="text/css" rel="stylesheet">
+  	<link href="../../../styles/components/locatiebord.css" type="text/css" rel="stylesheet">
+  	<link rel="stylesheet" href="../../../styles/components/spraak-bubbel.css">
+ 	 <link href="../../../styles/components/groenvaktekst.css" type="text/css" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+
+	<script defer src="../../../scripts/dialogue.js"></script>
+	<script defer src="../../../scripts/page-manager.js"></script>
+    <script defer src="script.js"></script>
+
+  </head>
+  <body>
+
+	<header>
+		
+			
+	</header>
+
+	<div id="scherm-1" class="invisible">
+		<img src="/media/bg/bg_menu.jpg" class="positioned background">
+		<p id="headertitel-s1" class="positioned vanboventitel">Menu</p>
+		<img src="/media/ico/ico_info.svg" class="positioned" id="info-s1">
+		<div class="positioned centered " id="flexbox-s1">
+			<button class="tekst-s1"><img src="/media/ico/ico_return.svg" id="return-s1">reset dialoog</button>
+			<button class="tekst-s1" id="hoofdmenu-s1">Hoofdmenu</button>
+			<button class="tekst-s1" id="instellingen-s1">Instellingen</button>
+			<button class="tekst-s1" id="verlaatgame-s1">Verlaat game</button>
+		</div>
+		<button class="positioned tekst-s1" id="hervatten-s1">hervatten </button>
+	</div>
+	<div id="scherm-2" class="invisible">
+		<img src="/media/ico/ico_return.svg" class="positioned" id="return">
+		<img src="/media/bg/bg_menu.jpg" class="positioned background">
+		<p id="headertitel-s2" class="positioned vanboventitel">Informatie</p>
+		<img src="/media/chrt/chrt_muisje_vraag_geen_vraagteken.svg" class="positioned" id="muisje-s2">
+		<div id="infobubbel-s2" class="spraak-bubbel positioned infobubbel">
+			<div><img src="/media/ico/ico_info.svg" id="info-s2"></div>
+			<div id="tekstbubbel-s2">Hier komt de informatie over de werking van de minigame met hieronder de uitleg over de icoontjes en knoppen </div>
+			<div></div>
+		</div>
+		<button id="klaar-s2" class="positioned">Klaar</button>
+	</div>
+	<div id="scherm-3" class="invisible">
+		<img src="/media/bg/bg_menu.jpg" class="positioned background">
+		<img src="/media/chrt/chrt_muisje_vraag_geen_vraagteken.svg" class="positioned" id="muisje-s3">
+		<div id="infobubbel-s3" class="spraak-bubbel positioned infobubbel">
+			<div id="tekstbubbel-s3">Hier komt de informatie over de werking van de minigame met hieronder de uitleg over de icoontjes en knoppen </div>
+			<div><img src="/media/ico/ico_doorgeven.svg" id="info-s3"></div>
+			<div></div>
+		</div>
+	</div>
+	<div id="scherm-4" class="invisible">
+		<img src="/media/bg/bg_menu.jpg" class="positioned background">
+		<img src="/media/chrt/chrt_muisje_vraag_geen_vraagteken.svg" class="positioned" id="muisje-s4">
+		<div id="infobubbel-s4" class="spraak-bubbel positioned infobubbel">
+			<div><img src="/media/ico/ico_info.svg" id="info-s4"></div>
+			<div id="tekstbubbel-s4">Server kon geen verbinding maken </div>
+			<button class="errorbutton">Herlaad</button>
+		</div>
+	</div>
+	<div id="scherm-5" class="invisible">
+		<img src="/media/bg/bg_menu.jpg" class="positioned background">
+		<img src="/media/chrt/chrt_muisje_vraag_geen_vraagteken.svg" class="positioned" id="muisje-s5">
+		<div id="infobubbel-s5" class="spraak-bubbel positioned infobubbel">
+			<div><img src="/media/ico/ico_markeroff.svg" id="info-s5"></div>
+			<div id="tekstbubbel-s5">Er is geen gps locatie beschikbaar </div>
+			<button class="errorbutton">Herlaad</button>
+		</div>
+	</div>
+	<div id="scherm-6" class="invisible">
+		<img src="/media/bg/bg_menu.jpg" class="positioned background">
+		<img src="/media/chrt/chrt_muisje_vraag_geen_vraagteken.svg" class="positioned" id="muisje-s6">
+		<div id="infobubbel-s6" class="spraak-bubbel positioned infobubbel">
+			<div><img src="/media/ico/ico_wifidisconnected.svg" id="info-s6"></div>
+			<div id="tekstbubbel-s6">Er is geen gps locatie beschikbaar </div>
+			<button class="errorbutton">Herlaad</button>
+		</div>
+	</div>
+	<div id="scherm-7" class="invisible">
+		<img src="/media/bg/bg_stad_blurry.jpg" class="positioned background">
+		<img src="/media/chrt/chrt_uil_vliegend.svg" class="positioned" id="uil-s7">
+		<div id="infobubbel-s7" class="spraak-bubbel positioned infobubbel">
+			<div id="tekstbubbel-s7">Verspreid de zaadjes door met de gsm te schudden </div>
+			<div><img src="/media/ico/ico_gsmschudden.svg" id="info-s7"></div>
+			<div></div>
+		</div>
+		<img src="/media/prop/prop_zak.svg" class="positioned" id="zak-s7">
+		<img src="/media/prop/prop_zaadjes.svg" class="positioned" id="zaadjes-s7">
+	</div>
+	<div id="scherm-8">
+		<img src="/media/bg/bg_stad_blurry.jpg" class="positioned background">
+		<img src="/media/chrt/chrt_eekhoorn_zittend.svg" class="positioned" id="eekhoorn-s8">
+		<div id="infobubbel-s8" class="spraak-bubbel positioned infobubbel">
+			<div id="tekstbubbel-s8">GSM doorgeven aan de ouder </div>
+			<div><img src="/media/ico/ico_doorgeven.svg" id="info-s8"></div>
+			<div></div>
+		</div>
+	</div>
+  </body>
+</html>

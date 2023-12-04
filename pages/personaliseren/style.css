@@ -1,0 +1,54 @@
+/* scherm 1 - personaliseren*/
+#vierkant{
+    height: 520px;
+    width: 380px;
+    background-color: var(--white);
+    border-radius: var(--radius-box);
+}
+#p1-s1{
+    font-family: var(--text-font);
+    font-size: var(--text-size);
+    font-weight: var(--text-weight-bold);
+    color: var(--text-color);
+}
+#p2-s1{
+    font-family: var(--text-font);
+    font-size: 18px;
+    font-weight: var(--text-weight-light);
+    color: var(--text-color);
+}
+#character-s1{
+    height: 71px;
+    width: 71px;
+    border-style: solid;
+    border-color: var(--text-color);
+    border-width: 1px;
+}
+.naam-s1{
+    width: 264px;
+    height: 39px;
+    background-color:var(--grey);
+    border-radius: 8px;
+    border-style: none;
+    box-shadow: var(--box-shadow);
+}
+#volgende-s1{
+    background-color: var(--groen);
+}
+/* scherm 2 - aantal spelers*/
+#p1-s2{
+    font-family: var(--text-font);
+    font-size: var(--text-size);
+    font-weight: var(--text-weight-bold);
+    color: var(--text-color);
+    text-align: center;
+}
+#p2-s2{
+    font-family: var(--text-font);
+    font-size: 18px;
+    font-weight: var(--text-weight-light);
+    color: var(--text-color);
+}
+#volgende-s2{
+    background-color: var(--groen);
+}

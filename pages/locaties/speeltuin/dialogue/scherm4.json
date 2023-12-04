@@ -1,0 +1,14 @@
+{
+	"count":3,
+	"prompts":[
+		{
+			"text": "Het is de bedoeling dat we recycleren in 2 verschillende vuilbakken. De restafval bak (groen) en de compost bak (bruin). Compost kan ik lekker opeten, maar van restafval wordt ik ziekjes."
+		},
+		{
+			"text": "Alles dat in de compost bak moet sleep je naar daar. De rest zal dan in de restafval bak terecht komen."
+		},
+		{
+			"text": "LET OP! Je hebt maar 3 kansen om juist te recycleren. "
+		}
+	]
+}

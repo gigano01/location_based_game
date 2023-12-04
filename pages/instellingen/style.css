@@ -1,0 +1,192 @@
+/* scherm header - */
+#return{
+    left: 10%;
+    bottom: 94dvh;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    height: 30px;
+    
+}
+/* scherm 1 - menu */
+#info-s1{
+    left: 93%;
+    bottom: 92dvh;
+    transform: translate(-50%, -50%);
+    height: 50px;
+}
+#flexbox-s1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 209px;
+    height: 420.374px;  
+}
+#return-s1{
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+}
+#hervatten-s1{
+    left: 50%;
+    bottom: 5dvh;
+    transform: translate(-50%, -50%);
+    width: 121px;
+    height: 36px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+/* scherm 2 - informatie */
+#muisje-s2{
+    left: 10%;
+    bottom: 0dvh;
+    transform: translate(-50%, -50%);
+    height: 162px;
+}
+#infobubbel-s2{
+    left: 50%;
+    bottom: 10dvh;
+    transform: translate(-50%, -50%);
+    height: 162px;
+}
+#klaar-s2{
+    left: 50%;
+    bottom: 0dvh;
+    transform: translate(-50%, -50%);
+    width: 121px;
+    height: 36px;
+    text-align: center;
+    padding-bottom: 40px;
+}
+#infobubbel-s2{
+    height: 510px;
+    bottom: 0dvh;
+}
+#info-s2{
+    height: 50px;
+    align-self: flex-start;
+}
+#tekstbubbel-s2{
+    padding: 40px;
+    text-align: center;
+}
+/* scherm 3 - gsm doorgeven */
+#infobubbel-s3{
+    height: 303px;
+    bottom: 20dvh;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+}
+#muisje-s3{
+    left: 5%;
+    bottom: 10dvh;
+    transform: translate(-50%, -50%);
+    height: 162px;
+}
+#tekstbubbel-s3{
+    padding: 20px;
+    text-align: center;
+}
+/* scherm 4 - geen verbinding */
+#infobubbel-s4{
+    height: 303px;
+    bottom: 20dvh;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+#info-s4{
+    height: 50px;
+    align-self: flex-start;
+}
+#muisje-s4{
+    left: 5%;
+    bottom: 10dvh;
+    transform: translate(-50%, -50%);
+    height: 162px;
+}
+/* scherm 5 - geen gps locatie */
+#infobubbel-s5{
+    height: 303px;
+    bottom: 20dvh;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+#info-s5{
+    height: 50px;
+    align-self: flex-start;
+}
+#muisje-s5{
+    left: 5%;
+    bottom: 10dvh;
+    transform: translate(-50%, -50%);
+    height: 162px;
+}
+/* scherm 6 - geen netwerk */
+#infobubbel-s6{
+    height: 303px;
+    bottom: 20dvh;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+#info-s6{
+    height: 50px;
+    align-self: flex-start;
+}
+#muisje-s6{
+    left: 5%;
+    bottom: 10dvh;
+    transform: translate(-50%, -50%);
+    height: 162px;
+}
+/* scherm 7 - zaadjes schudden */
+#infobubbel-s7{
+    height: 303px;
+    bottom: 20dvh;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+#info-s7{
+    align-self: flex-start;
+}
+#uil-s7{
+    left: -2%;
+    bottom: 5dvh;
+    rotate: 20deg;
+    transform: translate(-50%, -50%);
+    height: 162px;
+}
+#zak-s7{
+    left: 30%;
+    bottom: 5dvh;
+    z-index: 999;
+}
+#zaadjes-s7{
+    left: 10%;
+    bottom: 5dvh;
+}
+/* scherm 8 - gsm doorgeven */
+#infobubbel-s8{
+    height: 303px;
+    bottom: 20dvh;
+    transform: translate(-50%, -50%);
+    padding: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+#info-s8{
+    align-self: flex-start;
+}
+#eekhoorn-s8{
+    left: 30%;
+    bottom: 5dvh;
+    transform: translate(-50%, -50%);
+    height: 162px;
+}

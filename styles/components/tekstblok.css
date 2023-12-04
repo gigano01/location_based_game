@@ -1,0 +1,29 @@
+.tekst-blok {
+	width:90dvw;
+	height: fit-content;
+	background-color: white;
+	padding: 20px;
+	color: var(--text-color);
+	border-radius: var(--radius-box);
+	box-shadow: var(--box-shadow);
+	text-align: center;
+	max-width: 90dvw;
+}
+
+.tekst-blok h1{
+	font-size: calc(var(--text-size) + 1rem);
+	font-family: var(--text-family);
+	font-weight: var(--text-weight-bold);
+	margin-bottom: 20px;
+}
+
+.tekst-blok p{
+	font-size: var(--text-size);
+	font-family: var(--text-family);
+	font-weight: var(--text-weight-light);
+}
+
+.tekst-blok p.bold{
+	font-weight: var(--text-weight-bold);
+	font-size: calc(var(--text-size) + 1rem);
+}

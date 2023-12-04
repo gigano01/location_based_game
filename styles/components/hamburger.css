@@ -1,0 +1,22 @@
+.hamburger-a {
+	z-index: 12;
+	top: 12px;
+	left: 12px;
+	display: block;
+	height: 20px;
+}
+
+.hamburger {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	height: 30px;
+}
+
+.hamburger-line{
+	min-width: 40px;
+	min-height: 5px;
+	background-color: white;
+	border-radius: 12px;
+	box-shadow: var(--box-shadow);
+}

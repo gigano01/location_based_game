@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;700&display=swap" rel="stylesheet">
+
+	<link href="../../../styles/reset.css" type="text/css" rel="stylesheet">
+    <link href="../../../styles/variables.css" type="text/css" rel="stylesheet">
+    <link href="../../../styles/general.css" type="text/css" rel="stylesheet">
+    <link href="../../../styles/components/button.css" type="text/css" rel="stylesheet">
+	<link href="../../../styles/components/hamburger.css" type="text/css" rel="stylesheet">
+	<link href="../../../styles/components/background.css" type="text/css" rel="stylesheet">
+	<link href="../../../styles/components/locatiebord.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="../../../styles/components/spraak-bubbel.css">
+	<link rel="stylesheet" href="../../../styles/components/loading.css">
+	<link href="../../../styles/components/groenvaktekst.css" type="text/css" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+
+	<script defer src="../../../scripts/docReady.js"></script>
+	<script defer src="../../../scripts/dialogue.js"></script>
+	<script defer src="../../../scripts/page-manager.js"></script>
+	<!-- <script defer src="../../../scripts/get-query-param.js"></script> -->
+	<script defer src="../../../scripts/movement.js"></script>
+    <script defer src="script.js"></script>
+
+  </head>
+  <body>
+
+	<div id="loading-div">
+		<!-- <img src="../../../media/ico/ico_laden.svg" alt=""> -->
+		<h1 class="loading positioned centered">
+			loading
+		</h1>
+	</div>
+
+	<header>
+		<a href="../menu" class="hamburger-a positioned">
+			<div class="hamburger">
+				<div class="hamburger-line"></div>
+				<div class="hamburger-line"></div>
+				<div class="hamburger-line"></div>
+			</div>
+		</a>
+	</header>
+
+	<main>
+		<div id="scherm-1" class="invisible">
+      <img src="/media/bg/bg_inkompark.jpg" alt="begijnenhof" class="positioned background">
+      <div class="naambord" id="naambord-s1">Begijnenhof</div> 
+    </div>
+    <div id="scherm-2" class="invisible">
+      <img src="/media/bg/bg_inkompark.jpg" alt="begijnenhof" class="positioned background">
+      <img src="/media/chrt/chrt_eend_wandel.svg" alt="" class="positioned" id="eendje-s2">
+      <div id="eendjetekst-s2" class="spraak-bubbel positioned">
+        <span class="spraak-bubbel-text">unfilled data</span>
+      </div>
+    </div>
+    <div id="scherm-3" class="invisible">
+      <img src="/media/bg/bg_park.jpg" alt="begijnenhof" class="positioned background">
+      <img src="/media/chrt/chrt_eend_vraag.svg" alt="" class="positioned" id="eendje-s3">
+      <div id="eendjetekst-s3" class="spraak-bubbel positioned">
+        <span class="spraak-bubbel-text">unfilled data</span>
+      </div>
+    </div>
+    <div id="scherm-4" class="invisible">
+      <img src="/media/bg/bg_park.jpg" alt="begijnenhof" class="positioned background">
+      <div class="groenvaktekst" id="vraag-s4">Hoeveel standbeelden tellen jullie?</div>
+      <img src="/media/ico/ico_up.svg" id="up-s4">
+      <div class="groenvaktekst" id="cijfer-s4"></div>
+      <img src="/media/ico/ico_up.svg" id="down-s4">
+      <div class=" groenvaktekst" id="indienen-s4">Indienen</div>
+    </div>
+    <div id="scherm-5" class="invisible">
+      <img src="/media/bg/bg_park.jpg" alt="begijnenhof" class="positioned background">
+      <div class="groenvaktekst" id="vraag-s5">Hoeveel standbeelden tellen jullie?</div>
+      <img src="/media/ico/ico_up.svg" id="up-s5">
+      <div class="groenvaktekst" id="cijfer-s5"></div>
+      <img src="/media/ico/ico_up.svg" id="down-s5">
+      <div class=" groenvaktekst" id="indienen">Indienen</div>
+      <img src="/media/chrt/chrt_eend_wandel.svg" id="eendjes-s5" class="positioned">
+      <div id="eendjetekst-s5" class="spraak-bubbel positioned">
+        <span class="spraak-bubbel-text">unfilled data</span>
+      </div>
+    </div>
+    <div id="scherm-6" class="invisible">
+      <img src="/media/bg/bg_inkompark_blurry.jpg" alt="begijnenhof" class="positioned background">
+    </div>
+    <div id="scherm-7" class="invisible">
+      <img src="/media/bg/bg_inkompark_blurry.jpg" alt="begijnenhof" class="positioned background">
+      <img src="/media/chrt/chrt_eend_wandel.svg" id="eendje-s7" class="positioned">
+      <div id="eendjetekst-s7" class="spraak-bubbel positioned">
+        <span class="spraak-bubbel-text">unfilled data</span>
+      </div>
+    </div>
+	</main>
+
+
+  </body>
+</html>

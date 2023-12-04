@@ -6,19 +6,38 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="../../styles/reset.css" type="text/css" rel="stylesheet">
-    <link href="../../styles/variables.css" type="text/css" rel="stylesheet">
-    <link href="../../styles/general.css" type="text/css" rel="stylesheet">
-    <link href="../../styles/components/button.css" type="text/css" rel="stylesheet">
-	<link href="../../styles/components/hamburger.css" type="text/css" rel="stylesheet">
-	<link href="../../styles/components/background.css" type="text/css" rel="stylesheet">
-    <link href="style.css" type="text/css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;700&display=swap" rel="stylesheet">
 
+	<link href="../../../styles/reset.css" type="text/css" rel="stylesheet">
+    <link href="../../../styles/variables.css" type="text/css" rel="stylesheet">
+    <link href="../../../styles/general.css" type="text/css" rel="stylesheet">
+    <link href="../../../styles/components/button.css" type="text/css" rel="stylesheet">
+	<link href="../../../styles/components/hamburger.css" type="text/css" rel="stylesheet">
+	<link href="../../../styles/components/background.css" type="text/css" rel="stylesheet">
+  <link href="../../../styles/components/locatiebord.css" type="text/css" rel="stylesheet">
+  <link rel="stylesheet" href="../../../styles/components/spraak-bubbel.css">
+  <link rel="stylesheet" href="../../../styles/components/loading.css">
+  <link href="../../../styles/components/groenvaktekst.css" type="text/css" rel="stylesheet">
+    <link href="style.css" type="text/css" rel="stylesheet">
+	
+	<script defer src="../../../scripts/docReady.js"></script>
+	<script defer src="../../../scripts/dialogue.js"></script>
+	<script defer src="../../../scripts/page-manager.js"></script>
+	<!-- <script defer src="../../../scripts/get-query-param.js"></script> -->
+	<script defer src="../../../scripts/movement.js"></script>
     <script defer src="script.js"></script>
 
   </head>
   <body>
 
+	<div id="loading-div">
+		<!-- <img src="../../../media/ico/ico_laden.svg" alt=""> -->
+		<h1 class="loading positioned centered">
+			loading
+		</h1>
+	</div>
 	<header>
 		<a href="../menu" class="hamburger-a positioned">
 			<div class="hamburger">
@@ -30,11 +49,196 @@
 	</header>
 
 	<main>
-		<img src="../../../media/bg/bg_inkompark.jpg" alt="Graanmarkt" class="positioned background">
+		<div id="scherm-1" class="invisible">
+			<img src="/media/bg/bg_graanmarkt_sch1.png" alt="graanmarkt" class="positioned background">
+			<div class="naambord">Graanmarkt</div>
+		</div>
+		<div id="scherm-2" class="invisible" >
+			<img src="/media/bg/bg_graanmarkt_sch1.png" alt="graanmarkt" class="positioned background">
+			<img src="/media/chrt/chrt_eekhoorn_kijkend.svg" id="eekhoorntje-s2" class="positioned">
+		</div>
+		<div id="scherm-3" class="invisible">
+			<img src="/media/bg/bg_graanmarkt_sch1.png" alt="graanmarkt" class="positioned background">
+			<img src="/media/chrt/chrt_eekhoorn_blij.svg" id="eekhoorntje-s3" class="positioned centered">
+			<div id="eekhoorntjetekst-s3" class="spraak-bubbel sb-middle positioned">
+				<span class="spraak-bubbel-text">unfilled data</span>
+			</div>
+		</div>
+		<div id="scherm-4" class="invisible">
+			<img src="/media/bg/bg_graanmarkt_sch1.png" alt="graanmarkt" class="positioned background">
+			<img src="/media/chrt/chrt_eekhoorn_zittend.svg" id="eekhoorntje-s4" class="positioned centered">
+			<div id="eekhoorntjetekst-s4" class="spraak-bubbel sb-middle positioned">
+				<span class="spraak-bubbel-text">unfilled data</span>
+			</div>
+		</div>
+		<div id="scherm-5" class="invisible">
+			<img src="/media/bg/bg_graanmarkt_blurry.jpg" alt="graanmarkt" class="positioned background">
+			<table>
+				<tbody id="chessboard" class="positioned centered">
+					<tr>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+				</tbody>
+			</table>
+			<img src="/media/chrt/chrt_eekhoorn_les.svg" id="eekhoorntje-s5" class="positioned">
+			<div id="eekhoorntjetekst-s5" class="spraak-bubbel sb-flipped sb-middle positioned">
+				<span class="spraak-bubbel-text">unfilled data</span>
+			</div>
+		</div>
+		<div id="scherm-6" class="invisible">
+			<img src="/media/bg/bg_graanmarkt_blurry.jpg" alt="graanmarkt" class="positioned background">
+			<table>
+				<tbody id="chessboard" class="positioned centered">
+					<tr>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+				</tbody>
+			</table>
+			<img src="/media/chrt/chrt_eekhoorn_les.svg" id="eekhoorntje-s6" class="positioned">
+			<div id="eekhoorntjetekst-s6" class="spraak-bubbel sb-flipped sb-middle positioned">
+				<span class="spraak-bubbel-text">unfilled data</span>
+			</div>
+			<img src="/media/ico/ico_up.svg" id="omhoog-s6" class="positioned">
+			<img src="/media/ico/ico_up.svg" id="omlaag-s6" class="positioned">
+			<img src="/media/ico/ico_up.svg" id="rechts-s6" class="positioned">
+			<img src="/media/ico/ico_up.svg" id="links-s6" class="positioned">
+		</div>
+		<div id="scherm-7" class="invisible">
+			<!-- het spel zelf -->
+			<img src="/media/bg/bg_graanmarkt_blurry.jpg" alt="graanmarkt" class="positioned background">
+			<table>
+				<tbody id="chessboard" class="positioned centered">
+					<tr>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+				</tbody>
+			</table>
+			<img src="/media/chrt/chrt_eekhoorn_les.svg" id="eekhoorntje-s7" class="positioned">
+			<div id="eekhoorntjetekst-s7" class="spraak-bubbel positioned">
+				<span class="spraak-bubbel-text">unfilled data</span>
+			</div>
+			<img src="/media/ico/ico_up.svg" id="omhoog-spel" class="positioned">
+			<img src="/media/ico/ico_up.svg" id="omlaag-spel" class="positioned">
+			<img src="/media/ico/ico_up.svg" id="rechts-spel" class="positioned">
+			<img src="/media/ico/ico_up.svg" id="links-spel" class="positioned">
+		</div>
+		<div id="scherm-8" class="invisible">
+			<img src="/media/bg/bg_graanmarkt_blurry.jpg" alt="graanmarkt" class="positioned background">
+			<table>
+				<tbody id="chessboard" class="positioned centered">
+					<tr>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+					<tr>
+						<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+					</tr>
+				</tbody>
+			</table>
+			<img src="/media/chrt/chrt_eekhoorn_blij.svg" id="eekhoorntje-s8" class="positioned">
+			<div id="eekhoorntjetekst-s8" class="spraak-bubbel sb-middle sb-flipped positioned">
+				<span class="spraak-bubbel-text">unfilled data</span>
+			</div>
+			<img src="/media/ico/ico_up.svg" id="omhoog-s8" class="positioned">
+			<img src="/media/ico/ico_up.svg" id="omlaag-s8" class="positioned">
+			<img src="/media/ico/ico_up.svg" id="rechts-s8" class="positioned">
+			<img src="/media/ico/ico_up.svg" id="links-s8" class="positioned">
+		</div>
+		<div id="scherm-9" class="invisible">
+			<img src="/media/bg/bg_graanmarkt_blurry.jpg" alt="graanmarkt" class="positioned background">
+
+		</div>
+		<div id="scherm-10" class="invisible">
+				<img src="/media/bg/bg_graanmarkt_sch1.png" alt="graanmarkt" class="positioned background">
+				<img src="/media/chrt/chrt_eekhoorn_zittend.svg" id="eekhoorntje-s10" class="positioned">
+				<div id="eekhoorntjetekst-s10" class="spraak-bubbel positioned">
+					<span class="spraak-bubbel-text">unfilled data</span>
+				</div>
+			</div>
+		</div>
 	</main>
 
-    <h1>Welkom!</h1>
-    <button id="start-button">Start</button>
+
 
   </body>
 </html>

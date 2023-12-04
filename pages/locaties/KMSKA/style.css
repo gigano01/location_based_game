@@ -1,0 +1,150 @@
+/* scherm2 */
+#muisje-s2{
+    top: 80dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+/* scherm3 */
+#muisje-s3{
+    top: 80dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 460px;
+
+}
+#muisjetekst-s3{
+    bottom: 40dvh;
+}
+/* scherm4 */
+#muisje-s4{
+    top: 85dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 460px;
+
+}
+#muisjetekst-s4{
+    bottom: 32dvh;
+}
+#vlak-s4{
+    top: 23dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 350px;
+    height: 288px;  
+}
+#fontijnspel-s4{
+    top: 17dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+ 
+}
+#bloemspel-2-s4{
+    top: 30dvh;
+    left: 20%;
+    transform: translate3d(-50%, -50%, 0);
+ 
+}
+#bloemspel-1-s4{
+    top: 30dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+ 
+}
+#bloemspel-3-s4{
+    top: 30dvh;
+    left: 80%;
+    transform: translate3d(-50%, -50%, 0);
+ 
+}
+/* scherm5 */
+#timer-s5{
+    top: 10dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 180px;
+    height: 88px;
+    font-size: 64px;
+}
+#fontijn-s5{
+    top: 70dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+#vlak-s5{
+    top: 30dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 358px;
+    height: 150px;
+}
+#bloemspel-1-s5{
+    top: 30dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+#bloemspel-2-s5{
+    top: 30dvh;
+    left: 25%;
+    transform: translate3d(-50%, -50%, 0);
+}
+#bloemspel-3-s5{
+    top: 30dvh;
+    left: 75%;
+    transform: translate3d(-50%, -50%, 0);
+}
+/* scherm6 */
+#timer-s6{
+    top: 10dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 180px;
+    height: 88px;
+    font-size: 64px;
+}
+#fontijn-s6{
+    top: 70dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+#vlak-s6{
+    top: 30dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 358px;
+    height: 150px;
+}
+#bloemspel-1-s6{
+    top: 30dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+#bloemspel-2-s6{
+    top: 30dvh;
+    left: 25%;
+    transform: translate3d(-50%, -50%, 0);
+}
+#bloemspel-3-s6{
+    top: 30dvh;
+    left: 75%;
+    transform: translate3d(-50%, -50%, 0);
+}
+/* scherm7 */
+#fontijn-s7{
+    top: 70dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+/* scherm8 */
+#fontijn-s8{
+    top: 70dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+}
+#muisjetekst-s8{
+    bottom: 34dvh;
+}
+/* scherm10 */
+#muisjetekst-s10{
+    bottom: 34dvh;
+}

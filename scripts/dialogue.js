@@ -1,4 +1,6 @@
-
+function makeDialogueInvisible(dialogue){
+	dialogue.container.classList.add("invisible")
+}
 
 function setDialogueEndHandler(dialogue, handler) {
 	if (typeof handler !== "function") {
@@ -11,8 +13,14 @@ function setDialogueEndHandler(dialogue, handler) {
 function __dialogueClickAction(){}
 
 function assignDialogueToContainer(dialogue, container, textContainer) {
+	container.classList.remove("invisible")
 	dialogue.container = container
-	dialogue.textContainer = textContainer
+	if(textContainer != null) {
+		dialogue.textContainer = textContainer
+	}else{
+		dialogue.textContainer = container.getElementsByClassName("spraak-bubbel-text")[0]
+	}
+	
 	
 	dialogue.textContainer.textContent = dialogue.prompts[dialogue.promptNumber].text
 

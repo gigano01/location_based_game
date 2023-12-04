@@ -37,7 +37,17 @@ onScreen(6, ()=>{
 	createDialogueObject("dialogue/scherm6.json").then((dialogue)=>{
 		assignDialogueToContainer(dialogue,document.getElementById("eekhoorntjetekst-s6"))
 		setDialogueEndHandler(dialogue,()=>{
-			gotoScreen(10)
+			nextScreen()
+			//gotoScreen(10)
+		})
+	})
+})
+
+onScreen(7, ()=>{
+	createDialogueObject("dialogue/scherm7.json").then((dialogue)=>{
+		assignDialogueToContainer(dialogue,document.getElementById("eekhoorntjetekst-s7"))
+		setDialogueEndHandler(dialogue,()=>{
+			nextScreen()
 		})
 	})
 })

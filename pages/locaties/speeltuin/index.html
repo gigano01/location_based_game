@@ -18,16 +18,25 @@
 	<link href="../../../styles/components/background.css" type="text/css" rel="stylesheet">
   <link href="../../../styles/components/locatiebord.css" type="text/css" rel="stylesheet">
   <link rel="stylesheet" href="../../../styles/components/spraak-bubbel.css">
+  <link rel="stylesheet" href="../../../styles/components/loading.css">
   <link href="../../../styles/components/groenvaktekst.css" type="text/css" rel="stylesheet">
     <link href="style.css" type="text/css" rel="stylesheet">
 
-	<script defer src="../../../scripts/dialogue.js"></script>
-	<script defer src="../../../scripts/page-manager.js"></script>
-    <script defer src="script.js"></script>
+		<script defer src="../../../scripts/docReady.js"></script>
+		<script defer src="../../../scripts/dialogue.js"></script>
+		<script defer src="../../../scripts/page-manager.js"></script>
+		<!-- <script defer src="../../../scripts/get-query-param.js"></script> -->
+		<script defer src="../../../scripts/movement.js"></script>
+		<script defer src="script.js"></script>
 
   </head>
   <body>
-
+	<div id="loading-div">
+		<!-- <img src="../../../media/ico/ico_laden.svg" alt=""> -->
+		<h1 class="loading positioned centered">
+			loading
+		</h1>
+	</div>
 	<header>
 		<a href="../menu" class="hamburger-a positioned">
 			<div class="hamburger">
@@ -99,9 +108,6 @@
 			<img src="/media/prop/prop_compostpot.svg" id="compostpot-s6" class="positioned">       
 		</div>
 		<div id="scherm-7" class="invisible">
-			<img src="/media/bg/bg_park.jpg" alt="Speeltuin" class="positioned background"> 
-		</div>
-		<div id="scherm-7" class="">
 			<img src="/media/bg/bg_park.jpg" alt="Speeltuin" class="positioned background">
 			<img src="/media/chrt/chrt_wasbeer_blij.svg" id="wasbeer-s7" class="positioned">
 			<div id="wasbeertekst-s7" class="spraak-bubbel positioned">

@@ -13,25 +13,18 @@
 
 }
 #muisjetekst-s3{
-    top: 10dvh;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);
-    width: 460px;
-
+    bottom: 40dvh;
 }
 /* scherm4 */
 #muisje-s4{
-    top: 80dvh;
+    top: 85dvh;
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
     width: 460px;
 
 }
 #muisjetekst-s4{
-    top: 10dvh;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);
-    width: 460px;
+    bottom: 32dvh;
 }
 #vlak-s4{
     top: 23dvh;
@@ -149,13 +142,9 @@
     transform: translate3d(-50%, -50%, 0);
 }
 #muisjetekst-s8{
-    top: 30dvh;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);
+    bottom: 34dvh;
 }
 /* scherm10 */
 #muisjetekst-s10{
-    top: 30dvh;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);
+    bottom: 34dvh;
 }

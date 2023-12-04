@@ -46,7 +46,7 @@ function createMap(myID, lat, lng, zoom, styled) {
     lat = typeof lat !== "undefined" ? lat : 51.219608;
     lng = typeof lng !== "undefined" ? lng : 4.411694;
     zoom = typeof zoom !== "undefined" ? zoom : 15;
-    styled = typeof styled !== "undefined" ? styled : "mapbox://styles/mapbox/streets-v11";
+    styled = typeof styled !== "undefined" ? styled : "mapbox://styles/noahvanleemput/clpgydb7a00jt01poe8ucfwgw";
 
     mapboxgl.accessToken = mapboxAccessToken;
 
@@ -54,7 +54,7 @@ function createMap(myID, lat, lng, zoom, styled) {
       lat: lat,
       lng: lng,
     };
-
+console.log(styled)
     const map = new mapboxgl.Map({
       container: myID,
       style: styled,

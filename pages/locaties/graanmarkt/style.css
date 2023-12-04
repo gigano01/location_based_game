@@ -57,37 +57,56 @@
 #eekhoorntjetekst-s4{
 	bottom: 41dvh;
 }
-
-#eekhoorentjetekst-5, #eekhoorntjetekst-4{
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);
-
-}
 /* scherm 5 */
+
+#eekhoorntje-s5{
+	bottom:0;
+	left: 50%;
+    transform: translate3d(-50%, 0, 0);
+}
+
+#eekhoorntjetekst-s5{
+	bottom: 26dvh;
+}
 /* scherm 6 */
-#omhoog{
-    top: 10%;
-    left: 20%;
-    transform: translate3d(-50%, -50%, 0);
+#omhoog-s6{
+    top: 5dvh;
+    left: 5vw;
+	width: 100px;
 }
-#omlaag{
-    top: 5%;
-    left: 25%;
-    transform: translate3d(-50%, -50%, 0);
+#omlaag-s6{
+    top: 5dvh;
+    left: 25vw;
+    transform: translate3d(0, 0, 0);
     transform: rotate(180deg);
+
+	width: 100px;
 }
-#rechts{
-    top: 5%;
-    left: 45%;
+#rechts-s6{
+    top: 5dvh;
+    left: 45vw;
     transform: translate3d(-50%, -50%, 0);
     transform: rotate(90deg);
+
+	width: 100px;
 }
-#links{
-    top: 5%;
-    left: 65%;
+#links-s6{
+    top: 5dvh;
+    left: 65vw;
     transform: translate3d(-50%, -50%, 0);
     transform: rotate(270deg);
+
+	width: 100px;
+}
+
+#eekhoorntje-s6{
+	bottom:0;
+	left: 50%;
+    transform: translate3d(-50%, 0, 0);
+}
+
+#eekhoorntjetekst-s6{
+	bottom: 26dvh;
 }
 /* scherm 7 */
 #bord-2{
@@ -95,17 +114,7 @@
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
 }
-#eekhoorntje-5{
-    top: 24%;
-    left: 80%;
-    transform: translate3d(-50%, -50%, 0);
-    width: 100px;
-}
-#eekhoorntjetekst-5{
-    top: -70%;
-    left: 80%;
-    transform: translate3d(-50%, -50%, 0); 
-}
+
 #omhoog-spel{
     top: 90%;
     left: 15%;
@@ -143,3 +152,38 @@
     transform: translate3d(-50%, -50%, 0);
 }
 /* scherm 9 moet nog gemaakt worden  */
+
+
+
+/*CHESS BOARD*/
+
+:root {
+	--black-color: #96C9FF;
+	--white-color: #fff;
+}
+
+#chessboard {
+	width: 90%;
+	height: 30%;
+
+	top: 32dvh;
+
+	border-collapse: collapse;
+	box-shadow: var(--box-shadow);
+}
+
+#chessboard td {
+	width: 12vw ;
+	height: 12vw;
+}
+
+#chessboard tr:nth-child(even) td:nth-child(odd),
+#chessboard tr:nth-child(odd) td:nth-child(even) {
+	background-color: var(--black-color);
+	box-shadow: var(--box-shadow);
+}
+
+#chessboard tr:nth-child(even) td:nth-child(even),
+#chessboard tr:nth-child(odd) td:nth-child(odd) {
+	background-color: var(--white-color);
+}

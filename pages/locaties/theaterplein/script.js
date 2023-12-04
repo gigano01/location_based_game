@@ -1,3 +1,5 @@
+const gamedata = {}
+
 onScreen(1, ()=>{
 	setTimeout(nextScreen,3000)
 })
@@ -44,12 +46,17 @@ onScreen(6, ()=>{
 })
 
 onScreen(7, ()=>{
+
+
+
+	/*
 	createDialogueObject("dialogue/scherm7.json").then((dialogue)=>{
 		assignDialogueToContainer(dialogue,document.getElementById("eekhoorntjetekst-s7"))
 		setDialogueEndHandler(dialogue,()=>{
 			nextScreen()
 		})
 	})
+	*/
 })
 
 onScreen(8, ()=>{
@@ -60,6 +67,12 @@ onScreen(8, ()=>{
 		})
 	})
 })
+
 docReady(async ()=>{
+	const fetched = await fetch("../../../data/graanmarkt_game_data.json")
+	gamedata = await fetched.json()
+	
+
+	
 	gotoScreen(1)
 })

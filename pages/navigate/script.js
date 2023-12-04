@@ -44,12 +44,33 @@ async function drawpage() {
 	
 	// sla gegevens op in localStorage om later de draad terug op te kunnen pikken
 	localStorage.setItem('locationID', getQueryParam("locationID"));
+
+	let map = null;
+	let markerEnd = null;
+	let markerGPS = null;
 	
 	// deze functie wordt opgeroepen elke keer een nieuwe locatie doorkomt
 	function success(position) {
+		if (map) {
+			map.flyTo({
+			  center: [position.coords.longitude, position.coords.latitude]
+			});
+		  } else {
+			map = createMap("myID", position.coords.latitude, position.coords.longitude, 15, 'mapbox://styles/noahvanleemput/clpgydb7a00jt01poe8ucfwgw');
+			markerEnd = createMarker(map, 'markerEnd', 42, 42, 'https://vaw.be/cacher/pin-454.png',coordinates.latitude, coordinates.longitude, false);
+		  }
+		
+		  if (markerGPS) {
+			markerGPS.setLngLat([position.coords.longitude, position.coords.latitude]);
+		  } else {
+			markerGPS = createMarker(map, 'markerGPS', 42, 42, 'https://vaw.be/cacher/gps-454.png',position.coords.latitude, position.coords.longitude, false);
+		  }
+
+		console.log('succes', position)
 		// bereken afstand tussen mijn locatie en die van mijn doel
 		const distance = getDistance(position.coords.latitude, position.coords.longitude, coordinates.latitude, coordinates.longitude).distance;
 		// laat die afstand zien
+		console.log(distance);
 		distanceElement.textContent = distance;
 	
 		// de afstand tussen mijn locatie en die van mijn doel is minder dan 20 meter, rekeninghoudend met de accuraatheid van gps?
@@ -87,6 +108,7 @@ async function drawpage() {
 	
 		// access real gps data
 		navigator.geolocation.watchPosition(success, error, options);
+		console.log('hallo')
 	}
 }
 

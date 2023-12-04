@@ -73,5 +73,5 @@
 .spraak-bubbel-text {
 	font-family: var(--text-font);
 	font-size: var(--text-size);
-	font-weight: var(--text-weight-bold);
+	font-weight: var(--text-weight-mid);
 }

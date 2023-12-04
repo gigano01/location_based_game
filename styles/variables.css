@@ -17,8 +17,9 @@
   	
 	--text-size: 1.75rem;
 	--text-font: 'Signika Negative', sans-serif;
-	--text-weight-bold: 700;
-	--text-weight-light: 300;
+	--text-weight-bold: 600;
+	--text-weight-mid: 400;
+	--text-weight-light: 200;
 
 	--box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 

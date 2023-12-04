@@ -4,20 +4,88 @@
         "distance": 1234,
         "minimumRadius": 4,
         "coordinates": {"latitude": 51.22245352642213, "longtitude": 4.414333407277695},
-        "nextPage": "start"
+        "nextPage": ""
     },
-    "begijnhof01": {
+
+    "begijnhof-01": {
         "name": "begijnhof",
         "distance": 1234,
         "minimumRadius": 20,
-        "coordinates": {"latitude": 51.22245352642213, "longtitude": 4.414333407277695},
-        "nextPage": "VULIN"
+        "coordinates": {"latitude": 51.223388, "longtitude": 4.413865},
+        "nextPage": "kranen/kluis/index.html?id=begijnhof"
     },
+
     "begijnhof-02": {
         "name": "begijnhof",
         "distance": 1234,
         "minimumRadius": 20,
-        "coordinates": {"latitude": 51.22245352642213, "longtitude": 4.414333407277695},
-        "nextPage": "VULIN"
+        "coordinates": {"latitude": 51.222551, "longtitude": 4.414346},
+        "nextPage": "locaties/begijnhof/index.html"
+    },
+
+	"theaterplein-01": {
+        "name": "theaterplein",
+        "distance": 1234,
+        "minimumRadius": 20,
+        "coordinates": {"latitude": 51.215276, "longtitude": 4.410593},
+        "nextPage": "kranen/kluis/index.html?id=theaterplein"
+    },
+
+    "theaterplein-02": {
+        "name": "theaterplein",
+        "distance": 1234,
+        "minimumRadius": 20,
+        "coordinates": {"latitude": 51.214483, "longtitude": 4.410015},
+        "nextPage": "locaties/theaterplein/index.html"
+    },
+
+    "botanischetuin-01": {
+        "name": "botanische tuin",
+        "distance": 1234,
+        "minimumRadius": 20,
+        "coordinates": {"latitude": 51.213909, "longtitude": 4.407520},
+        "nextPage":"kranen/kluis/index.html?id=botanischetuin"
+    },
+
+    "botanischetuin-02": {
+        "name": "botanische tuin",
+        "distance": 1234,
+        "minimumRadius": 20,
+        "coordinates": {"latitude": 51.214404, "longtitude":4.406657},
+        "nextPage": "locaties/botanischetuin/index.html"
+    },
+
+    "speeltuin-01": {
+        "name": "speeltuin",
+        "distance": 1234,
+        "minimumRadius": 20,
+        "coordinates": {"latitude": 51.214846, "longtitude":4.397548},
+        "nextPage": "kranen/kluis/index.html?id=speeltuin"
+    },
+
+    "speeltuin-02": {
+        "name": "speeltuin",
+        "distance": 1234,
+        "minimumRadius": 20,
+        "coordinates": {"latitude": 51.215041, "longtitude":4.396301},
+        "nextPage": "locaties/speeltuin/index.html"
+    },
+
+    "KMSKA-01": {
+        "name": "KMSKA",
+        "distance": 1234,
+        "minimumRadius": 20,
+        "coordinates": {"latitude": 51.209911, "longtitude":4.394259},
+        "nextPage": "kranen/kluis/index.html?id=KMSKA"
+    },
+
+    "KMSKA-02": {
+        "name": "KMSKA",
+        "distance": 1234,
+        "minimumRadius": 20,
+        "coordinates": {"latitude": 51.208896, "longtitude":4.394087},
+        "nextPage": "locaties/KMSKA/index.html"
     }
+
+
 }

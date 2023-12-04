@@ -1,18 +1,48 @@
 {
 	"begijnhof": {
 		"eerste-keer": true,
-		"vraag": "Is dit een testvraag?",
-		"juist-antwoord":"u mama",
-		"foute-antwoorden": ["foutief","fout","fouter dan fout", "rood licht"],
+		"vraag": "Welk proces wordt gebruikt om oud papier opnieuw te gebruiken? ",
+		"juist-antwoord":"Recycling",
+		"foute-antwoorden": ["Compostering","Verdamping ","fouter dan fout", "rood licht"],
 		"tip": "het is een persoon",
 		"mapLocationID": "begijnhof-02"
 	},
-	"graanmarkt": {
+
+	"theaterplein": {
 		"eerste-keer": false,
 		"vraag": "dit is een tweede testvraag?",
 		"juist-antwoord":"deze is juist",
 		"foute-antwoorden": ["foutiefaa","fouta","fouteraa dan fouta", "rood lichtaaa"],
 		"tip": "het zegt letterlijk welke juist is",
-		"mapLocationID": "test"
+		"mapLocationID": "theaterplein-02"
+	},
+
+	"botanischetuin": {
+		"eerste-keer": false,
+		"vraag": "dit is een tweede testvraag?",
+		"juist-antwoord":"deze is juist",
+		"foute-antwoorden": ["foutiefaa","fouta","fouteraa dan fouta", "rood lichtaaa"],
+		"tip": "het zegt letterlijk welke juist is",
+		"mapLocationID": "botanischetuin-02"
+	},
+
+	"speeltuin": {
+		"eerste-keer": false,
+		"vraag": "dit is een tweede testvraag?",
+		"juist-antwoord":"deze is juist",
+		"foute-antwoorden": ["foutiefaa","fouta","fouteraa dan fouta", "rood lichtaaa"],
+		"tip": "het zegt letterlijk welke juist is",
+		"mapLocationID": "speeltuin-02"
+	},
+
+	"KMSKA": {
+		"eerste-keer": false,
+		"vraag": "dit is een tweede testvraag?",
+		"juist-antwoord":"deze is juist",
+		"foute-antwoorden": ["foutiefaa","fouta","fouteraa dan fouta", "rood lichtaaa"],
+		"tip": "het zegt letterlijk welke juist is",
+		"mapLocationID": "KMSKA-02"
 	}
+
+
 }

@@ -51,6 +51,15 @@ onScreen(7, ()=>{
 		})
 	})
 })
+
+onScreen(8, ()=>{
+	createDialogueObject("dialogue/scherm8.json").then((dialogue)=>{
+		assignDialogueToContainer(dialogue,document.getElementById("eekhoorntjetekst-s8"))
+		setDialogueEndHandler(dialogue,()=>{
+			nextScreen()
+		})
+	})
+})
 docReady(async ()=>{
 	gotoScreen(1)
 })

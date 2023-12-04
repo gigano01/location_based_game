@@ -4,20 +4,27 @@
         "distance": 1234,
         "minimumRadius": 4,
         "coordinates": {"latitude": 51.22245352642213, "longtitude": 4.414333407277695},
-        "nextPage": "start"
+        "nextPage": ""
     },
-    "begijnhof01": {
+    "begijnhof-01": {
         "name": "begijnhof",
         "distance": 1234,
         "minimumRadius": 20,
         "coordinates": {"latitude": 51.22245352642213, "longtitude": 4.414333407277695},
-        "nextPage": "VULIN"
+        "nextPage": "kranen/kluis/index.html?id=begijnhof"
     },
     "begijnhof-02": {
         "name": "begijnhof",
         "distance": 1234,
         "minimumRadius": 20,
         "coordinates": {"latitude": 51.22245352642213, "longtitude": 4.414333407277695},
-        "nextPage": "VULIN"
+        "nextPage": "locaties/begijnhof/index.html"
+    },
+	"graanmarkt": {
+        "name": "graanmarkt",
+        "distance": 1234,
+        "minimumRadius": 20,
+        "coordinates": {"latitude": 51.22245352642213, "longtitude": 4.414333407277695},
+        "nextPage": "locaties/graanmarkt/index.html"
     }
 }

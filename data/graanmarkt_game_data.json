@@ -1,0 +1,21 @@
+{
+	"moves":[
+		{
+			"direction": "up",
+			"amount": 5
+		},
+		{
+			"direction": "left",
+			"amount": 4
+		},
+		{
+			"direction": "down",
+			"amount": 3
+		},
+		{
+			"direction": "right",
+			"amount": 2
+		}
+	],
+	"winnende-locatie": ""
+}

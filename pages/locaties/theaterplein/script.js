@@ -1,4 +1,4 @@
-const gamedata = {}
+let gamedata = {}
 
 onScreen(1, ()=>{
 	setTimeout(nextScreen,3000)
@@ -46,7 +46,7 @@ onScreen(6, ()=>{
 })
 
 onScreen(7, ()=>{
-
+	gamedata.moves
 
 
 	/*

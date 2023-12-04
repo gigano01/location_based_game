@@ -69,12 +69,12 @@
 	bottom: 26dvh;
 }
 /* scherm 6 */
-#omhoog-s6, #omhoog-spel, #omhoog-s8{
+#omhoog-s6, #omhoog-s8{
     top: 5dvh;
     left: 5vw;
 	width: 100px;
 }
-#omlaag-s6, #omlaag-spel, #omlaag-s8{
+#omlaag-s6, #omlaag-s8{
     top: 5dvh;
     left: 25vw;
     transform: translate3d(0, 0, 0);
@@ -82,7 +82,7 @@
 
 	width: 100px;
 }
-#rechts-s6, #rechts-spel, #rechts-s8{
+#rechts-s6, #rechts-s8{
     top: 5dvh;
     left: 45vw;
     transform: translate3d(-50%, -50%, 0);
@@ -90,7 +90,17 @@
 
 	width: 100px;
 }
-#links-s6, #links-spel, #links-s8{
+
+#rechts-spel, #omlaag-spel,  #omhoog-spel, #links-spel{
+	top: 5dvh;
+    left: 45vw;
+    --transform: rotate(90deg);
+    
+
+	width: 100px;
+}
+
+#links-s6, #links-s8{
     top: 5dvh;
     left: 65vw;
     transform: translate3d(-50%, -50%, 0);

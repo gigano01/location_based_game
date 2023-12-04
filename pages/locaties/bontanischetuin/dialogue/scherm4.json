@@ -2,16 +2,16 @@
 	"count":4,
 	"prompts":[
 		{
-			"text": "Hey daar! Zijn jullie de dappere helden die het antigif gaan samenstellen"
+			"text": "Hey daar! Zijn jullie de dappere helden die het antigif gaan samenstellen?"
 		},
 		{
-			"text":"We gaan samen in deze tuin opzoek naar een aantal planten om het antigif samen te stellen"
+			"text":"We gaan samen in deze tuin opzoek naar een aantal planten om het antigif samen te stellen."
 		},
 		{
-			"text":"Je krijgt de naam en de foto van een plant, en jij moet hem gaan zoeken en scannen om hem mee in het antigif te krijgen."
+			"text":"Je krijgt de naam en de foto van een plant. Jij moet ze gaan zoeken en scannen om ze daarna te kunnen gebruiken in het antigif."
 		},
 		{
-			"text":"LET OP! je krijgt maar 3 kansen om de juiste plant te scannen, als dit niet het geval is zullen jullie het zonder het antigif moeten doen."
+			"text":"LET OP! Je krijgt maar 3 kansen om de juiste plant te scannen, als dit niet het geval is zullen jullie het zonder het antigif moeten doen."
 		}
 	]
 }

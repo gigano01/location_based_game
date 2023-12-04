@@ -1,8 +1,12 @@
 {
-	"count":1,
+	"count":2,
 	"prompts":[
 		{
 			"text": "Oh nee! We zijn aangekomen aan de kantoren van de contractor."
+		},
+
+		{
+			"text": "We moeten hier zo snel mogelijk de meir oversteken! Ben jij snel genoeg?"
 		}
 	]
 }

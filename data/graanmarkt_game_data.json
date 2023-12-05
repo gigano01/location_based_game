@@ -5,7 +5,7 @@
 			"amount": 5
 		},
 		{
-			"direction": "left",
+			"direction": "right",
 			"amount": 4
 		},
 		{
@@ -13,9 +13,9 @@
 			"amount": 3
 		},
 		{
-			"direction": "right",
+			"direction": "left",
 			"amount": 2
 		}
 	],
-	"winnende-locatie": ""
+	"winnende-locatie": {"x": 3, "y":6}
 }

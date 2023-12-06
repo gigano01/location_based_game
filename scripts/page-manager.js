@@ -12,6 +12,10 @@ function callForScreenEventHandler() {
 	}
 }
 
+function getScreenNumber() {
+	return __pageI
+}
+
 function findScreenNumber() {
 	if (__amountOfPages === 0) {
 		let found = false

@@ -119,6 +119,7 @@
 
 @keyframes eekhoornEntrance1 {
     0% {
+        scale: 30%;
         bottom: -40%;
     }
 
@@ -128,14 +129,14 @@
     }
 }
 
-@keyframes eekhoornRotate1 {
+/* @keyframes eekhoornRotate1 {
     0% {
         transform: rotate(0deg);
     }
     100% {
         transform: rotate(-5deg);
     }
-}
+} */
 
 /* scherm 6 */
 #omhoog-s6,

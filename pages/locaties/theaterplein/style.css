@@ -190,7 +190,6 @@
     left: 45vw;
     --transform: rotate(90deg);
 
-
     width: 100px;
 }
 
@@ -234,6 +233,13 @@
 /* scherm 7 */
 #eekhoorntjetekst-s7 {
     bottom: 26dvh;
+}
+
+#eekhoorntje-s7{
+    left: 7%;
+    transform: translate3d(-50%, 0, 0);
+
+    animation: eekhoornEntrance1 1.5s ease-in-out forwards, eekhoornRotate2 1s alternate 0.5s ease-in-out infinite;
 }
 
 #eekhoorntjetekst-s8 {

@@ -1,7 +1,7 @@
 /* scherm 2 */
 #eendje-s2{
     position: fixed;
-    top: 75dvh;
+    top: 100dvh;
     left: 30%;
     transform: translate(-50%, -50%);
 }

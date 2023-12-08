@@ -1,5 +1,5 @@
-#vierkantwit{
-    background-color: var(--white);
+.vierkantwit{
+        background-color: var(--white);
     width: 304px;
     height: 344px;  
     align-items: center;

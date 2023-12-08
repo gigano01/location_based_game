@@ -4,14 +4,14 @@
     top: 75dvh;
     left: 30%;
     transform: translate(-50%, -50%) rotate(0deg); /* Startpositie en rotatie van 0 graden */
-    animation: arriveWaggelEendje 3s ease-in-out; /* Voeg animatie toe */
+    animation: arriveWaggelEendje1 3s ease-in-out; /* Voeg animatie toe */
 }
 
 #eendjetekst-s2{
     bottom: 40dvh;
 }
 
-@keyframes arriveWaggelEendje {
+@keyframes arriveWaggelEendje1 {
     0% {
         top: 110dvh;
         left: -20%;

@@ -14,6 +14,7 @@
 
 @keyframes arriveWaggelEendje1 {
     0% {
+        scale: 75%;
         top: 110dvh;
         left: -20%;
         transform: translate(-50%, -50%) rotate(10deg); /* Beginpositie en rotatie van 0 graden */
@@ -63,7 +64,7 @@
     left: 30%;
 
     transform: translate(-50%, -50%) rotate(0deg); /* Startpositie en rotatie van 0 graden */
-    animation: askQuestionEendje 3s ease-in-out infinite alternate; /* Voeg animatie toe */
+    animation: askQuestionEendje 8s ease-in-out alternate 3; /* Voeg animatie toe */
 }
 
 #eendjetekst-s3{
@@ -77,11 +78,11 @@
         transform: translate(-50%, -50%) rotate(0deg);
     }
     50% {
-        left: 30%; /* Middenpositie rechts van het scherm, aanpassen naar wens */
+        left: 35%; /* Middenpositie rechts van het scherm, aanpassen naar wens */
         transform: translate(-50%, -50%) rotate(0deg);
     }
     100% {
-        left: 25%; /* Eindpositie links van het scherm */
+        left: 30%; /* Eindpositie links van het scherm */
         transform: translate(-50%, -50%) rotate(0deg);
     }
 }
@@ -143,12 +144,59 @@
     position:fixed;
     top: 90dvh;
     left: 20%;
-    transform: translate(-50%, -50%);
-}
-#eendjetekst-s5{
 
+    transform: translate(-50%, -50%) rotate(0deg); /* Startpositie en rotatie van 0 graden */
+    animation: arriveWaggelEendje2 3s ease-in-out; /* Voeg animatie toe */
+}
+
+#eendjetekst-s5{
     bottom: 30dvh;
 } 
+
+@keyframes arriveWaggelEendje2 {
+    0% {
+        scale: 75%;
+        top: 110dvh;
+        left: -20%;
+        transform: translate(-50%, -50%) rotate(10deg); /* Beginpositie en rotatie van 0 graden */
+    }
+    
+    14% {
+        top: 105dvh;
+        left: -10%;
+        transform: translate(-50%, -50%) rotate(0deg); 
+    }
+    28% {
+        top: 100dvh;
+        left: 0%;
+        transform: translate(-50%, -50%) rotate(-10deg); /* Middenpositie, aanpassen naar wens */
+    }
+    42% {
+        top: 95dvh;
+        left: 5%;
+        transform: translate(-50%, -50%) rotate(0deg); /* Middenpositie, aanpassen naar wens */
+    }
+    56% {
+        top: 90dvh;
+        left: 15%;
+        transform: translate(-50%, -50%) rotate(10deg); /* Middenpositie, aanpassen naar wens */
+    }
+    71% {
+        top: 85dvh;
+        left: 20%;
+        transform: translate(-50%, -50%) rotate(0deg); /* Middenpositie, aanpassen naar wens */
+    }
+    85% {
+        top: 80dvh;
+        left: 25%;
+        transform: translate(-50%, -50%) rotate(-10deg); /* Middenpositie, aanpassen naar wens */
+    }
+    100% {
+        top: 90dvh;
+        left: 20%;
+        transform: translate(-50%, -50%) rotate(0deg); /* Eindpositie en rotatie van 0 graden */
+    }
+}
 
 #eendjetekst-s7{
 	bottom: 25dvh;

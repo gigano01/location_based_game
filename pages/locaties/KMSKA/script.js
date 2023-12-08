@@ -27,14 +27,14 @@ onScreen(4, ()=>{
 let gameDragging = null
 const mouseTracker = document.getElementById("mousetracker-s5")
 const flower1 = document.getElementById("bloemspel-1-s5")
-flower1T = flower1.style.top
-flower1L = flower1.style.left
+const flower1T = flower1.style.top
+const flower1L = flower1.style.left
 const flower2 = document.getElementById("bloemspel-2-s5")
-flower2T = flower2.style.top
-flower2L = flower2.style.left
+const flower2T = flower2.style.top
+const flower2L = flower2.style.left
 const flower3 = document.getElementById("bloemspel-3-s5")
-flower3T = flower3.style.top
-flower3L = flower3.style.left
+const flower3T = flower3.style.top
+const flower3L = flower3.style.left
 
 const fountain = document.getElementById("fontijn-s5")
 

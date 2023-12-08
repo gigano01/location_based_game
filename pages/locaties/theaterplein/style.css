@@ -1,42 +1,43 @@
 /* scherm 1 */
-#eekhoorntje-s2{
+#eekhoorntje-s2 {
     top: 85%;
-	left: 80%;
-	
-	transform: translate3d(-50%, -50%, 0);
+    left: 80%;
+
+    transform: translate3d(-50%, -50%, 0);
 }
-#eekhoorntjetekst-s2{
+
+#eekhoorntjetekst-s2 {
     position: fixed;
     top: 20%;
     left: 50%;
-    
+
     transform: translate3d(-50%, -50%, 0);
 }
 
 
 /* scherm 2 */
-#eekhoorntje-s2{
+#eekhoorntje-s2 {
     top: 80%;
     left: 50%;
-    
+
     transform: translate3d(-50%, -50%, 0);
 }
 
-#eekhoorntjetekst-s2{
+#eekhoorntjetekst-s2 {
     position: fixed;
     top: 20%;
     left: 50%;
-    
+
     transform: translate3d(-50%, -50%, 0);
 }
 
 /* scherm 3 */
-#eekhoorntje-s3{
-	top: 75dvh;
+#eekhoorntje-s3 {
+    top: 75dvh;
     animation: eekhoornEntrance 1s ease-out forwards;
 }
 
-#eekhoorntjetekst-s3{
+#eekhoorntjetekst-s3 {
     bottom: 44dvh;
 }
 
@@ -48,11 +49,13 @@
         /* transform: rotate(0deg); */
 
     }
+
     50% {
         bottom: 50%;
         /* transform: rotate(10deg); */
 
     }
+
     100% {
         bottom: 75%;
         /* transform: rotate(0deg); */
@@ -60,20 +63,21 @@
 }
 
 /* scherm 4 */
-#bord-s1{
+#bord-s1 {
     width: 264px;
     height: 248px;
     top: 30%;
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
 }
-#eekhoorntje-s4{
-	top: 75dvh;
+
+#eekhoorntje-s4 {
+    top: 75dvh;
     animation: eekhoornFall 1s ease-out forwards, eekhoornRotate 2s alternate 0.5s ease-in-out infinite;
 }
 
-#eekhoorntjetekst-s4{
-	bottom: 41dvh;
+#eekhoorntjetekst-s4 {
+    bottom: 41dvh;
 }
 
 @keyframes eekhoornFall {
@@ -82,10 +86,12 @@
         transform: rotate(0deg);
 
     }
+
     100% {
         top: 62dvh;
         left: 30%;
-        transform: rotate(0deg); /* Aanpassen van de rotatiehoek naar wens */
+        transform: rotate(0deg);
+        /* Aanpassen van de rotatiehoek naar wens */
     }
 }
 
@@ -93,21 +99,35 @@
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(5deg);
     }
 }
 
 /* scherm 5 */
-#eekhoorntje-s5{
-	bottom:0;
-	left: 30%;
+#eekhoorntje-s5 {
+    bottom: 0;
+    left: 50%;
     transform: translate3d(-50%, 0, 0);
-    animation: eekhoornRotate1 2s alternate 0.5s ease-in-out infinite;
+    animation: eekhoornEntrance1 1.4s ease-in-out forwards, eekhoornRotate1 2s alternate 0.5s ease-in-out infinite;
 }
 
-#eekhoorntjetekst-s5{
-	bottom: 26dvh;
+#eekhoorntjetekst-s5 {
+    bottom: 26dvh;
+}
+
+@keyframes eekhoornEntrance1 {
+    0% {
+        left: 50%;
+        bottom: -40%;
+    }
+
+    100% {
+        left: 50%;
+        bottom: 0%;
+        transform: rotate(0deg);
+    }
 }
 
 @keyframes eekhoornRotate1 {
@@ -115,102 +135,112 @@
         transform: rotate(0deg);
     }
     100% {
-        transform: rotate(5deg);
+        transform: rotate(-5deg);
     }
 }
 
 /* scherm 6 */
-#omhoog-s6, #omhoog-s8{
+#omhoog-s6,
+#omhoog-s8 {
     top: 5dvh;
     left: 5vw;
-	width: 100px;
+    width: 100px;
 }
-#omlaag-s6, #omlaag-s8{
+
+#omlaag-s6,
+#omlaag-s8 {
     top: 5dvh;
     left: 25vw;
     transform: translate3d(0, 0, 0);
     transform: rotate(180deg);
 
-	width: 100px;
+    width: 100px;
 }
-#rechts-s6, #rechts-s8{
+
+#rechts-s6,
+#rechts-s8 {
     top: 5dvh;
     left: 45vw;
     transform: translate3d(-50%, -50%, 0);
     transform: rotate(90deg);
 
-	width: 100px;
+    width: 100px;
 }
 
-#links-s6, #links-s8{
-	top: 5dvh;
+#links-s6,
+#links-s8 {
+    top: 5dvh;
     left: 65vw;
     transform: translate3d(-50%, -50%, 0);
     transform: rotate(270deg);
-	
-	width: 100px;
+
+    width: 100px;
 }
 
 #aantal-keren-spel {
-	font-family: var(--text-font);
-	font-weight: var(--text-weight-bold);
-	font-size: 5rem;
-	top: 5.7dvh;
+    font-family: var(--text-font);
+    font-weight: var(--text-weight-bold);
+    font-size: 5rem;
+    top: 5.7dvh;
     left: 34vw;
-	color:#fff;
+    color: #fff;
 }
 
-#pijl-spel{
-	top: 5dvh;
+#pijl-spel {
+    top: 5dvh;
     left: 45vw;
     --transform: rotate(90deg);
-    
 
-	width: 100px;
-}
 
-.omlaag-spel{
-	transform: rotate(180deg);
-}
-.omhoog-spel{
-	/*NOTHING*/
-}
-.rechts-spel{
-	transform: rotate(90deg);
-}
-.links-spel{
-	transform: rotate(270deg);
+    width: 100px;
 }
 
-#eekhoorntje-s6{
-	bottom:0;
-	left: 50%;
+.omlaag-spel {
+    transform: rotate(180deg);
+}
+
+.omhoog-spel {
+    /*NOTHING*/
+}
+
+.rechts-spel {
+    transform: rotate(90deg);
+}
+
+.links-spel {
+    transform: rotate(270deg);
+}
+
+#eekhoorntje-s6 {
+    bottom: 0;
+    left: 50%;
     transform: translate3d(-50%, 0, 0);
 }
 
-#eekhoorntjetekst-s6{
-	bottom: 26dvh;
+#eekhoorntjetekst-s6 {
+    bottom: 26dvh;
 }
 
 /* scherm 7 */
-#eekhoorntjetekst-s7{
-	bottom: 26dvh;
+#eekhoorntjetekst-s7 {
+    bottom: 26dvh;
 }
 
-#eekhoorntjetekst-s8{
-	bottom: 35dvh;
+#eekhoorntjetekst-s8 {
+    bottom: 35dvh;
 }
 
-#eekhoorntje-s8{
-	left: 50%;
+#eekhoorntje-s8 {
+    left: 50%;
     transform: translate3d(-50%, 0, 0);
 }
 
-#bord-2{
+#bord-2 {
     top: 50%;
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
 }
+
 /*
 #omhoog-spel{
 	top: 5dvh;
@@ -238,63 +268,65 @@
 */
 
 /* scherm 8 */
-#eekhoorntje-6{
+#eekhoorntje-6 {
     width: 309px;
     top: 70%;
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
 }
-#eekhoorntjetekst-6{
+
+#eekhoorntjetekst-6 {
     top: -10%;
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
 }
+
 /* scherm 9 moet nog gemaakt worden  */
 
 /* scherm 10 */
-#eekhoorntje-s10{
-	top: auto;
-	transform: translateX(-50%);
+#eekhoorntje-s10 {
+    top: auto;
+    transform: translateX(-50%);
 }
 
-#eekhoorntjetekst-s10{
-	bottom: 28dvh;
+#eekhoorntjetekst-s10 {
+    bottom: 28dvh;
 }
 
 /*CHESS BOARD*/
 
 :root {
-	--black-color: #96C9FF;
-	--white-color: #fff;
+    --black-color: #96C9FF;
+    --white-color: #fff;
 }
 
 .chessboard {
-	width: 90%;
-	height: 30%;
+    width: 90%;
+    height: 30%;
 
-	top: 32dvh;
+    top: 32dvh;
 
-	border-collapse: collapse;
-	box-shadow: var(--box-shadow);
+    border-collapse: collapse;
+    box-shadow: var(--box-shadow);
 }
 
 .chessboard td {
-	width: 12vw ;
-	height: 12vw;
+    width: 12vw;
+    height: 12vw;
 }
 
 .chessboard tr:nth-child(even) td:nth-child(odd),
 .chessboard tr:nth-child(odd) td:nth-child(even) {
-	background-color: var(--black-color);
-	box-shadow: var(--box-shadow);
+    background-color: var(--black-color);
+    box-shadow: var(--box-shadow);
 }
 
 .chessboard tr:nth-child(even) td:nth-child(even),
 .chessboard tr:nth-child(odd) td:nth-child(odd) {
-	background-color: var(--white-color);
+    background-color: var(--white-color);
 }
 
 #chessboard-s6 tr:nth-child(8) td:nth-child(1),
-#chessboard-s7 tr:nth-child(8) td:nth-child(1){
-	border: black 2px solid;
+#chessboard-s7 tr:nth-child(8) td:nth-child(1) {
+    border: black 2px solid;
 }

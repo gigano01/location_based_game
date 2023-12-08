@@ -108,7 +108,7 @@
 /* scherm 5 */
 #eekhoorntje-s5 {
     bottom: 0;
-    left: 50%;
+    left: 30%;
     transform: translate3d(-50%, 0, 0);
     animation: eekhoornEntrance1 1.4s ease-in-out forwards, eekhoornRotate1 2s alternate 0.5s ease-in-out infinite;
 }
@@ -119,12 +119,10 @@
 
 @keyframes eekhoornEntrance1 {
     0% {
-        left: 50%;
         bottom: -40%;
     }
 
     100% {
-        left: 50%;
         bottom: 0%;
         transform: rotate(0deg);
     }
@@ -213,12 +211,23 @@
 
 #eekhoorntje-s6 {
     bottom: 0;
-    left: 50%;
-    transform: translate3d(-50%, 0, 0);
+    left: 30%;
+    /* transform: translate3d(-50%, 0, 0); */
+
+    animation: eekhoornRotate1 2s alternate 0.5s ease-in-out infinite;
 }
 
 #eekhoorntjetekst-s6 {
     bottom: 26dvh;
+}
+
+@keyframes eekhoornRotate1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
 }
 
 /* scherm 7 */
@@ -279,6 +288,27 @@
     top: -10%;
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
+}
+
+@keyframes eekhoornEntrance {
+    0% {
+        scale: 30%;
+        left: 20%;
+        top: 100%;
+        /* transform: rotate(0deg); */
+
+    }
+
+    50% {
+        bottom: 50%;
+        /* transform: rotate(10deg); */
+
+    }
+
+    100% {
+        bottom: 75%;
+        /* transform: rotate(0deg); */
+    }
 }
 
 /* scherm 9 moet nog gemaakt worden  */

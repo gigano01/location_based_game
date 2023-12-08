@@ -58,6 +58,13 @@
  
 }
 /* scherm5 */
+#mousetracker-s5{
+	width: 10px;
+	height: 10px;
+	background-color: red;
+	transform: translateX(-50%) translateY(-50%);
+}
+
 #timer-s5{
     top: 10dvh;
     left: 50%;

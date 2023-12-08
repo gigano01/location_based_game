@@ -1,12 +1,29 @@
 /* scherm 2 */
 #eendje-s2{
     position: fixed;
-    top: 100dvh;
+    top: 75dvh;
     left: 30%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(0deg); /* Startpositie en rotatie van 0 graden */
+    animation: arriveWaggelEendje 3s ease-in-out; /* Voeg animatie toe */
 }
+
 #eendjetekst-s2{
     bottom: 40dvh;
+}
+
+@keyframes arriveWaggelEendje {
+    0% {
+        top: 100dvh;
+        transform: translate(-50%, -50%) rotate(0deg); /* Beginpositie en rotatie van 0 graden */
+    }
+    50% {
+        top: 30dvh;
+        transform: translate(-50%, -50%) rotate(-10deg); /* Middenpositie, aanpassen naar wens */
+    }
+    100% {
+        top: 40dvh;
+        transform: translate(-50%, -50%) rotate(0deg); /* Eindpositie en rotatie van 0 graden */
+    }
 }
 
 /* scherm 3 */

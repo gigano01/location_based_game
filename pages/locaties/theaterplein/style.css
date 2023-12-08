@@ -366,6 +366,21 @@
     bottom: 28dvh;
 }
 
+@keyframes eekhoornFall1 {
+    0% {
+        top: -100%;
+        left: 30%;
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+        top: 62dvh;
+        left: 30%;
+        transform: rotate(0deg);/* Aanpassen van de rotatiehoek naar wens */
+    }
+}
+
 /*CHESS BOARD*/
 
 :root {

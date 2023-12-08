@@ -240,8 +240,31 @@
 }
 
 #eekhoorntje-s8 {
-    left: 50%;
+    left: 25%;
     transform: translate3d(-50%, 0, 0);
+
+    animation: eekhoornEntrance2 1.5s ease-in-out forwards, eekhoornRotate2 2s alternate 0.5s ease-in-out infinite;
+}
+
+@keyframes eekhoornEntrance2 {
+    0% {
+        scale: 30%;
+        bottom: -60%;
+    }
+
+    100% {
+        bottom: 0%;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes eekhoornRotate2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
 }
 
 #bord-2 {
@@ -288,6 +311,8 @@
     top: -10%;
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
+
+    animation: eekhoornEntrance 1s ease-out forwards;
 }
 
 @keyframes eekhoornEntrance {

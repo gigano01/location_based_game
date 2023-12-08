@@ -1,21 +1,27 @@
 /* scherm 2 */
 #eendje-s2 {
     position: fixed;
-    top: 75dvh;
+    top: 100dvh; /* Startpositie buiten het scherm */
     left: 30%;
     transform: translate(-50%, -50%);
-    animation: moveEendje 2s linear infinite alternate; /* Voeg animatie toe */
+    animation: arriveEendje 3s ease-in-out; /* Voeg animatie toe */
 }
+
 #eendjetekst-s2{
     bottom: 40dvh;
 }
 
-@keyframes moveEendje {
-    to {
-        top: 25dvh; /* Definieer het eindpunt van de animatie */
+@keyframes arriveEendje {
+    0% {
+        top: 100dvh; /* Beginpositie buiten het scherm */
+    }
+    50% {
+        top: 30dvh; /* Middenpositie, aanpassen naar wens */
+    }
+    100% {
+        top: 40dvh; /* Eindpositie, aanpassen naar wens */
     }
 }
-
 /* scherm 3 */
 #eendje-s3{
     position: fixed;

@@ -14,11 +14,16 @@
 @keyframes arriveWaggelEendje {
     0% {
         top: 120dvh;
-        left: -10%;
+        left: -20%;
         transform: translate(-50%, -50%) rotate(0deg); /* Beginpositie en rotatie van 0 graden */
     }
+    25% {
+        top: 110dvh;
+        left: -10%;
+        transform: translate(-50%, -50%) rotate(10deg); 
+    }
     50% {
-        top: 100dvh;
+        top: 80dvh;
         left: 20%;
         transform: translate(-50%, -50%) rotate(-10deg); /* Middenpositie, aanpassen naar wens */
     }

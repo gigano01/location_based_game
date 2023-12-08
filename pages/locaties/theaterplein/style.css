@@ -31,14 +31,29 @@
 }
 
 /* scherm 3 */
-
 #eekhoorntje-s3{
-	top: 75dvh;
+    position: fixed;
+    bottom: -100%;
+    left: 50%;
+
+    transform: translateX(-50%);
+    animation: eekhoornEntrance 2s ease-out forwards;
 }
 
 #eekhoorntjetekst-s3{
     bottom: 44dvh;
+}
 
+@keyframes eekhoornEntrance {
+    0% {
+        bottom: -100%;
+    }
+    50% {
+        bottom: 50%;
+    }
+    100% {
+        bottom: 75%;
+    }
 }
 
 /* scherm 4 */
@@ -57,8 +72,8 @@
 #eekhoorntjetekst-s4{
 	bottom: 41dvh;
 }
-/* scherm 5 */
 
+/* scherm 5 */
 #eekhoorntje-s5{
 	bottom:0;
 	left: 50%;
@@ -68,6 +83,7 @@
 #eekhoorntjetekst-s5{
 	bottom: 26dvh;
 }
+
 /* scherm 6 */
 #omhoog-s6, #omhoog-s8{
     top: 5dvh;
@@ -140,8 +156,8 @@
 #eekhoorntjetekst-s6{
 	bottom: 26dvh;
 }
-/* scherm 7 */
 
+/* scherm 7 */
 #eekhoorntjetekst-s7{
 	bottom: 26dvh;
 }

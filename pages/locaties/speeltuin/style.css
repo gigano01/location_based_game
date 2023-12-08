@@ -1,12 +1,12 @@
 /* scherm 2 */
 #wasbeer-s2{
-    top: 75dvh;
+    bottom: 0dvh;
     left: 70%;
     transform: translate3d(-50%, -50%, 0);
 }
 /* scherm 3 */
 #wasbeer-s3{
-    top: 75dvh;
+    bottom: 0dvh;
     left: 30%;
     transform: translate3d(-50%, -50%, 0);
 }
@@ -22,65 +22,67 @@
     transform: translate3d(-50%, -50%, 0);
 }
 #wasbeer-s4{
-    top: 75dvh;
+    bottom: 0dvh;
     left: 30%;
     transform: translate3d(-50%, -50%, 0);
+    z-index: 999;
 }
 #wasbeertekst-s4{
     bottom: 33dvh;
+    z-index: 999;
 }
 #kapstok-s4{
-    top: 10dvh;
+    bottom: 30dvh;
     left: 15%;
     transform: translate3d(-50%, -50%, 0);
 }
 #fles-1-s4{
-    top: 20dvh;
+    bottom: 25dvh;
     left: 33%;
     transform: translate3d(-50%, -50%, 0);  
 }
 #fles-2-s4{
-    top: 40dvh;
+    bottom: 17dvh;
     left: 30%;
     transform: translate3d(-50%, -50%, 0);  
 }
 #tandpasta-s4{
-    top: 35dvh;
+    bottom: 22dvh;
     left: 15%;
     transform: translate3d(-50%, -50%, 0);  
 }
 #beker-s4{
-    top: 55dvh;
+    bottom: 10dvh;
     left: 15%;
     transform: translate3d(-50%, -50%, 0);  
 }
 #vis-s4{
-    top: 15dvh;
+    bottom: 25dvh;
     left: 85%;
     transform: translate3d(-50%, -50%, 0);  
 }
 #kaas-s4{
-    top: 30dvh;
-    left: 70%;
+    bottom: 25dvh;
+    left: 69%;
     transform: translate3d(-50%, -50%, 0);  
 }
 #brood-s4{
-    top: 45dvh;
+    bottom: 18dvh;
     left: 80%;
     transform: translate3d(-50%, -50%, 0);  
 }
 #broccoli-s4{
-    top:55dvh;
+    bottom:15dvh;
     left:70%;
     transform: translate3d(-50%, -50%, 0);  
 }
 #vuilbakgroen-s4{
-    top:80dvh;
+    bottom:-5dvh;
     left:75%;
     transform: translate3d(-50%, -50%, 0);  
 }
 #vuilbakgrijs-s4{
-    top:80dvh;
+    bottom:-5dvh;
     left:20%;
     transform: translate3d(-50%, -50%, 0);  
 }
@@ -107,20 +109,9 @@
     height: 88px;
     font-size: 64px;
 }
-#compostpot-s6{
-    top: 93dvh;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);   
-}
-#vuilbakgroen-s6{
-    top: 50dvh;
-    left: 50%;
-    height: 133px;
-    transform: translate3d(-50%, -50%, 0);   
-}
 #wasbeer-s6{
     width: 318px;
-    top: 75dvh;
+    bottom: -10dvh;
     left: 60%;
     transform: translate3d(-50%, -50%, 0);   
     z-index: 999;
@@ -130,15 +121,14 @@
 	z-index: 300; 
 }
 /* scherm 7 */
-#compostpot-s7{
-    top: 93dvh;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);   
-}
 #wasbeer-s7{
     width: 318px;
     top: 75dvh;
     left: 60%;
     transform: translate3d(-50%, -50%, 0);   
     z-index: 999;
+}
+#wasbeertekst-s7{
+    bottom: 45dvh;
+	z-index: 300; 
 }

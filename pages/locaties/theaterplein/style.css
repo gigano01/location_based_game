@@ -239,7 +239,17 @@
     left: 7%;
     transform: translate3d(-50%, 0, 0);
 
-    animation: eekhoornEntrance1 1.5s ease-in-out forwards, eekhoornRotate2 1s alternate 0.5s ease-in-out infinite;
+    animation: eekhoornEntrance3 1.5s ease-in-out forwards, eekhoornRotate2 1s alternate 0.5s ease-in-out infinite;
+}
+
+@keyframes eekhoornEntrance3 {
+    0% {
+        left: 90%;
+    }
+
+    100% {
+        left: 7%;
+    }
 }
 
 #eekhoorntjetekst-s8 {
@@ -349,6 +359,7 @@
 #eekhoorntje-s10 {
     top: auto;
     transform: translateX(-50%);
+    animation: eekhoornFall1 1s ease-out forwards, eekhoornRotate 2s alternate 0.5s ease-in-out infinite;
 }
 
 #eekhoorntjetekst-s10 {

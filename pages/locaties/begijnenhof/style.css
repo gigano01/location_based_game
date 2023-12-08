@@ -13,18 +13,39 @@
 
 @keyframes arriveWaggelEendje {
     0% {
-        top: 120dvh;
-        left: -20%;
+        top: 140dvh;
+        left: -40%;
         transform: translate(-50%, -50%) rotate(0deg); /* Beginpositie en rotatie van 0 graden */
     }
-    25% {
-        top: 110dvh;
-        left: -10%;
+    
+    14% {
+        top: 130dvh;
+        left: -30%;
         transform: translate(-50%, -50%) rotate(10deg); 
     }
-    50% {
-        top: 80dvh;
-        left: 20%;
+    28% {
+        top: 120dvh;
+        left: -20%;
+        transform: translate(-50%, -50%) rotate(0deg); /* Middenpositie, aanpassen naar wens */
+    }
+    42% {
+        top: 110dvh;
+        left: -10%;
+        transform: translate(-50%, -50%) rotate(-10deg); /* Middenpositie, aanpassen naar wens */
+    }
+    56% {
+        top: 100dvh;
+        left: 0%;
+        transform: translate(-50%, -50%) rotate(-10deg); /* Middenpositie, aanpassen naar wens */
+    }
+    71% {
+        top: 90dvh;
+        left: 5%;
+        transform: translate(-50%, -50%) rotate(-10deg); /* Middenpositie, aanpassen naar wens */
+    }
+    85% {
+        top: 85dvh;
+        left: 15%;
         transform: translate(-50%, -50%) rotate(-10deg); /* Middenpositie, aanpassen naar wens */
     }
     100% {

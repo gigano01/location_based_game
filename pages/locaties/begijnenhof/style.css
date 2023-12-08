@@ -3,6 +3,7 @@
     position: fixed;
     top: 75dvh;
     left: 30%;
+
     transform: translate(-50%, -50%) rotate(0deg); /* Startpositie en rotatie van 0 graden */
     animation: arriveWaggelEendje1 3s ease-in-out; /* Voeg animatie toe */
 }
@@ -60,11 +61,31 @@
     position: fixed;
     top: 75%;
     left: 30%;
-    transform: translate(-50%, -50%);
+
+    transform: translate(-50%, -50%) rotate(0deg); /* Startpositie en rotatie van 0 graden */
+    animation: askQuestionEendje 3s ease-in-out infinite alternate; /* Voeg animatie toe */
 }
+
 #eendjetekst-s3{
     bottom: 40dvh;
 }
+
+@keyframes askQuestionEendje {
+    0% {
+        top: 77%;
+        left: 25%; /* Beginpositie links van het scherm */
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    50% {
+        left: 30%; /* Middenpositie rechts van het scherm, aanpassen naar wens */
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        left: 25%; /* Eindpositie links van het scherm */
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+}
+
 /* scherm 4 */
 #vraag-s4{
     position: fixed;

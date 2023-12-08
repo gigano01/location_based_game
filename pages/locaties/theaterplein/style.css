@@ -236,7 +236,7 @@
 }
 
 #eekhoorntje-s7{
-    left: 7%;
+    left: 32%;
     transform: translate3d(-50%, 0, 0);
 
     animation: eekhoornEntrance3 1.5s ease-in-out forwards, eekhoornRotate2 1s alternate 0.5s ease-in-out infinite;
@@ -244,11 +244,11 @@
 
 @keyframes eekhoornEntrance3 {
     0% {
-        left: 90%;
+        left: 150%;
     }
 
     100% {
-        left: 7%;
+        left: 25%;
     }
 }
 
@@ -275,7 +275,7 @@
     }
 }
 
-@keyframes eekhoornRotate2 {
+@keyframes eekhoornRotate {
     0% {
         transform: rotate(0deg);
     }

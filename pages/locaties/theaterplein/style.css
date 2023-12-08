@@ -32,12 +32,8 @@
 
 /* scherm 3 */
 #eekhoorntje-s3{
-    position: fixed;
-    bottom: -100%;
-    left: 50%;
-
-    transform: translateX(-50%);
-    animation: eekhoornEntrance 2s ease-out forwards;
+	top: 75dvh;
+    animation: eekhoornEntrance 1s ease-out forwards;
 }
 
 #eekhoorntjetekst-s3{
@@ -46,13 +42,20 @@
 
 @keyframes eekhoornEntrance {
     0% {
-        bottom: -100%;
+        scale: 30%;
+        left: 20%;
+        top: 100%;
+        /* transform: rotate(0deg); */
+
     }
     50% {
         bottom: 50%;
+        /* transform: rotate(10deg); */
+
     }
     100% {
         bottom: 75%;
+        /* transform: rotate(0deg); */
     }
 }
 
@@ -66,11 +69,31 @@
 }
 #eekhoorntje-s4{
 	top: 75dvh;
-
+    animation: eekhoornFall 1s ease-out forwards, eekhoornRotate 3s alternate 0.5s ease-in-out infinite;
 }
 
 #eekhoorntjetekst-s4{
 	bottom: 41dvh;
+}
+
+@keyframes eekhoornFall {
+    0% {
+        top: -100%;
+    }
+    100% {
+        top: 62dvh;
+        left: 30%;
+        transform: rotate(0deg); /* Aanpassen van de rotatiehoek naar wens */
+    }
+}
+
+@keyframes eekhoornRotate {
+    0%, 100% {
+        transform: translateX(-50%) rotate(0deg);
+    }
+    50% {
+        transform: translateX(-50%) rotate(-4deg);
+    }
 }
 
 /* scherm 5 */

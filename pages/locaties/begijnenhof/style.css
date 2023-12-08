@@ -14,39 +14,39 @@
 @keyframes arriveWaggelEendje {
     0% {
         top: 110dvh;
-        left: -30%;
-        transform: translate(-50%, -50%) rotate(0deg); /* Beginpositie en rotatie van 0 graden */
+        left: -20%;
+        transform: translate(-50%, -50%) rotate(10deg); /* Beginpositie en rotatie van 0 graden */
     }
     
     14% {
         top: 105dvh;
-        left: -20%;
-        transform: translate(-50%, -50%) rotate(10deg); 
+        left: -10%;
+        transform: translate(-50%, -50%) rotate(0deg); 
     }
     28% {
         top: 100dvh;
-        left: -10%;
-        transform: translate(-50%, -50%) rotate(0deg); /* Middenpositie, aanpassen naar wens */
-    }
-    42% {
-        top: 105dvh;
-        left: -5%;
+        left: 0%;
         transform: translate(-50%, -50%) rotate(-10deg); /* Middenpositie, aanpassen naar wens */
     }
-    56% {
-        top: 100dvh;
-        left: 0%;
-        transform: translate(-50%, -50%) rotate(0deg); /* Middenpositie, aanpassen naar wens */
-    }
-    71% {
+    42% {
         top: 95dvh;
         left: 5%;
-        transform: translate(-50%, -50%) rotate(10deg); /* Middenpositie, aanpassen naar wens */
+        transform: translate(-50%, -50%) rotate(0deg); /* Middenpositie, aanpassen naar wens */
     }
-    85% {
+    56% {
         top: 90dvh;
         left: 15%;
-        transform: translate(-50%, -50%) rotate(-5deg); /* Middenpositie, aanpassen naar wens */
+        transform: translate(-50%, -50%) rotate(10deg); /* Middenpositie, aanpassen naar wens */
+    }
+    71% {
+        top: 85dvh;
+        left: 20%;
+        transform: translate(-50%, -50%) rotate(0deg); /* Middenpositie, aanpassen naar wens */
+    }
+    85% {
+        top: 80dvh;
+        left: 25%;
+        transform: translate(-50%, -50%) rotate(-10deg); /* Middenpositie, aanpassen naar wens */
     }
     100% {
         top: 75dvh;

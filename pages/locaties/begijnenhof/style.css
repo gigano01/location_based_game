@@ -1,13 +1,21 @@
 /* scherm 2 */
-#eendje-s2{
+#eendje-s2 {
     position: fixed;
     top: 75dvh;
     left: 30%;
     transform: translate(-50%, -50%);
+    animation: moveEendje 2s linear infinite alternate; /* Voeg animatie toe */
 }
 #eendjetekst-s2{
     bottom: 40dvh;
 }
+
+@keyframes moveEendje {
+    to {
+        top: 25dvh; /* Definieer het eindpunt van de animatie */
+    }
+}
+
 /* scherm 3 */
 #eendje-s3{
     position: fixed;

@@ -53,7 +53,7 @@
 @keyframes uilLanding {
     0% {
         scale: 80%;
-        top: 50%;
+        top: 60%;
     }
 
     100% {
@@ -149,9 +149,32 @@
 /* scherm 8 */
 #uil-s8{
     top: 70dvh;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);  
+    left: 30%;
+    transform: translate3d(-50%, -50%, 0);
+    
+    animation: uilEntrance 1.5s ease-in-out forwards, uilRotate1 1s alternate 0.5s ease-in-out infinite;
 }
+
+@keyframes uilEntrance {
+    0% {
+        scale: 50%;
+        left: -100%;
+    }
+
+    100% {
+        right: 3%;
+    }
+}
+
+@keyframes uilRotate1 {
+    0% {
+        transform: translate3d(-50%, -50%, 0) rotate(3deg);
+    }
+    100% {
+        transform: translate3d(-50%, -50%, 0) rotate(-3deg);
+    }
+}
+
 #uiltekst-s8{
     bottom: 49dvh;
 }

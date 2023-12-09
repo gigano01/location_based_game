@@ -70,14 +70,11 @@
         scale: 100%;
 		bottom: 13dvh;
         left: -100%;
-        transform: rotate(0deg);
-
     }
 
     100% {
 		bottom: 1dvh;
-        left: 20%;
-        transform: rotate(0deg);
+        left: 22%;
     }
 }
 
@@ -95,17 +92,45 @@
 	left: 50vw;
 	bottom: 2dvh;
 	z-index:20;
-	
 
 	/*flip de img*/
 	-webkit-transform: scaleX(-1.3) scaleY(1.3);
   	transform: scaleX(-1.3) scaleY(1.3);
+
+	/* animation */
+	  animation: muisEntrance2 1.5s ease-in-out forwards, muisRotate2 1.5s alternate 1ms ease-in-out infinite;
 }
 
 #muisje-s5-tekstbubbel{
 	bottom: 30dvh;
 }
 
+@keyframes muisEntrance2 {
+    0% {
+		bottom: 1dvh;
+        left: 100%;
+
+    }
+
+    100% {
+		scale: 130%;
+		bottom: 1dvh;
+        left: 60%;
+		
+    }
+}
+
+@keyframes muisRotate2 {
+    0% {
+		transform: rotate(2deg);
+    }
+    100% {
+        transform: rotate(-3deg);
+
+    }
+}
+
+/* scherm 6*/
 #vraag{
 	top:20dvh;
 	background-color: var(--game-groen);
@@ -128,6 +153,7 @@
 	padding: 15px;
 }
 
+/* scherm 7*/
 #muisje-s7-tekstbubbel {
 	bottom: 29dvh;
 }

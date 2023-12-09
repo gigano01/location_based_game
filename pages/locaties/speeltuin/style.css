@@ -10,7 +10,7 @@
     left: 30%;
     transform: translate3d(-50%, -50%, 0);
 
-    animation: wasbeerEntrance 1.4s ease-in-out forwards, wasbeerRotate 1.5s alternate 1ms ease-in-out infinite;;
+    animation: wasbeerEntrance 1.4s ease-in-out forwards, wasbeerRotate 1s alternate 1ms ease-in-out infinite;;
 }
 #wasbeertekst-s3{
     bottom: 34dvh;
@@ -153,8 +153,7 @@
     transform: translate3d(-50%, -50%, 0);   
     z-index: 999;
 
-    /* animation: wasbeerEntrance1 1.4s ease-in-out forwards, wasbeerRotate1 1.5s alternate 1ms ease-in-out infinite;; */
-
+    animation: wasbeerEntrance1 1.5s ease-in-out forwards, wasbeerRotate1 1.5s alternate 1ms ease-in-out infinite;;
 }
 #wasbeertekst-s6{
     bottom: 40dvh;
@@ -163,9 +162,9 @@
 
 @keyframes wasbeerEntrance1 {
     0% {
-        scale: 100%;
-        top: 70dvh;
-        left: 30%;
+        scale: 40%;
+        top: 150dvh;
+        left: 50%;
         transform: rotate(0deg);
 
     }

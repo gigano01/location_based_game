@@ -13,7 +13,6 @@
     bottom: 38dvh;
 }
 
-
 #muisje-s8-tekstbubbel {
     bottom: 40dvh;
 }
@@ -21,14 +20,13 @@
 @keyframes muisEntrance {
     0% {
         scale: 100%;
-        bottom: 1dvh;
+        top: 80dvh;
         left: -120%;
     }
-
     100% {
         scale: 100%;
-        bottom: 30dvh;
-        left: -10%;
+        top: 56dvh;
+        left: -15%;
     }
 }
 
@@ -36,7 +34,6 @@
     0% {
         transform: rotate(-3deg);
     }
-
     100% {
         transform: rotate(3deg);
     }
@@ -75,7 +72,14 @@
     font-weight: var(--text-weight-bold);
     color: var(--white);
 }
-
+#muisje-s4 {
+    top: 80dvh;
+    left: 40%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 460px;
+    /* animation */
+    animation: muisJump 1s ease-in-out forwards, muisRotate1 1.5s alternate 1ms ease-in-out infinite;
+}
 #muisjetekst-s4 {
     bottom: 34dvh;
 }

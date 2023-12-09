@@ -4,10 +4,14 @@
     left: 70%;
     transform: translate3d(-50%, -50%, 0) scaleX(-1);
 
-    animation: muisEntrance1 1.5s ease-in-out forwards;
+    animation: muisEntrance 1.5s ease-in-out forwards, muisRotate 2s alternate 0.5s ease-in-out infinite;
 }
 
-@keyframes muisEntrance1 {
+#muistekst-s2{
+    bottom: 40dvh;
+}
+
+@keyframes muisEntrance {
     0% {
         scale: 50%;
         left: 160%;
@@ -18,9 +22,15 @@
     }
 }
 
-#muistekst-s2{
-    bottom: 40dvh;
+@keyframes muisRotate {
+    0% {
+        transform: translate3d(-50%, -50%, 0) scaleX(-1) rotate(0deg);
+    }
+    100% {
+        transform: translate3d(-50%, -50%, 0) scaleX(-1) rotate(-3deg);
+    }
 }
+
 
 /* scherm 3 */
 #uil-s3{

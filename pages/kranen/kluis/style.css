@@ -234,8 +234,8 @@
 
     100% {
 		scale: 100%;
-		bottom: 8dvh;
-        left: 5%;
+		bottom: 9dvh;
+        left: -10%;
     }
 }
 
@@ -292,7 +292,6 @@
 
 #muisje-s12-tekstbubbel {
 	bottom: calc(15dvh + 480px);
-
 }
 
 #tekstblok-s12{
@@ -305,7 +304,7 @@
 		left: -120%;
     }
     100% {
-		left: 25%;
+		left: 30%;
     }
 }
 

@@ -1,14 +1,16 @@
 /* scherm 2 */
-#eendje-s2{
+#eendje-s2 {
     position: fixed;
     top: 75dvh;
     left: 30%;
 
-    transform: translate(-50%, -50%) rotate(0deg); /* Startpositie en rotatie van 0 graden */
-    animation: arriveWaggelEendje1 3s ease-in-out; /* Voeg animatie toe */
+    transform: translate(-50%, -50%) rotate(0deg);
+    /* Startpositie en rotatie van 0 graden */
+    animation: arriveWaggelEendje1 3s ease-in-out;
+    /* Voeg animatie toe */
 }
 
-#eendjetekst-s2{
+#eendjetekst-s2 {
     bottom: 40dvh;
 }
 
@@ -17,78 +19,98 @@
         scale: 75%;
         top: 110dvh;
         left: -20%;
-        transform: translate(-50%, -50%) rotate(10deg); /* Beginpositie en rotatie van 0 graden */
+        transform: translate(-50%, -50%) rotate(10deg);
+        /* Beginpositie en rotatie van 0 graden */
     }
-    
+
     14% {
         top: 105dvh;
         left: -10%;
-        transform: translate(-50%, -50%) rotate(0deg); 
+        transform: translate(-50%, -50%) rotate(0deg);
     }
+
     28% {
         top: 100dvh;
         left: 0%;
-        transform: translate(-50%, -50%) rotate(-10deg); /* Middenpositie, aanpassen naar wens */
+        transform: translate(-50%, -50%) rotate(-10deg);
+        /* Middenpositie, aanpassen naar wens */
     }
+
     42% {
         top: 95dvh;
         left: 5%;
-        transform: translate(-50%, -50%) rotate(0deg); /* Middenpositie, aanpassen naar wens */
+        transform: translate(-50%, -50%) rotate(0deg);
+        /* Middenpositie, aanpassen naar wens */
     }
+
     56% {
         top: 90dvh;
         left: 15%;
-        transform: translate(-50%, -50%) rotate(10deg); /* Middenpositie, aanpassen naar wens */
+        transform: translate(-50%, -50%) rotate(10deg);
+        /* Middenpositie, aanpassen naar wens */
     }
+
     71% {
         top: 85dvh;
         left: 20%;
-        transform: translate(-50%, -50%) rotate(0deg); /* Middenpositie, aanpassen naar wens */
+        transform: translate(-50%, -50%) rotate(0deg);
+        /* Middenpositie, aanpassen naar wens */
     }
+
     85% {
         top: 80dvh;
         left: 25%;
-        transform: translate(-50%, -50%) rotate(-10deg); /* Middenpositie, aanpassen naar wens */
+        transform: translate(-50%, -50%) rotate(-10deg);
+        /* Middenpositie, aanpassen naar wens */
     }
+
     100% {
         top: 75dvh;
         left: 30%;
-        transform: translate(-50%, -50%) rotate(0deg); /* Eindpositie en rotatie van 0 graden */
+        transform: translate(-50%, -50%) rotate(0deg);
+        /* Eindpositie en rotatie van 0 graden */
     }
 }
 
 /* scherm 3 */
-#eendje-s3{
+#eendje-s3 {
     position: fixed;
     top: 75%;
     left: 30%;
 
-    transform: translate(-50%, -50%) rotate(0deg); /* Startpositie en rotatie van 0 graden */
-    animation: askQuestionEendje 8s ease-in-out alternate 3; /* Voeg animatie toe */
+    transform: translate(-50%, -50%) rotate(0deg);
+    /* Startpositie en rotatie van 0 graden */
+    animation: askQuestionEendje 8s ease-in-out alternate 3;
+    /* Voeg animatie toe */
 }
 
-#eendjetekst-s3{
+#eendjetekst-s3 {
     bottom: 40dvh;
 }
 
 @keyframes askQuestionEendje {
     0% {
         top: 77%;
-        left: 25%; /* Beginpositie links van het scherm */
+        left: 25%;
+        /* Beginpositie links van het scherm */
         transform: translate(-50%, -50%) rotate(0deg);
     }
+
     50% {
-        left: 35%; /* Middenpositie rechts van het scherm, aanpassen naar wens */
+        left: 35%;
+        /* Middenpositie rechts van het scherm, aanpassen naar wens */
         transform: translate(-50%, -50%) rotate(0deg);
     }
+
     100% {
-        left: 30%; /* Eindpositie links van het scherm */
+        left: 30%;
+        /* Eindpositie links van het scherm */
         transform: translate(-50%, -50%) rotate(0deg);
     }
 }
 
 /* scherm 4 */
-#vraag-s4{
+#vraag-s4 {
     position: fixed;
     top: 15dvh;
     left: 50%;
@@ -96,14 +118,16 @@
     width: 358px;
     height: 88px;
 }
-#up-s4{
+
+#up-s4 {
     position: fixed;
     top: 30dvh;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 140px;
 }
-#cijfer-s4{
+
+#cijfer-s4 {
     width: 171px;
     height: 168px;
     flex-shrink: 0;
@@ -111,11 +135,12 @@
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
 
-	font-family: var(--text-font);
-	font-weight: var(--text-weight-bold);
-	font-size: 8rem;
+    font-family: var(--text-font);
+    font-weight: var(--text-weight-bold);
+    font-size: 8rem;
 }
-#down-s4{
+
+#down-s4 {
     position: fixed;
     top: 70dvh;
     left: 50%;
@@ -123,40 +148,64 @@
     width: 140px;
 }
 
-#indienen-s4{
+#indienen-s4 {
     top: 90dvh;
     left: 50%;
     width: 169px;
     height: 88px;
 }
 
-#volumeBar-s4{
-	top: 7dvh;
-	left: 50%;
-	background-color: green;
-	border-radius: var(--box-radius);
-	transform: translateX(-50%);
+#volumeBar-s4 {
+    top: 7dvh;
+    left: 50%;
+    background-color: green;
+    border-radius: var(--box-radius);
+    transform: translateX(-50%);
 }
+
 /* scherm5 */
-#eendje-s5{
-    width: 307px;
-    height: 484px;
-    position:fixed;
-    top: 90dvh;
-    left: 20%;
+#eendje-s5 {
+    position: fixed;
+    top: 85dvh;
+    left: 25%;
 
-    transform: translate(-50%, -50%) rotate(0deg); /* Startpositie en rotatie van 0 graden */
+    transform: translate(-50%, -50%) rotate(0deg);
+    /* Startpositie en rotatie van 0 graden */
+    animation: eendjeEntrance 2s ease-in-out forwards, eendjeRotate 2s alternate 0.5s ease-in-out infinite;
 }
 
-#eendjetekst-s5{
+#eendjetekst-s5 {
     bottom: 30dvh;
-} 
-
-#eendjetekst-s7{
-	bottom: 25dvh;
 }
 
-#vraag-s5{
+@keyframes eendjeEntrance {
+    0% {    
+        scale: 50%;
+        top: 100dvh;
+        left: -100%;
+    }
+
+    100% {
+        top: 72dvh;
+        left: 8%;
+    }
+}
+
+@keyframes eendjeRotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(7deg);
+    }
+}
+
+#eendjetekst-s7 {
+    bottom: 25dvh;
+}
+
+#vraag-s5 {
     position: fixed;
     top: 15dvh;
     left: 50%;
@@ -164,7 +213,7 @@
     width: 358px;
     height: 88px;
 }
-#up-s5{
+
+#up-s5 {
     position: fixed;
-    
 }

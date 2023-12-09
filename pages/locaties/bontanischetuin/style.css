@@ -3,7 +3,21 @@
     top: 70dvh;
     left: 70%;
     transform: translate3d(-50%, -50%, 0) scaleX(-1);
+
+    animation: muisEntrance1 1.5s ease-in-out forwards;
 }
+
+@keyframes muisEntrance1 {
+    0% {
+        scale: 50%;
+        left: 160%;
+    }
+
+    100% {
+        left: 75%;
+    }
+}
+
 #muistekst-s2{
     bottom: 40dvh;
 }

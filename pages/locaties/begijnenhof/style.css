@@ -215,7 +215,7 @@
 /* scherm7 */
 #eendje-s7{
     position: fixed;
-    top: 85dvh;
+    top: 90dvh;
     left: 25%;
     transform: translate(-50%, -50%) rotate(0deg);
 }

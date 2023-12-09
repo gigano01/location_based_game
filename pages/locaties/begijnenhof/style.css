@@ -168,9 +168,8 @@
     position: fixed;
     top: 85dvh;
     left: 25%;
-
     transform: translate(-50%, -50%) rotate(0deg);
-    /* Startpositie en rotatie van 0 graden */
+
     animation: eendjeEntrance 2s ease-in-out forwards, eendjeRotate 2s alternate 0.5s ease-in-out infinite;
 }
 
@@ -201,10 +200,6 @@
     }
 }
 
-#eendjetekst-s7 {
-    bottom: 25dvh;
-}
-
 #vraag-s5 {
     position: fixed;
     top: 15dvh;
@@ -216,4 +211,18 @@
 
 #up-s5 {
     position: fixed;
+}
+
+/* scherm7 */
+#eendje-s7{
+    position: fixed;
+    top: 85dvh;
+    left: 25%;
+    transform: translate(-50%, -50%) rotate(0deg);
+
+    animation: eendjeEntrance 2s ease-in-out forwards, eendjeRotate 2s alternate 0.5s ease-in-out infinite;
+}
+
+#eendjetekst-s7 {
+    bottom: 25dvh;
 }

@@ -31,7 +31,6 @@
     }
 }
 
-
 /* scherm 3 */
 #uil-s3{
     height: 110px;
@@ -43,11 +42,34 @@
 #uil-s4{
     top: 70dvh;
     left: 75%;
-    transform: translate3d(-50%, -50%, 0);  
+    transform: translate3d(-50%, -50%, 0);
+
+    animation: uilLanding 1.5s ease-in-out forwards, uilRotate alternate 1s ease-in-out infinite;
 }
 #uiltekst-s4{
     bottom: 49dvh;
 }
+
+@keyframes uilLanding {
+    0% {
+        scale: 80%;
+        top: 50%;
+    }
+
+    100% {
+        left: 67%;
+    }
+}
+
+@keyframes uilRotate {
+    0% {
+        transform: translate3d(-50%, -50%, 0) scaleX(-1) rotate(3deg);
+    }
+    100% {
+        transform: translate3d(-50%, -50%, 0) scaleX(-1) rotate(-3deg);
+    }
+}
+
 /* scherm 5 */
 
 /* scherm 6 */

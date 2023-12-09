@@ -72,9 +72,11 @@
     font-weight: var(--text-weight-bold);
     color: var(--white);
 }
+
+/* scherm4 */
 #muisje-s4 {
     top: 80dvh;
-    left: 40%;
+    left: 50%;
     transform: translate3d(-50%, -50%, 0);
     width: 460px;
     /* animation */
@@ -82,4 +84,26 @@
 }
 #muisjetekst-s4 {
     bottom: 34dvh;
+}
+
+@keyframes muisJump {
+    0% {
+        scale: 20%;
+        top: 100dvh;
+        left: 0%;
+    }
+    100% {
+        scale: 100%;
+        top: 58dvh;
+        left: -5%;
+    }
+}
+
+@keyframes muisRotate1 {
+    0% {
+        transform: rotate(-3deg);
+    }
+    100% {
+        transform: rotate(3deg);
+    }
 }

@@ -153,7 +153,7 @@
     transform: translate3d(-50%, -50%, 0);   
     z-index: 999;
 
-    animation: wasbeerEntrance1 1.5s ease-in-out forwards, wasbeerRotate1 1.5s alternate 1ms ease-in-out infinite;;
+    animation: wasbeerEntrance1 1.5s ease-in-out forwards, wasbeerRotate1 1.5s alternate 1ms ease-in-out infinite;
 }
 #wasbeertekst-s6{
     bottom: 40dvh;

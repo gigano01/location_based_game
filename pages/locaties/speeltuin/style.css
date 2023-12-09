@@ -9,10 +9,38 @@
     top: 75dvh;
     left: 30%;
     transform: translate3d(-50%, -50%, 0);
+
+    animation: wasbeerEntrance 1.4s ease-in-out forwards, wasbeerRotate 1s alternate 0.1s ease-in-out infinite;;
 }
 #wasbeertekst-s3{
     bottom: 34dvh;
 }
+
+@keyframes wasbeerEntrance {
+    0% {
+        scale: 90%;
+        top: 60dvh;
+        left: 5%;
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+        top: 65dvh;
+        left: 5%;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes wasbeerRotate {
+    0% {
+        transform: translate3d(-50%, -50%, 0) rotate(3deg);
+    }
+    100% {
+        transform: translate3d(-50%, -50%, 0) rotate(-3deg);
+    }
+}
+
 /* scherm 4 */
 #kader-s4{
     width: 305px;

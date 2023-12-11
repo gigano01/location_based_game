@@ -185,7 +185,7 @@
 
     100% {
         top: 72dvh;
-        left: 8%;
+        left: 10%;
     }
 }
 
@@ -218,8 +218,23 @@
     top: 90dvh;
     left: 25%;
     transform: translate(-50%, -50%) rotate(0deg);
+
+    animation: eendjeEntrance1 1.5s ease-in-out forwards, eendjeRotate 2s alternate 0.5s ease-in-out infinite;
 }
 
 #eendjetekst-s7 {
     bottom: 25dvh;
+}
+
+@keyframes eendjeEntrance1 {
+    0% {    
+        scale: 50%;
+        top: 100dvh;
+        left: -100%;
+    }
+
+    100% {
+        top: 77dvh;
+        left: 10%;
+    }
 }

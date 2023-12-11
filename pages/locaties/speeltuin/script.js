@@ -24,15 +24,39 @@ onScreen(4, ()=>{
 	})
 })
 
-const maxTimeInMinutes = 2 //make dynamic!!
+const edible = ["vis-s5","kaas-s5","brood-s5","broccoli-s5"]
+function isEdible(node){
+	return edible.includes(node.id)
+}
+
+const trashObjects = document.getElementsByClassName("afval-s5")
+const trashcanGreen = document.getElementById("vuilbakgroen-s5")
+const trashcanGrey = document.getElementById("compostpot-s5")
+let fallingItem = null
+let fallingX = 0
+let fallingY = -50
+const sideMargin = 40 // in percentage
+const w = document.defaultView.innerWidth
+const h = document.defaultView.innerHeight
+const fallingSpeed = 3.7
+const speedupBias = 7
+let tries = 0
+let fail = false
+let timerID = null
+
+
+const maxTimeInMinutes = 1 //make dynamic!!
 const maxTimeInSeconds = maxTimeInMinutes * 60
 let time = maxTimeInSeconds
 
 function timer(){
-	let timerDiv = document.getElementById("kader-s5")
+	const timerDiv = document.getElementById("kader-s5")
 
 	if(time > 0) {
 		time--
+	} else {
+		clearInterval(timerID)
+		nextScreen()
 	}
 
 	if(time < 10) {
@@ -41,12 +65,67 @@ function timer(){
 		timerDiv.textContent = `${Math.floor(time/60)}:${time % 60}`
 	}
 
-	clearInterval(timer)
+	//clearInterval(timer)
+}
+
+function game() {
+	const randomNum = Math.round(Math.random()*(trashObjects.length-1))
+	
+	if (fallingItem === null){
+		fallingItem = trashObjects[randomNum]
+		fallingX = Math.random() * (w * ((100 - sideMargin) / 100)) + (w * sideMargin / 100) / 2.5
+		fallingY = -100
+	}
+
+	//GOD FORGIVE ME ;-;
+	if (overlaps(fallingItem, trashcanGrey)){
+		fallingItem.style.display = "none"
+		if(!isEdible(fallingItem, trashcanGrey)){
+			fallingItem = null
+			requestAnimationFrame(game)
+			return
+		} else {
+			clearInterval(timerID)
+			document.getElementById("kader-s6").textContent = `${Math.floor(time/60)}:${time % 60}`
+			document.getElementById("kader-s5").textContent = `start!`
+			fail = true
+			gotoScreen(6)
+			return
+		}
+	}else if(overlaps(fallingItem, trashcanGreen)){
+		fallingItem.style.display = "none"
+		if (isEdible(fallingItem)){
+			fallingItem = null
+			requestAnimationFrame(game)
+			return
+		} else {
+			clearInterval(timerID)
+			document.getElementById("kader-s6").textContent = `${Math.floor(time/60)}:${time % 60}`
+			document.getElementById("kader-s5").textContent = `start!`
+			fail = true
+			gotoScreen(6)
+			return
+		}
+	}
+
+	fallingY += fallingSpeed + ((maxTimeInSeconds - time ) / speedupBias)
+	console.log((maxTimeInSeconds - time ) / speedupBias)
+
+
+	fallingItem.style.left = `${fallingX}px`
+	fallingItem.style.top = `${fallingY}px`
+	fallingItem.style.display = "block"
+
+	requestAnimationFrame(game)
 }
 
 onScreen(5,()=>{
+	//reset alles voor als we gefaald hebben
+	fallingItem = null
+	fallingX = 0
+	fallingY = -50
 	time = maxTimeInSeconds
-	setInterval(timer, 1000)
+	timer = setInterval(timer, 1000)
 
 	const trashcan = document.getElementById("vuilbakgroen-s5")
 	onMovementHandler = () => {
@@ -57,13 +136,33 @@ onScreen(5,()=>{
 		trashcan.style.left = `${x}px`
 		trashcan.style.top = `${y}px`
 	}
+	requestAnimationFrame(game)
 })
 
 onScreen(6, ()=>{
-	createDialogueObject("dialogue/scherm6.json").then((dialogue)=>{
+	let dialogueLoc
+	if (fail) {
+		dialogueLoc = (tries > 1) ? "dialogue/scherm6_fail_final.json" : "dialogue/scherm6_fail.json"
+		tries++
+	} else {
+		dialogueLoc = "dialogue/scherm6.json"
+	}
+
+	if(tries === 4) {
+		gotoScreen(7)
+		return
+	}
+
+	createDialogueObject(dialogueLoc).then((dialogue)=>{
 		assignDialogueToContainer(dialogue,document.getElementById("wasbeertekst-s6"))
 		setDialogueEndHandler(dialogue,()=>{
-			nextScreen()
+			if (fail) {
+				removeDialogueFromContainer(dialogue)
+				fail = false
+				gotoScreen(5)
+			} else {
+				nextScreen()
+			}
 		})
 	})
 })
@@ -72,7 +171,8 @@ onScreen(7, ()=>{
 	createDialogueObject("dialogue/scherm7.json").then((dialogue)=>{
 		assignDialogueToContainer(dialogue,document.getElementById("wasbeertekst-s7"))
 		setDialogueEndHandler(dialogue,()=>{
-			nextScreen()
+			const nextlocID = "KMSKA-01"
+			location.assign(`../../navigate/index.html?locationID=${nextlocID}`)
 		})
 	})
 })

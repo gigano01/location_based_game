@@ -103,6 +103,10 @@
     height: 133px;
     transform: translate3d(-50%, -50%, 0);  
 }
+
+.afval-s5{
+	display: none;
+}
 /* scherm 6 */
 #kader-s6{
     width: 180px;

@@ -10,13 +10,17 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;700&display=swap" rel="stylesheet">
 
-    <link href="../../../styles/reset.css" type="text/css" rel="stylesheet">
+	<link href="../../../styles/reset.css" type="text/css" rel="stylesheet">
     <link href="../../../styles/variables.css" type="text/css" rel="stylesheet">
     <link href="../../../styles/general.css" type="text/css" rel="stylesheet">
     <link href="../../../styles/components/button.css" type="text/css" rel="stylesheet">
 	<link href="../../../styles/components/hamburger.css" type="text/css" rel="stylesheet">
 	<link href="../../../styles/components/background.css" type="text/css" rel="stylesheet">
-	<!--VERGEET NIET OM TE CHECKEN OF DEZE LINKJES WERKEN-->
+	<link href="../../../styles/components/locatiebord.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="../../../styles/components/spraak-bubbel.css">
+	<link rel="stylesheet" href="../../../styles/components/loading.css">
+	<link rel="stylesheet" href="../../../styles/components/vierkantwit.css">
+	<link href="../../../styles/components/groenvaktekst.css" type="text/css" rel="stylesheet">
     <link href="style.css" type="text/css" rel="stylesheet">
 
 	<script defer src="../../../scripts/dialogue.js"></script>
@@ -39,8 +43,23 @@
 	<div id="scherm-1">
 		<img src="../../../media/bg/bg_riool_sch1.jpg" alt="" class="positioned background">
 	</div>
-    <h1>Welkom!</h1>
-    <button id="start-button">Start</button>
+	<div class="positioned centered vierkantwit eenboom invisible">
+		<img src="../../media/prop/prop_boompjegroot.svg" id="boom-1-1" class="positioned">
+		<p>YAY! Super gedaan! Jullie hebben de buit gevonden.</p>
+	</div>
+	<div class="positioned centered vierkantwit tweebomen invisible">
+		<img src="../../media/prop/prop_boompjeklein.svg" id="boom-2-1" class="positioned">
+		<img src="../../media/prop/prop_boompjeklein.svg" id="boom-2-2" class="positioned">
+		<p>YAY! Super gedaan! Jullie hebben de buit gevonden. Jullie krijgen extra bomen om te planten!</p>
+	</div>
+	<div class="positioned centered vierkantwit driebomen">
+		<img src="../../media/prop/prop_boompjeklein.svg" id="boom-3-1" class="positioned">
+		<img src="../../media/prop/prop_boompjegroot.svg" id="boom-3-2" class="positioned">
+		<img src="../../media/prop/prop_boompjeklein.svg" id="boom-3-3" class="positioned">
+		<p>YAY! Super gedaan! Jullie hebben de buit gevonden. Jullie verdienen extra groen om te planten in de stad. </p>
+	</div>
+	
+
 
   </body>
 </html>

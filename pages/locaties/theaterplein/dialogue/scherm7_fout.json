@@ -1,8 +1,11 @@
 {
-	"count":1,
+	"count":2,
 	"prompts":[
 		{
-			"text": "oepsie dat is niet juist, probeer opnieuw!"
+			"text": "Jammer genoeg stond je niet op de juiste plaats!"
+		},
+		{
+			"text": "Probeer nog een keer!"
 		}
 	]
 }

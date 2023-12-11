@@ -36,6 +36,26 @@ const flower3 = document.getElementById("bloemspel-3-s5")
 const flower3T = flower3.style.top
 const flower3L = flower3.style.left
 
+const maxTimeInMinutes = 1 //make dynamic!!
+const maxTimeInSeconds = maxTimeInMinutes * 60
+let time = maxTimeInSeconds
+
+function timer(){
+	let timerDiv = document.getElementById("timer-s5")
+
+	if(time > 0) {
+		time--
+	}
+
+	if(time < 10) {
+		timerDiv.textContent = `${time}`
+	}else{
+		timerDiv.textContent = `${Math.floor(time/60)}:${time % 60}`
+	}
+
+	clearInterval(timer)
+}
+
 const fountain = document.getElementById("fontijn-s5")
 
 function flowerBehaviour(flower, flowerT, flowerL){
@@ -68,6 +88,8 @@ function gameLoop(){
 }
 
 onScreen(5, ()=>{
+	time = maxTimeInSeconds
+	setInterval(timer, 1000)
 	gameLoop()
 })
 onScreen(6,nextScreen)

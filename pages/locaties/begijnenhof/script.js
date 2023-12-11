@@ -5,12 +5,15 @@ onScreen(1, ()=>{
 })
 
 onScreen(2, ()=>{
-	createDialogueObject("dialogue/scherm2.json").then((dialogue)=>{
-		assignDialogueToContainer(dialogue,document.getElementById("eendjetekst-s2"))
-		setDialogueEndHandler(dialogue,()=>{
-			nextScreen()
-		})
-	})
+	let gansElement = document.querySelector("#eendje-s2");
+    gansElement.addEventListener('animationend', () => {
+        createDialogueObject("dialogue/scherm3.json").then((dialogue)=>{
+            assignDialogueToContainer(dialogue,document.getElementById("eendjetekst-s2"))
+            setDialogueEndHandler(dialogue,()=>{
+                nextScreen()
+            })
+        })
+    });
 })
 
 onScreen(3, ()=>{

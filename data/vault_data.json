@@ -35,7 +35,7 @@
 		"mapLocationID": "speeltuin-02"
 	},
 
-	"KMSKA": {
+	"kmska": {
 		"eerste-keer": false,
 		"vraag": "Wat helpt om parken en groene plekken in de stad te houden?",
 		"juist-antwoord":"Bomen en groen planten",

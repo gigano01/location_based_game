@@ -12,10 +12,13 @@ onScreen(2, ()=>{
 })
 
 onScreen(3, ()=>{
-	createDialogueObject("dialogue/scherm3.json").then((dialogue)=>{
-		assignDialogueToContainer(dialogue,document.getElementById("eekhoorntjetekst-s3"))
-		setDialogueEndHandler(dialogue,()=>{
-			nextScreen()
+	let gansElement = document.querySelector("#eekhoorntje-s3");
+    gansElement.addEventListener('animationend', () => {
+		createDialogueObject("dialogue/scherm3.json").then((dialogue)=>{
+			assignDialogueToContainer(dialogue,document.getElementById("eekhoorntjetekst-s3"))
+			setDialogueEndHandler(dialogue,()=>{
+				nextScreen()
+			})
 		})
 	})
 })
@@ -30,22 +33,25 @@ onScreen(4, ()=>{
 })
 
 onScreen(5, ()=>{
-	createDialogueObject("dialogue/scherm5.json").then((dialogue)=>{
-		assignDialogueToContainer(dialogue,document.getElementById("eekhoorntjetekst-s5"))
-		setDialogueEndHandler(dialogue,()=>{
-			nextScreen()
+	let gansElement = document.querySelector("#eekhoorntje-s5");
+    gansElement.addEventListener('animationend', () => {
+		createDialogueObject("dialogue/scherm5.json").then((dialogue)=>{
+			assignDialogueToContainer(dialogue,document.getElementById("eekhoorntjetekst-s5"))
+			setDialogueEndHandler(dialogue,()=>{
+				nextScreen()
+			})
 		})
 	})
 })
 
 onScreen(6, ()=>{
-	createDialogueObject("dialogue/scherm6.json").then((dialogue)=>{
-		assignDialogueToContainer(dialogue,document.getElementById("eekhoorntjetekst-s6"))
-		setDialogueEndHandler(dialogue,()=>{
-			nextScreen()
-			//gotoScreen(10)
+		createDialogueObject("dialogue/scherm6.json").then((dialogue)=>{
+			assignDialogueToContainer(dialogue,document.getElementById("eekhoorntjetekst-s6"))
+			setDialogueEndHandler(dialogue,()=>{
+				nextScreen()
+				//gotoScreen(10)
+			})
 		})
-	})
 })
 
 function turnOffAllDirections(arrow){
@@ -56,10 +62,13 @@ function turnOffAllDirections(arrow){
 }
 
 function gameDialoguePopup() {
-	document.getElementById("popup-s7").classList.remove("invisible")
-	createDialogueObject("dialogue/scherm7.json").then((dialogue)=>{
-		assignDialogueToContainer(dialogue,document.getElementById("eekhoorntjetekst-s7"))
-		removeDialogueFromContainer(dialogue) //maakt het onklikbaar
+	let gansElement = document.querySelector("#eekhoorntje-s7");
+    gansElement.addEventListener('animationend', () => {
+		document.getElementById("popup-s7").classList.remove("invisible")
+		createDialogueObject("dialogue/scherm7.json").then((dialogue)=>{
+			assignDialogueToContainer(dialogue,document.getElementById("eekhoorntjetekst-s7"))
+			removeDialogueFromContainer(dialogue) //maakt het onklikbaar
+		})
 	})
 }
 
@@ -151,10 +160,13 @@ onScreen(7, ()=>{
 })
 
 onScreen(8, ()=>{
-	createDialogueObject("dialogue/scherm8.json").then((dialogue)=>{
-		assignDialogueToContainer(dialogue,document.getElementById("eekhoorntjetekst-s8"))
-		setDialogueEndHandler(dialogue,()=>{
-			nextScreen()
+	let gansElement = document.querySelector("#eekhoorntje-s8");
+    gansElement.addEventListener('animationend', () => {
+		createDialogueObject("dialogue/scherm8.json").then((dialogue)=>{
+			assignDialogueToContainer(dialogue,document.getElementById("eekhoorntjetekst-s8"))
+			setDialogueEndHandler(dialogue,()=>{
+				nextScreen()
+			})
 		})
 	})
 })

@@ -107,8 +107,7 @@ onScreen(10, ()=>{
 	createDialogueObject("dialogue/scherm10.json").then((dialogue)=>{
 		assignDialogueToContainer(dialogue,document.getElementById("muisjetekst-s10"))
 		setDialogueEndHandler(dialogue,()=>{
-			const nextlocID = ""
-			location.assign(`../../navigate/index.html?locationID=${nextlocID}`)
+			console.log("that was it boys, end of da game")
 		})
 	})
 })

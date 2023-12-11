@@ -21,6 +21,7 @@
     left: 50%;
 
     transform: translate3d(-50%, -50%, 0);
+    animation: eekhoornEntrance0 2s ease-out forwards;
 }
 
 #eekhoorntjetekst-s2 {
@@ -29,6 +30,19 @@
     left: 50%;
 
     transform: translate3d(-50%, -50%, 0);
+}
+
+@keyframes eekhoornEntrance0 {
+    0% {
+        scale: 100%;
+        top: 80;
+        left: 100%;
+    }
+    100% {
+        scale: 100%;
+        top: 80%;
+        left: 50%;
+    }
 }
 
 /* scherm 3 */

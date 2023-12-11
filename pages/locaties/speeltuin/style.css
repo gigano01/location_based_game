@@ -93,9 +93,9 @@
     font-size: 64px;
 }
 #compostpot-s5{
-    top: 93dvh;
+    bottom: -2dvh;
     left: 50%;
-    transform: translate3d(-50%, -50%, 0);  
+    transform: translate3d(-50%, 0, 0) scaleX(700%);  
 }
 #vuilbakgroen-s5{
     top: 50dvh;

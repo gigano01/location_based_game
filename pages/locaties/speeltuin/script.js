@@ -24,7 +24,40 @@ onScreen(4, ()=>{
 	})
 })
 
-onScreen(5,nextScreen)
+const maxTimeInMinutes = 2 //make dynamic!!
+const maxTimeInSeconds = maxTimeInMinutes * 60
+let time = maxTimeInSeconds
+
+function timer(){
+	let timerDiv = document.getElementById("kader-s5")
+
+	if(time > 0) {
+		time--
+	}
+
+	if(time < 10) {
+		timerDiv.textContent = `${time}`
+	}else{
+		timerDiv.textContent = `${Math.floor(time/60)}:${time % 60}`
+	}
+
+	clearInterval(timer)
+}
+
+onScreen(5,()=>{
+	time = maxTimeInSeconds
+	setInterval(timer, 1000)
+
+	const trashcan = document.getElementById("vuilbakgroen-s5")
+	onMovementHandler = () => {
+		let pos = getMTPosition()
+		let x = pos.x
+		let y = pos.y
+	
+		trashcan.style.left = `${x}px`
+		trashcan.style.top = `${y}px`
+	}
+})
 
 onScreen(6, ()=>{
 	createDialogueObject("dialogue/scherm6.json").then((dialogue)=>{

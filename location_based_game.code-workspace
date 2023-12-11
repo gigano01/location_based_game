@@ -58,6 +58,10 @@
 			{
 				"folderPath": "location_based_game\\cheat\\",
 				"color": "foldercolorizer.ruby"
+			},
+			{
+				"folderPath": "location_based_game\\pages\\testpages\\",
+				"color": "foldercolorizer.Ecru"
 			}
 		]
 	}

@@ -3,10 +3,13 @@ onScreen(1, ()=>{
 })
 
 onScreen(2, ()=>{
-	createDialogueObject("dialogue/scherm2.json").then((dialogue)=>{
-		assignDialogueToContainer(dialogue,document.getElementById("muistekst-s2"))
-		setDialogueEndHandler(dialogue,()=>{
-			nextScreen()
+	let gansElement = document.querySelector("#muis-s2");
+    gansElement.addEventListener('animationend', () => {
+		createDialogueObject("dialogue/scherm2.json").then((dialogue)=>{
+			assignDialogueToContainer(dialogue,document.getElementById("muistekst-s2"))
+			setDialogueEndHandler(dialogue,()=>{
+				nextScreen()
+			})
 		})
 	})
 })
@@ -17,16 +20,26 @@ onScreen(3, ()=>{
 })
 
 onScreen(4, ()=>{
-	createDialogueObject("dialogue/scherm4.json").then((dialogue)=>{
-		assignDialogueToContainer(dialogue,document.getElementById("uiltekst-s4"))
-		setDialogueEndHandler(dialogue,()=>{
-			nextScreen()
+	let gansElement = document.querySelector("#uil-s4");
+    gansElement.addEventListener('animationend', () => {
+		createDialogueObject("dialogue/scherm4.json").then((dialogue)=>{
+			assignDialogueToContainer(dialogue,document.getElementById("uiltekst-s4"))
+			setDialogueEndHandler(dialogue,()=>{
+				nextScreen()
+			})
 		})
 	})
 })
 
 //WE SKIPPEN HET SPEL EFFE
-onScreen(5, nextScreen)
+onScreen(5, ()=>{
+	function callback(base64) {
+		console.log('the image was captured');
+		console.log(base64);
+	  }
+	  
+	  startCamera(false, '#video', '#canvas', '#capture', callback);
+})
 onScreen(6, nextScreen)
 onScreen(7, nextScreen)
 

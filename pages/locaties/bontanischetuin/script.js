@@ -43,9 +43,11 @@ onScreen(5, ()=>{
 	  startCamera(true, '#video', '#canvas', '#capture', callback);
 })
 onScreen(6, ()=>{
-	
+	setTimeout(nextScreen, 200)
 })
-onScreen(7, nextScreen)
+onScreen(7, ()=>{
+	setTimeout(nextScreen, 200)
+})
 
 onScreen(8, ()=>{
 	createDialogueObject("dialogue/scherm8.json").then((dialogue)=>{

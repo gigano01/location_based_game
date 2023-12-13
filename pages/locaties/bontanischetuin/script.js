@@ -38,7 +38,7 @@ onScreen(5, ()=>{
 		console.log(base64);
 	  }
 	  
-	  startCamera(false, '#video', '#canvas', '#capture', callback);
+	  startCamera(true, '#video', '#canvas', '#capture', callback);
 })
 onScreen(6, nextScreen)
 onScreen(7, nextScreen)

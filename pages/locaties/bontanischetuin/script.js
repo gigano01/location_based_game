@@ -33,14 +33,18 @@ onScreen(4, ()=>{
 
 //WE SKIPPEN HET SPEL EFFE
 onScreen(5, ()=>{
+	
 	function callback(base64) {
+		nextScreen()
 		console.log('the image was captured');
 		console.log(base64);
 	  }
 	  
 	  startCamera(true, '#video', '#canvas', '#capture', callback);
 })
-onScreen(6, nextScreen)
+onScreen(6, ()=>{
+	
+})
 onScreen(7, nextScreen)
 
 onScreen(8, ()=>{

@@ -80,7 +80,7 @@
 }
 
 #capture {
-	bottom: 30dvh;
+	bottom: 20dvh;
 	left: 50%;
 	transform: translateX(-50%);
 }

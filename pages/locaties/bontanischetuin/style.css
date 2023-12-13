@@ -89,7 +89,7 @@
 	top: 50%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
-	minwidth: 100dvw;
+	min-width: 100dvw;
 	height: 100dvw; /*same height as width*/
 }
 

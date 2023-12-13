@@ -72,8 +72,8 @@
 
 /* scherm 5 */
 #video {
-	top: -50%;
-	bottom: -50%;
+	top: 50%;
+	bottom: 50%;
 	transform: translateX(-50%) translateY(-50%);
 }
 

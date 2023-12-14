@@ -36,8 +36,31 @@
     height: 110px;
     top: 33dvh;
     left: 75%;
-    transform: translate3d(-50%, -50%, 0);  
+    transform: translate3d(-50%, -50%, 0); 
+
+    animation: uilVliegen 1.5s ease-in-out forwards, uilRotate0 2s alternate 0.5s ease-in-out infinite;
 }
+
+@keyframes uilVliegen {
+    0% {
+        scale: 50%;
+        left: 160%;
+    }
+
+    100% {
+        left: 75%;
+    }
+}
+
+@keyframes uilRotate0 {
+    0% {
+        transform: translate3d(-50%, -50%, 0) scaleX(-1) rotate(0deg);
+    }
+    100% {
+        transform: translate3d(-50%, -50%, 0) scaleX(-1) rotate(-3deg);
+    }
+}
+
 /* scherm 4 */
 #uil-s4{
     top: 70dvh;

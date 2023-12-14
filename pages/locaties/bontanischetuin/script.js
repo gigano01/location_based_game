@@ -11,10 +11,9 @@ onScreen(2, ()=>{
 	})
 })
 
-onScreen(3, ()=>{
-	//TODO animatie :D
-	setTimeout(nextScreen,800)
-})
+// onScreen(3, ()=>{
+// 	setTimeout(nextScreen,800)
+// })
 
 onScreen(4, ()=>{
 	createDialogueObject("dialogue/scherm4.json").then((dialogue)=>{

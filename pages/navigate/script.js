@@ -49,6 +49,7 @@ async function drawpage() {
 	let markerEnd = null;
 	let markerGPS = null;
 	
+	
 	// deze functie wordt opgeroepen elke keer een nieuwe locatie doorkomt
 	function success(position) {
 		if (map) {

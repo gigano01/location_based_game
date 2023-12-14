@@ -94,6 +94,27 @@
 }
 
 /* scherm 5 */
+#video {
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	min-width: 100dvw;
+	height: 100dvw; /*same height as width*/
+}
+
+#capture {
+	bottom: 20dvh;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#canvas{
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	min-width: 100dvw;
+	height: 100dvw; /*same height as width*/
+}
 
 /* scherm 6 */
 #uil-s6{

@@ -9,10 +9,38 @@
     bottom: 0dvh;
     left: 30%;
     transform: translate3d(-50%, -50%, 0);
+
+    animation: wasbeerEntrance 1.4s ease-in-out forwards, wasbeerRotate 1s alternate 1ms ease-in-out infinite;;
 }
 #wasbeertekst-s3{
     bottom: 34dvh;
 }
+
+@keyframes wasbeerEntrance {
+    0% {
+        scale: 90%;
+        top: 70dvh;
+        left: 30%;
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+        top: 75dvh;
+        left: 30%;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes wasbeerRotate {
+    0% {
+        transform: translate3d(-50%, -50%, 0) rotate(3deg);
+    }
+    100% {
+        transform: translate3d(-50%, -50%, 0) rotate(-3deg);
+    }
+}
+
 /* scherm 4 */
 #kader-s4{
     width: 305px;
@@ -93,15 +121,19 @@
     font-size: 64px;
 }
 #compostpot-s5{
-    top: 93dvh;
+    bottom: -2dvh;
     left: 50%;
-    transform: translate3d(-50%, -50%, 0);  
+    transform: translate3d(-50%, 0, 0) scaleX(700%);  
 }
 #vuilbakgroen-s5{
     top: 50dvh;
     left: 50%;
     height: 133px;
     transform: translate3d(-50%, -50%, 0);  
+}
+
+.afval-s5{
+	display: none;
 }
 /* scherm 6 */
 #kader-s6{
@@ -115,11 +147,39 @@
     left: 60%;
     transform: translate3d(-50%, -50%, 0);   
     z-index: 999;
+
+    animation: wasbeerEntrance1 1.5s ease-in-out forwards, wasbeerRotate1 1.5s alternate 1ms ease-in-out infinite;
 }
 #wasbeertekst-s6{
     bottom: 40dvh;
 	z-index: 300; 
 }
+
+@keyframes wasbeerEntrance1 {
+    0% {
+        scale: 40%;
+        top: 150dvh;
+        left: 50%;
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+        top: 75dvh;
+        left: 50%;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes wasbeerRotate1 {
+    0% {
+        transform: translate3d(-50%, -50%, 0) rotate(3deg);
+    }
+    100% {
+        transform: translate3d(-50%, -50%, 0) rotate(-3deg);
+    }
+}
+
 /* scherm 7 */
 #wasbeer-s7{
     width: 318px;

@@ -5,6 +5,64 @@
 		}
 	],
 	"settings": {
-		"hide-files.files": []
+		"hide-files.files": [],
+		"folder-color.pathColors": [
+			{
+				"folderPath": "location_based_game\\pages\\locaties\\begijnenhof\\",
+				"color": "foldercolorizer.LightSalmon"
+			},
+			{
+				"folderPath": "location_based_game\\pages\\locaties\\bontanischetuin\\",
+				"color": "foldercolorizer.LightSalmon2"
+			},
+			{
+				"folderPath": "location_based_game\\pages\\locaties\\KMSKA\\",
+				"color": "foldercolorizer.Coral"
+			},
+			{
+				"folderPath": "location_based_game\\pages\\locaties\\meir\\",
+				"color": "foldercolorizer.SandyTan"
+			},
+			{
+				"folderPath": "location_based_game\\pages\\locaties\\speeltuin\\",
+				"color": "foldercolorizer.cyan"
+			},
+			{
+				"folderPath": "location_based_game\\pages\\locaties\\theaterplein\\",
+				"color": "foldercolorizer.LemonChiffon"
+			},
+			{
+				"folderPath": "location_based_game\\plugins\\",
+				"color": "foldercolorizer.olive"
+			},
+			{
+				"folderPath": "location_based_game\\scripts\\",
+				"color": "foldercolorizer.Gold"
+			},
+			{
+				"folderPath": "location_based_game\\styles\\",
+				"color": "foldercolorizer.emerald"
+			},
+			{
+				"folderPath": "location_based_game\\media\\",
+				"color": "foldercolorizer.PaleTaupe"
+			},
+			{
+				"folderPath": "location_based_game\\mapbox\\",
+				"color": "foldercolorizer.orange"
+			},
+			{
+				"folderPath": "location_based_game\\data\\",
+				"color": "foldercolorizer.lime"
+			},
+			{
+				"folderPath": "location_based_game\\cheat\\",
+				"color": "foldercolorizer.ruby"
+			},
+			{
+				"folderPath": "location_based_game\\pages\\testpages\\",
+				"color": "foldercolorizer.Ecru"
+			}
+		]
 	}
 }

@@ -1,46 +1,46 @@
 {
 	"begijnhof": {
 		"eerste-keer": true,
-		"vraag": "Welk proces wordt gebruikt om oud papier opnieuw te gebruiken? ",
-		"juist-antwoord":"Recycling",
-		"foute-antwoorden": ["Compostering","Verdamping ","fouter dan fout", "rood licht"],
-		"tip": "het is een persoon",
+		"vraag": "Welk broeikasgas draagt het meest bij aan de opwarming van de aarde? ",
+		"juist-antwoord":"CO2",
+		"foute-antwoorden": ["Methaan","Stikstofoxide ","Waterdamp", "Zuurstof"],
+		"tip": "Het is een gas dat uit auto's komt en wordt gemaakt als we dingen verbranden, zoals benzine in motoren.",
 		"mapLocationID": "begijnhof-02"
 	},
 
 	"theaterplein": {
 		"eerste-keer": false,
-		"vraag": "Welke van deze acties kan helpen om de biodiversiteit in een stad te vergroten? ",
-		"juist-antwoord":"Verschillende habitats creëren zoals bossen, bloemen velden",
-		"foute-antwoorden": ["Het gebruik van pesticiden om onkruid te bestrijden","Het planten van één soort plant","fouteraa dan fouta", "rood lichtaaa"],
-		"tip": "het zegt letterlijk welke juist is",
+		"vraag": "Wat is een belangrijk voordeel van het planten van bomen voor het milieu?",
+		"juist-antwoord":"Halen CO2 uit de lucht",
+		"foute-antwoorden": ["Ze houden regen tegen","Zwaartekracht wordt sterker","Ze zijn de thuis van dieren", "Ze maken de wereld groener"],
+		"tip": "Ze zuiveren de lucht voor ons.",
 		"mapLocationID": "theaterplein-02"
 	},
 
 	"botanischetuin": {
 		"eerste-keer": false,
-		"vraag": "Welk gas wordt door bomen opgenomen tijdens het fotosyntheseproces?",
-		"juist-antwoord":"Koolstofdioxide",
-		"foute-antwoorden": ["Zuurstof","Stikstof","fouteraa dan fouta", "rood lichtaaa"],
-		"tip": "het zegt letterlijk welke juist is",
+		"vraag": "Welk gas wordt door bomen aangemaakt tijdens het fotosyntheseproces?",
+		"juist-antwoord":"Zuurstof",
+		"foute-antwoorden": ["CO2","Stikstof","Groenstof", "Luchtdioxide", "Boomgas"],
+		"tip": "Tijdens fotosynthese maken bomen iets wat we allemaal nodig hebben om te ademen.",
 		"mapLocationID": "botanischetuin-02"
 	},
 
 	"speeltuin": {
 		"eerste-keer": false,
-		"vraag": "Welk afval kan worden omgezet in compost?",
-		"juist-antwoord":"Voedselresten",
-		"foute-antwoorden": ["Plastic flessen","Aluminium blikjes","fouteraa dan fouta", "rood lichtaaa"],
-		"tip": "het zegt letterlijk welke juist is",
+		"vraag": "Welk type afval kan worden hergebruikt in compost om de bodem te verbeteren?",
+		"juist-antwoord":" Gft-afval (groente-, fruit- en tuinafval)",
+		"foute-antwoorden": ["Plastic flessen","Aluminium blikjes","Restafval", "Klein gevaarlijk afval"],
+		"tip": "Denk aan iets wat je vaak in de keuken vindt en dat afkomstig is van natuurlijke bronnen.",
 		"mapLocationID": "speeltuin-02"
 	},
 
-	"KMSKA": {
+	"kmska": {
 		"eerste-keer": false,
-		"vraag": "Welke factor draagt bij aan het behoud van groene ruimtes in de stad?",
-		"juist-antwoord":" Het creëren van stedelijke parken en groene zones",
-		"foute-antwoorden": ["Het verwijderen van bomen om ruimte te maken voor gebouwen","Het gebruik van kunstgras in alle buitenruimtes","fouteraa dan fouta", "rood lichtaaa"],
-		"tip": "het zegt letterlijk welke juist is",
+		"vraag": "Wat helpt om parken en groene plekken in de stad te houden?",
+		"juist-antwoord":"Bomen en groen planten",
+		"foute-antwoorden": ["Groene plekken water geven","Veel auto's","Betonnen gebouwen", "Groententuintje", "Kunstgras"],
+		"tip": "Wat doe je als beloning in dit spel?",
 		"mapLocationID": "KMSKA-02"
 	}
 

@@ -3,9 +3,32 @@
     top: 70dvh;
     left: 70%;
     transform: translate3d(-50%, -50%, 0) scaleX(-1);
+
+    animation: muisEntrance 1.5s ease-in-out forwards, muisRotate 2s alternate 0.5s ease-in-out infinite;
 }
+
 #muistekst-s2{
     bottom: 40dvh;
+}
+
+@keyframes muisEntrance {
+    0% {
+        scale: 50%;
+        left: 160%;
+    }
+
+    100% {
+        left: 75%;
+    }
+}
+
+@keyframes muisRotate {
+    0% {
+        transform: translate3d(-50%, -50%, 0) scaleX(-1) rotate(0deg);
+    }
+    100% {
+        transform: translate3d(-50%, -50%, 0) scaleX(-1) rotate(-3deg);
+    }
 }
 
 /* scherm 3 */
@@ -19,12 +42,56 @@
 #uil-s4{
     top: 70dvh;
     left: 75%;
-    transform: translate3d(-50%, -50%, 0);  
+    transform: translate3d(-50%, -50%, 0);
+
+    animation: uilLanding 1.5s ease-in-out forwards, uilRotate alternate 1s ease-in-out infinite;
 }
 #uiltekst-s4{
     bottom: 49dvh;
 }
+
+@keyframes uilLanding {
+    0% {
+        scale: 80%;
+        top: 60%;
+    }
+
+    100% {
+        left: 67%;
+    }
+}
+
+@keyframes uilRotate {
+    0% {
+        transform: translate3d(-50%, -50%, 0) scaleX(-1) rotate(3deg);
+    }
+    100% {
+        transform: translate3d(-50%, -50%, 0) scaleX(-1) rotate(-3deg);
+    }
+}
+
 /* scherm 5 */
+#video {
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	min-width: 100dvw;
+	height: 100dvw; /*same height as width*/
+}
+
+#capture {
+	bottom: 20dvh;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#canvas{
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	min-width: 100dvw;
+	height: 100dvw; /*same height as width*/
+}
 
 /* scherm 6 */
 #uil-s6{
@@ -103,9 +170,32 @@
 /* scherm 8 */
 #uil-s8{
     top: 70dvh;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 0);  
+    left: 30%;
+    transform: translate3d(-50%, -50%, 0);
+    
+    animation: uilEntrance 1.5s ease-in-out forwards, uilRotate1 1s alternate 0.5s ease-in-out infinite;
 }
+
+@keyframes uilEntrance {
+    0% {
+        scale: 50%;
+        left: -100%;
+    }
+
+    100% {
+        right: 3%;
+    }
+}
+
+@keyframes uilRotate1 {
+    0% {
+        transform: translate3d(-50%, -50%, 0) rotate(3deg);
+    }
+    100% {
+        transform: translate3d(-50%, -50%, 0) rotate(-3deg);
+    }
+}
+
 #uiltekst-s8{
     bottom: 49dvh;
 }

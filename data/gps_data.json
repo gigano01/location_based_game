@@ -1,4 +1,8 @@
 [
+    {
+        "coord": {"latitude": 50.8493824, "longitude": 4.390912},
+        "instructie": "testerdetesttest"
+    },
 {
     "coord": {"latitude": 51.22717252375627, "longitude": 4.417239943308896},
     "instructie": "Loop door de Pretstraat en volg de straat tot aan de Cassiersstraat"

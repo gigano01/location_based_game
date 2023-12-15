@@ -3,8 +3,8 @@
         "name": "testlocatie1",
         "distance": 1234,
         "minimumRadius": 4,
-        "coordinates": {"latitude": 51.22245352642213, "longtitude": 4.414333407277695},
-        "nextPage": ""
+        "coordinates": {"latitude": 51.227689732536845 , "longtitude": 4.4214824372436965},
+        "nextPage": "kranen/kluis/index.html?id=begijnhof"
     },
 
     "begijnhof-01": {
@@ -20,7 +20,7 @@
         "distance": 1234,
         "minimumRadius": 20,
         "coordinates": {"latitude": 51.222551, "longtitude": 4.414346},
-        "nextPage": "locaties/begijnhof/index.html"
+        "nextPage": "locaties/begijnenhof/index.html"
     },
 
 	"theaterplein-01": {
@@ -71,20 +71,20 @@
         "nextPage": "locaties/speeltuin/index.html"
     },
 
-    "KMSKA-01": {
+    "kmska-01": {
         "name": "KMSKA",
         "distance": 1234,
         "minimumRadius": 20,
         "coordinates": {"latitude": 51.209911, "longtitude":4.394259},
-        "nextPage": "kranen/kluis/index.html?id=KMSKA"
+        "nextPage": "kranen/kluis/index.html?id=kmska"
     },
 
-    "KMSKA-02": {
+    "kmska-02": {
         "name": "KMSKA",
         "distance": 1234,
         "minimumRadius": 20,
         "coordinates": {"latitude": 51.208896, "longtitude":4.394087},
-        "nextPage": "locaties/KMSKA/index.html"
+        "nextPage": "locaties/kmska/index.html"
     }
 
 

@@ -14,9 +14,9 @@ onScreen(2, ()=>{
 	})
 })
 
-// onScreen(3, ()=>{
-// 	setTimeout(nextScreen,800)
-// })
+onScreen(3, ()=>{
+ 	setTimeout(nextScreen,800)
+})
 
 onScreen(4, ()=>{
 	let gansElement = document.querySelector("#uil-s4");
@@ -32,11 +32,11 @@ onScreen(4, ()=>{
 
 //WE SKIPPEN HET SPEL EFFE
 onScreen(5, ()=>{
-	
 	function callback(base64) {
 		nextScreen()
 		console.log('the image was captured');
 		console.log(base64);
+		setTimeout(nextScreen,1200)
 	  }
 	  
 	  startCamera(true, '#video', '#canvas', '#capture', callback);

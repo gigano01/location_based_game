@@ -1,7 +1,7 @@
 // iframe
 
 const iframeElement = document.querySelector('#iframe');
-iframeElement.src = getNextPage();
+iframeElement.src = "pages/start";
 
 // simulator
 

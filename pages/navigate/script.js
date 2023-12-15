@@ -49,6 +49,7 @@ async function drawpage() {
 	let markerEnd = null;
 	let markerGPS = null;
 	
+	
 	// deze functie wordt opgeroepen elke keer een nieuwe locatie doorkomt
 	function success(position) {
 		if (map) {
@@ -76,7 +77,7 @@ async function drawpage() {
 		// de afstand tussen mijn locatie en die van mijn doel is minder dan 20 meter, rekeninghoudend met de accuraatheid van gps?
 		if (distance < successRadiusInMeter + Math.min(position.coords.accuracy/2, successRadiusInMeter)) {
 			// navigeer naar de pagina die getoond moet worden als ik in 20 meter van locatie ben
-			location.assign(`../${nextPage}/index.html`)
+			location.assign(`../${nextPage}`)
 		}
 	}
 	
@@ -111,6 +112,20 @@ async function drawpage() {
 		console.log('hallo')
 	}
 }
+fetch('../../data/gps_data.json')
+    .then(response => response.json())
+    .then(data => {
+        // Get the current location
+        navigator.geolocation.getCurrentPosition(position => {
+            // Compare the current location with the coordinates in the JSON object
+            data.forEach(item => {
+                if (item.coord.latitude === position.coords.latitude && item.coord.longitude === position.coords.longitude) {
+                    // Update the HTML content of the box with the corresponding instruction
+                    document.getElementById('instructionbox').innerHTML = item.instructie;
+                }
+            });
+        });
+    });
 
 drawpage()
 

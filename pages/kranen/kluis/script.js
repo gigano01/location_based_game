@@ -88,6 +88,7 @@ onScreen(6, ()=>{
 		console.log(ansArray)
 		localStorage.setItem("correct-answer", random1)
 		localStorage.setItem("answer-array",JSON.stringify(ansArray))
+		correctAnswer = random1
 	}
 
 	answer1.textContent = ansArray[0]
@@ -215,7 +216,7 @@ docReady(async ()=>{
 	quizData = vaultData[locationID]
 	//console.log(quizData)
 	if (quizData === undefined) {
-		console.error("invalid location id")
+		console.error(`invalid vault id ${locationID}`)
 	}
 	gotoScreen(1)
 })

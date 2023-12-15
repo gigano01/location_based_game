@@ -23,6 +23,14 @@
         "nextPage": "locaties/begijnhof/index.html"
     },
 
+    "meir": {
+        "name": "meir",
+        "distance": 1234,
+        "minimumRadius": 20,
+        "coordinates": {"latitude": 51.218476, "longtitude": 4.410314},
+        "nextPage": "locaties/meir/index.html"
+    },
+
 	"theaterplein-01": {
         "name": "theaterplein",
         "distance": 1234,
@@ -67,7 +75,7 @@
         "name": "speeltuin",
         "distance": 1234,
         "minimumRadius": 20,
-        "coordinates": {"latitude": 51.215041, "longtitude":4.396301},
+        "coordinates": {"latitude": 51.215047, "longtitude":4.396962},
         "nextPage": "locaties/speeltuin/index.html"
     },
 

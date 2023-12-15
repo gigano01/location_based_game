@@ -150,6 +150,87 @@
 #muisjetekst-s8{
     bottom: 34dvh;
 }
+/* scherm9 */
+#fontijn-s9{
+    top: 70dvh;
+    left: 20%;
+    transform: translate3d(-50%, -50%, 0);
+}
+#boompje-1-s9 {
+    top: 10dvh;
+    left: 90%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+#boompje-2-s9 {
+    top: 20dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+#boompje-3-s9 {
+    top: 80dvh;
+    left: 10%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+
+  #boompje-4-s9 {
+    top: 40dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+
+  #boompje-5-s9 {
+    top: 50dvh;
+    left: 80%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+
+  #boompje-6-s9 {
+    top: 60dvh;
+    left: 20%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+
+  #boompje-7-s9 {
+    top: 70dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+
+  #boompje-8-s9 {
+    top: 80dvh;
+    left: 80%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+
+  #boompje-9-s9 {
+    top: 30dvh;
+    left: 20%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+
+  #boompje-10-s9 {
+    top: 40dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+
+  #boompje-11-s9 {
+    top: 50dvh;
+    left: 80%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+
+  #boompje-12-s9 {
+    top: 60dvh;
+    left: 20%;
+    transform: translate3d(-50%, -50%, 0);
+  }
+
+  #boompje-13-s9 {
+    top: 70dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+  }
 /* scherm10 */
 #muisjetekst-s10{
     bottom: 34dvh;

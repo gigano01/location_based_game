@@ -6,16 +6,44 @@
 	animation: zoomin 2s ease-in-out 1s 1 normal forwards;
 }
 
-
+/* scherm 1 */
 #muisje-s1 {
 	bottom: 24dvh;
 	left: 45vw;
+
+    animation: muisEntrance 1.5s ease-in-out forwards, muisRotate 1.5s alternate 1ms ease-in-out infinite;
 }
 
 #muisje-s1-tekstbubbel {
 	bottom: 47dvh;
 }
 
+@keyframes muisEntrance {
+    0% {
+        scale: 100%;
+		bottom: 13dvh;
+        left: 150%;
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+		bottom: 13dvh;
+        left: 70%;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes muisRotate {
+    0% {
+        transform: translate3d(-50%, -50%, 0) rotate(3deg);
+    }
+    100% {
+        transform: translate3d(-50%, -50%, 0) rotate(-3deg);
+    }
+}
+
+/* scherm 2 */
 #muisje-s2 {
 	left: 47vw;
 	bottom: 22dvh;
@@ -25,31 +53,81 @@
   	transform: scaleX(-1);
 }
 
+/* scherm 4*/
 #muisje-s4{
 	left: -12px;
 	bottom: 13dvh;
+
+	animation: muisEntrance1 1.5s ease-in-out forwards, muisRotate1 1.5s alternate 1ms ease-in-out infinite;
 }
 
 #muisje-s4-tekstbubbel{
 	bottom: 38dvh;
 }
 
+@keyframes muisEntrance1 {
+    0% {
+        scale: 100%;
+		bottom: 13dvh;
+        left: -100%;
+    }
 
+    100% {
+		bottom: 1dvh;
+        left: 22%;
+    }
+}
+
+@keyframes muisRotate1 {
+    0% {
+        transform: translate3d(-50%, -50%, 0) rotate(2deg);
+    }
+    100% {
+        transform: translate3d(-50%, -50%, 0) rotate(-3deg);
+    }
+}
+
+/* scherm 5*/
 #muisje-s5 {
 	left: 50vw;
 	bottom: 2dvh;
 	z-index:20;
-	
 
 	/*flip de img*/
 	-webkit-transform: scaleX(-1.3) scaleY(1.3);
   	transform: scaleX(-1.3) scaleY(1.3);
+
+	/* animation */
+	  animation: muisEntrance2 1.5s ease-in-out forwards, muisRotate2 1.5s alternate 1ms ease-in-out infinite;
 }
 
 #muisje-s5-tekstbubbel{
 	bottom: 30dvh;
 }
 
+@keyframes muisEntrance2 {
+    0% {
+		bottom: 1dvh;
+        left: 100%;
+    }
+
+    100% {
+		scale: 130%;
+		bottom: 1dvh;
+        left: 60%;
+    }
+}
+
+@keyframes muisRotate2 {
+    0% {
+		transform: scaleX(-1.3) scaleY(1.3) rotate(-3deg);; /*flip img*/
+    }
+    100% {
+		transform: scaleX(-1.3) scaleY(1.3) rotate(3deg); /*flip img*/
+    }
+}
+
+/* scherm 6*/
 #vraag{
 	top:20dvh;
 	background-color: var(--game-groen);
@@ -72,18 +150,43 @@
 	padding: 15px;
 }
 
-#muisje-s7-tekstbubbel {
-	bottom: 29dvh;
-}
-
+/* scherm 7*/
 #muisje-s7 {
 	left: 52vw;
 	bottom: 2dvh;
 	
-
 	/*flip de img*/
 	-webkit-transform: scaleX(-1.5) scaleY(1.5);
   	transform: scaleX(-1.5) scaleY(1.5);
+
+	/* animation */
+	  animation: muisEntrance3 1s ease-in-out forwards, muisRotate3 1.5s alternate 1ms ease-in-out infinite;
+}
+
+#muisje-s7-tekstbubbel {
+	bottom: 29dvh;
+}
+
+@keyframes muisEntrance3 {
+    0% {
+		bottom: 1dvh;
+        left: 100%;
+    }
+
+    100% {
+		scale: 130%;
+		bottom: 1dvh;
+        left: 60%;
+    }
+}
+
+@keyframes muisRotate3 {
+    0% {
+		transform: scaleX(-1.3) scaleY(1.3) rotate(-3deg);; /*flip img*/
+    }
+    100% {
+		transform: scaleX(-1.3) scaleY(1.3) rotate(3deg); /*flip img*/
+    }
 }
 
 #rood-vak {
@@ -106,16 +209,43 @@
 	text-align: center;
 }
 
+/* scherm 8*/
 #muisje-s8 {
 	left: 5vw;
 	bottom: 8dvh;
 	/*flip de img*/
 	-webkit-transform: scaleX(2) scaleY(2);
   	transform: scaleX(2) scaleY(2);
+
+ /* animation */
+	animation: muisEntrance4 1s ease-in-out forwards, muisRotate4 1.5s alternate 1ms ease-in-out infinite;
 }
 
 #muisje-s8-tekstbubbel {
 	bottom: 40dvh;
+}
+
+@keyframes muisEntrance4 {
+    0% {
+		scale: 40%;
+		bottom: 1dvh;
+        left: -120%;
+    }
+
+    100% {
+		scale: 100%;
+		bottom: 9dvh;
+        left: -10%;
+    }
+}
+
+@keyframes muisRotate4 {
+    0% {
+		transform: scaleX(2) scaleY(2) rotate(-3deg); /*flip img*/
+    }
+    100% {
+		transform: scaleX(2) scaleY(2) rotate(3deg); /*flip img*/
+    }
 }
 
 .code-nr {
@@ -145,16 +275,19 @@
 	transform: translateX(-50%);
 }
 
-#muisje-s12 {
-	bottom: calc(15dvh + 250px);
-}
-
 #kraan-s12, #kraan-s13 {
 	bottom: 15dvh;
 	left: 17vw;
 	--transform-origin: 49%;
 	transform: rotate(90rad);
 	--animation: rotate 10s ease-in-out 1s 1 normal forwards;
+}
+
+/* scherm12 */
+#muisje-s12 {
+	bottom: calc(15dvh + 250px);
+		/* animation */
+		animation: muisLopen 1.5s ease-in-out forwards, muisRotate5 1.5s alternate 1ms ease-in-out infinite;
 }
 
 #muisje-s12-tekstbubbel {
@@ -166,17 +299,63 @@
 	left: 50%;
 	transform: translateX(-50%);
 }
+@keyframes muisLopen{
+    0% {
+		left: -120%;
+    }
+    100% {
+		left: 30%;
+    }
+}
 
+@keyframes muisRotate5 {
+    0% {
+		transform: rotate(-6deg);
+    }
+    100% {
+		transform: rotate(3deg);
+    }
+}
+
+/* scherm13 */
 #muisje-s13 {
 	transform: scale(1.3);
 	left: -20px;
+	/* animation */
+	animation: muisJump 1.5s ease-in-out forwards, muisRotate6 1.5s alternate 1ms ease-in-out infinite;
 }
 
 #muisje-s13-tekstbubbel {
 	bottom: 40dvh;
 }
 
+@keyframes muisJump{
+	0% {
+		scale: 20%;
+        top: 150dvh;
+        left: -100%;
+        transform: scale(1.3) rotate(0deg);
 
+    }
+
+    100% {
+		scale: 130%;
+        top: 60dvh;
+        left: -10%;
+        transform: scale(1.3) rotate(0deg);
+    }
+}
+
+@keyframes muisRotate6 {
+    0% {
+		transform: rotate(-3deg);
+    }
+    100% {
+		transform: rotate(3deg);
+    }
+}
+
+/* Zoom-in animatie Kluis */
 @keyframes zoomin {
 	0% {
 		transform: translate3d(-50%, -50%, 0) scale(100%);

@@ -88,6 +88,7 @@ onScreen(6, ()=>{
 		console.log(ansArray)
 		localStorage.setItem("correct-answer", random1)
 		localStorage.setItem("answer-array",JSON.stringify(ansArray))
+		correctAnswer = random1
 	}
 
 	answer1.textContent = ansArray[0]
@@ -137,6 +138,8 @@ onScreen(7, ()=>{
 					dialogue.container.onclick = null //supper hacky lol
 					if (wrongCount >= 3){
 						console.log("lol")
+						localStorage.removeItem("correct-answer")
+						localStorage.removeItem("answer-array")
 						nextScreen()
 					} else {
 						gotoScreen(6)
@@ -211,11 +214,15 @@ docReady(async ()=>{
 	const vaultData = await fetched.json()
 	const locationID = getQueryParam("id")
 
+	//prevent booboos
+	localStorage.removeItem("correct-answer")
+	localStorage.removeItem("answer-array")
+
 	//console.log(vaultData)
 	quizData = vaultData[locationID]
 	//console.log(quizData)
 	if (quizData === undefined) {
-		console.error("invalid location id")
+		console.error(`invalid vault id ${locationID}`)
 	}
 	gotoScreen(1)
 })

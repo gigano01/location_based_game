@@ -11,6 +11,9 @@ async function load_json_data() {
 //Javascript is hier echt dom om, maar dit is de beste manier om het te doen :c
 async function drawpage() {
 	const json_data = await load_json_data()
+	const gps_data_raw = await fetch('../../data/gps_data.json')
+	const gps_data = await gps_data_raw.json()
+
 
 	const locationData = json_data[getQueryParam("locationID")]
 
@@ -79,6 +82,17 @@ async function drawpage() {
 			// navigeer naar de pagina die getoond moet worden als ik in 20 meter van locatie ben
 			location.assign(`../${nextPage}`)
 		}
+
+		//update de navigator
+		 // Compare the current location with the coordinates in the JSON object
+		 gps_data.forEach(item => {
+			var distance = getDistance(position.coords.latitude, position.coords.longitude, item.coord.latitude, item.coord.longitude).distance;
+			if (distance <= 60) {
+				// Update the HTML content of the box with the corresponding instruction
+				console.log('hallo dit werkt')
+				document.getElementById('instructionbox').innerHTML = item.instructie;
+			}
+		});
 	}
 	
 	// wanneer geen gps beschikbaar is
@@ -112,6 +126,14 @@ async function drawpage() {
 		console.log('hallo')
 	}
 }
+
+drawpage()
+
+/*  OUDE CODE
+load_json_data().then( (json_data) => {
+		//
+)
+
 fetch('../../data/gps_data.json')
     .then(response => response.json())
     .then(data => {
@@ -129,10 +151,4 @@ fetch('../../data/gps_data.json')
         });
     });
 
-drawpage()
-
-/*  OUDE CODE
-load_json_data().then( (json_data) => {
-		//
-)
 */

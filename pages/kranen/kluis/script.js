@@ -138,6 +138,8 @@ onScreen(7, ()=>{
 					dialogue.container.onclick = null //supper hacky lol
 					if (wrongCount >= 3){
 						console.log("lol")
+						localStorage.removeItem("correct-answer")
+						localStorage.removeItem("answer-array")
 						nextScreen()
 					} else {
 						gotoScreen(6)
@@ -211,6 +213,10 @@ docReady(async ()=>{
 	const fetched = await fetch("../../../data/vault_data.json")
 	const vaultData = await fetched.json()
 	const locationID = getQueryParam("id")
+
+	//prevent booboos
+	localStorage.removeItem("correct-answer")
+	localStorage.removeItem("answer-array")
 
 	//console.log(vaultData)
 	quizData = vaultData[locationID]

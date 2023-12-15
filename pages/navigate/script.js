@@ -119,7 +119,9 @@ fetch('../../data/gps_data.json')
         navigator.geolocation.getCurrentPosition(position => {
             // Compare the current location with the coordinates in the JSON object
             data.forEach(item => {
-                if (item.coord.latitude === position.coords.latitude && item.coord.longitude === position.coords.longitude) {
+                var distance = getDistance(position.coords.latitude, position.coords.longitude, item.coord.latitude, item.coord.longitude).distance;
+                if (distance <= 20) {
+					console.log('hallo dit werkt')
                     // Update the HTML content of the box with the corresponding instruction
                     document.getElementById('instructionbox').innerHTML = item.instructie;
                 }

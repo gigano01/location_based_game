@@ -74,8 +74,8 @@
     "speeltuin-02": {
         "name": "speeltuin",
         "distance": 1234,
-        "minimumRadius": 20,
-        "coordinates": {"latitude": 51.215047, "longtitude":4.396962},
+        "minimumRadius": 50,
+        "coordinates": {"latitude": 51.214932, "longtitude":4.396567},
         "nextPage": "locaties/speeltuin/index.html"
     },
 

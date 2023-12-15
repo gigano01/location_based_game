@@ -171,7 +171,7 @@ onScreen(7, ()=>{
 	createDialogueObject("dialogue/scherm7.json").then((dialogue)=>{
 		assignDialogueToContainer(dialogue,document.getElementById("wasbeertekst-s7"))
 		setDialogueEndHandler(dialogue,()=>{
-			const nextlocID = "KMSKA-01"
+			const nextlocID = "kmska-01"
 			location.assign(`../../navigate/index.html?locationID=${nextlocID}`)
 		})
 	})

@@ -1,194 +1,187 @@
 [
     {
-        "coord": {"latitude": 51.23005745675639, "longitude": 4.4174509727741365},
-        "instructie": "testerdetesttest"
+        "coord": {"latitude": 51.22980830664979, "longitude": 4.417765401278467},
+        "instructie": "Sta je voor Campus Viaduct van AP? Steek de straat over en ga linksaf naar De Pretstraat"
+    }, 
+    {
+        "coord": {"latitude": 51.22975008937495, "longitude": 4.417219206432973},
+        "instructie": "Loop door De Pretstraat"
     },
-{
-    "coord": {"latitude": 51.22717252375627, "longitude": 4.417239943308896},
-    "instructie": "Loop door de Pretstraat en volg de straat tot aan de Cassiersstraat"
-},
-{
-    "coord": {"latitude": 51.224518364625965, "longitude": 4.415027024652579},
-    "instructie": "Ga naar links en loop rechtdoor tot de Italiëlei"
-},
-{
-    "coord": {"latitude": 51.22461376845312, "longitude": 4.4142952702238905},
-    "instructie": "Steek over aan de lichten en ga daarna naar links"
-},
-{
-    "coord": {"latitude": 51.2241390916154, "longitude": 4.4140588533402125},
-    "instructie": "Ga naar rechts naar de Paardenmarkt"
-},
-{
-    "coord": {"latitude": 51.22461376845312, "longitude": 4.4142952702238905},
-    "instructie": "Ga naar links de Rodestraat door"
-},
-{
-    "coord": {"latitude": 51.22249781880568, "longitude": 4.413726739959776},
-    "instructie": "Ga naar links de Rodestraat door weg van de Paardenmarkt"
-},
-{
-    "coord": {"latitude": 51.22234121943717, "longitude": 4.413690474706661},
-    "instructie": "Aan je linkerkant is het Begijnhof, loop het steegje door"
-},
-{
-    "coord": {"latitude": 51.22234121943717, "longitude": 4.413690474706661},
-    "instructie": "Klaar met de opdracht? Ga terug naar de straat"
-},
-{
-    "coord": {"latitude": 51.222090062185714, "longitude": 4.413574646375653},
-    "instructie": "Ga naar links weg van waar we kwamen en loop rechtdoor"
-},
-{
-    "coord": {"latitude": 51.22182377321569, "longitude": 4.4132979762286535},
-    "instructie": "Steek de straat over en loop rechtdoor"
-},
-{
-    "coord": {"latitude": 51.221764669377805, "longitude": 4.413321044140094},
-    "instructie": "Op het einde van de straat, ga naar links"
-},
-{
-    "coord": {"latitude": 51.22154707903898, "longitude": 4.414062712596419},
-    "instructie": "Loop de straat af"
-},
-{
-    "coord": {"latitude": 51.22146648634387, "longitude": 4.414157577278564},
-    "instructie": "Ga op het einde van de straat naar rechts de Lange Sint-Annastraat in"
-},
-{
-    "coord": {"latitude": 51.22023239418715, "longitude": 4.413622797884168},
-    "instructie": "Loop de straat helemaal af tot op de Sint-Jacobsmarkt"
-},
-{
-    "coord": {"latitude": 51.21958897108807, "longitude": 4.413180233390921},
-    "instructie": "Steek schuin over naar de Apostelstraat en loop deze af"
-},
-{
-    "coord": {"latitude": 51.21945388258773, "longitude": 4.412643438055906},
-    "instructie": "Steek de straat over en ga naar rechts"
-},
-{
-    "coord": {"latitude": 51.21833530191626, "longitude": 4.41220990822358},
-    "instructie": "Ga naar links"
-},
-{
-    "coord": {"latitude": 51.21834582581206, "longitude": 4.412797077209201},
-    "instructie": "Loop de Otto Veniusstraat af"
-},
-{
-    "coord": {"latitude": 51.21687151297285, "longitude": 4.412446073763276},
-    "instructie": "Ga naar rechts en loop rechtdoor"
-},
-{
-    "coord": {"latitude": 51.216699902084386, "longitude": 4.411027708299179},
-    "instructie": "Ga links de Meistraat in en loop rechtdoor"
-},
-{
-    "coord": {"latitude": 51.21479166890218, "longitude": 4.4107109093347425},
-    "instructie": "Klaar met de opdracht? Loop verder"
-},
-{
-    "coord": {"latitude": 51.215276, "longitude": 4.410593},
-    "instructie": "Ga naar rechts het plein op en zoek het dambord bij de bankjes"
-},
-{
-    "coord": {"latitude": 51.21467865525655, "longitude": 4.409829582779434},
-    "instructie": "Loop rechtdoor naar de Oudevaartplaats en ga naar links"
-},
-{
-    "coord": {"latitude": 51.214681175476066, "longitude": 4.4091000219560454},
-    "instructie": "Loop rechtdoor"
-},
-{
-    "coord": {"latitude": 51.21414050878374, "longitude": 4.409081604919294},
-    "instructie": "Ga naar rechts Henri van Heuckstraat in"
-},
-{
-    "coord": {"latitude": 51.213909, "longitude": 4.407520},
-    "instructie": "Klaar met de opdracht? Loop verder"
-},
-{
-    "coord": {"latitude": 51.213910017423956, "longitude": 4.407653060063042},
-    "instructie": "Ga op het einde van de straat naar rechts"
-},
-{
-    "coord": {"latitude": 51.21406093661071, "longitude": 4.407088584251284},
-    "instructie": "Ga naar de Botanische tuin, klaar met de Botanische tuin? Loop langs het ZNA naar de Lange Gasthuisstraat"
-},
-{
-    "coord": {"latitude": 51.21365304559729, "longitude": 4.405128891156021},
-    "instructie": "Steek de straat over"
-},
-{
-    "coord": {"latitude": 51.21371101191572, "longitude": 4.404658834046455},
-    "instructie": "Ga op het einde van de straat naar rechts en loop door tot aan het kruispunt"
-},
-{
-    "coord": {"latitude": 51.21391431350465, "longitude": 4.404431516824514},
-    "instructie": "Ga zo naar links naar Rosier"
-},
-{
-    "coord": {"latitude": 51.21398989582843, "longitude": 4.403912905138363},
-    "instructie": "Loop rechtdoor"
-},
-{
-    "coord": {"latitude": 51.21401402615025, "longitude": 4.402210740638971},
-    "instructie": "Steek de straat over naar de Aalmoezenierstraat"
-},
-{
-    "coord": {"latitude": 51.21418893729269, "longitude": 4.400294431070018},
-    "instructie": "Blijf rechtdoor lopen"
-},
-{
-    "coord": {"latitude": 51.21446643401942, "longitude": 4.398758390167397},
-    "instructie": "Steek de straat over naar de Steenbergstraat"
-},
-{
-    "coord": {"latitude": 51.214972168957516, "longitude": 4.397157189197108},
-    "instructie": "// speeltuin"
-},
-{
-    "coord": {"latitude": 51.21473978444636, "longitude": 4.396621526803667},
-    "instructie": "Ga naar links de Sint-Andriesplaats in en loop rechtdoor"
-},
-{
-    "coord": {"latitude": 51.21459403167196, "longitude": 4.396496804086471},
-    "instructie": "Ga naar rechts en loop het basketbalveld op, ben je klaar? Kom terug naar het kruispunt en ga de Pachtstraat in"
-},
-{
-    "coord": {"latitude": 51.21459403167196, "longitude": 4.396496804086471},
-    "instructie": "Loop tot het einde van de straat en ga dan naar links"
-},
-{
-    "coord": {"latitude": 51.21404922277936, "longitude": 4.396832538760785},
-    "instructie": "Ga naar rechts de Van Craesbeeckstraat in"
-},
-{
-    "coord": {"latitude": 51.214846, "longitude": 4.397548},
-    "instructie": "Klaar met de opdracht? Loop verder"
-},
-{
-    "coord": {"latitude": 51.21329994274408, "longitude": 4.3968469613322325},
-    "instructie": "Loop de straat af en ga dan naar rechts de Kronenburgstraat op"
-},
-{
-    "coord": {"latitude": 51.21228937191207, "longitude": 4.39519511612409},
-    "instructie": "Ga naar links de Graaf van Egmontstraat in en blijf rechtdoor gaan"
-},
-{
-    "coord": {"latitude": 51.21211814961087, "longitude": 4.394119634248685},
-    "instructie": "Steek de straat over en loop rechtdoor"
-},
-{
-    "coord": {"latitude": 51.20994422441434, "longitude": 4.3942261387728845},
-    "instructie": "Klaar met de opdracht? Ga naar rechts, weg waar je vandaan kwam"
-},
-{
-    "coord": {"latitude": 51.209913821629726, "longitude": 4.394243443023427},
-    "instructie": "Loop naar het grote witte gebouw met standbeeld"
-},
-{
-    "coord": {"latitude": 51.20958068319652, "longitude": 4.394408187922867},
-    "instructie": "Ga op zoek naar de fontein"
-}
+    {
+        "coord": {"latitude": 51.229027831932235, "longitude": 4.417210939228755},
+        "instructie": "Steek de straat over en loop verder door De Pretstraat"
+    },
+    {
+        "coord": {"latitude": 51.228495615303316, "longitude": 4.41720385674817},
+        "instructie": "Blijf rechtdoor lopen"
+    },
+    {
+        "coord": {"latitude": 51.22804492198901, "longitude": 4.417213404600343},
+        "instructie": "Steek het kruispunt over en loop verder in De Pretstraat"
+    },
+    {
+        "coord": {"latitude": 51.22775185889116, "longitude": 4.417200891645739},
+        "instructie": "Loop tot het einde van de straat"
+    },
+    {
+        "coord": {"latitude": 51.227316178769605, "longitude": 4.41722591754059},
+        "instructie": "Steek het kruispunt over en loop verder door De Pretstraat"
+    },
+    {
+        "coord": {"latitude": 51.22624454016223, "longitude": 4.417232845215546},
+        "instructie": "Ga aan het einde van de straat links de Houwerstraat in"
+    },
+    {
+        "coord": {"latitude": 51.22573559155933, "longitude": 4.416543968885379},
+        "instructie": "Loop tot het einde van de straat"
+    },
+    {
+        "coord": {"latitude": 51.22537276558364, "longitude": 4.415535458327217},
+        "instructie": "Ga aan het einde van de straat naar links"
+    },
+    {
+        "coord": {"latitude": 51.22519832624813, "longitude": 4.415370202389697},
+        "instructie": "Loop rechtdoor tot aan het eerste verkeerslicht"
+    },
+    {
+        "coord": {"latitude": 51.22476004615073, "longitude": 4.415477464258578},
+        "instructie": "Steek bij het verkeerslicht de straat over"
+    },
+    {
+        "coord": {"latitude": 51.2245349552317, "longitude": 4.415257523126214},
+        "instructie": "Loop rechtdoor door de Paardenmarkt"
+    },
+    {
+        "coord": {"latitude": 51.22456394385746, "longitude": 4.414518918618605},
+        "instructie": "Ga de eerste straat rechts in, de Rodestraat in"
+    },
+    {
+        "coord": {"latitude": 51.224429496325634, "longitude": 4.4140951354515545},
+        "instructie": "Loop rechtdoor door de Rodestraat"
+    },
+    {
+        "coord": {"latitude": 51.223388, "longitude": 4.413865},
+        "instructie": "Klaar met je opdracht? Loop verder door de Rodestraat"
+    },
+    {
+        "coord": {"latitude": 51.222727042287474, "longitude": 4.413771721978571},
+        "instructie": "Binnenkort zie je aan de linkerkant het Begijnhof, loop door de poort."
+    },
+    {
+        "coord": {"latitude": 51.22241316440813, "longitude": 4.4137218193645635},
+        "instructie": "Ga aan je linkerkant door de poort het Begijnhof in"
+    },
+    {
+        "coord": {"latitude": 51.222551, "longitude": 4.414346},
+        "instructie": "Klaar met je opdracht? Ga terug door de poort naar de Rodestraat"
+    },
+    {
+        "coord": {"latitude": 51.222308924279, "longitude": 4.413995029104828},
+        "instructie": "Ga naar links, en loop tot het einde van de straat"
+    },
+    {
+        "coord": {"latitude": 51.22212169874999, "longitude": 4.413646515600286},
+        "instructie": "Volg de weg die de straat volgt"
+    },
+    {
+        "coord": {"latitude": 51.22180006631824, "longitude": 4.413179859010414},
+        "instructie": "Ga links de Rozenstraat in"
+    },
+    {
+        "coord": {"latitude": 51.22173455068267, "longitude": 4.4129813755495},
+        "instructie": "Loop rechtdoor door de Rozenstraat"
+    },
+    {
+        "coord": {"latitude": 51.22141341622757, "longitude": 4.412731449653975},
+        "instructie": "Steek aan het einde van de straat over en loop door het Frans Halsplein"
+    },
+    {
+        "coord": {"latitude": 51.22060769578728, "longitude": 4.412151046578824},
+        "instructie": "Aan het einde van de straat, steek over en ga rechts"
+    },
+    {
+        "coord": {"latitude": 51.2203470811882, "longitude": 4.411740257427705},
+        "instructie": "Ga de eerste straat links in, de Parochiestraat"
+    },
+    {
+        "coord": {"latitude": 51.22026667939829, "longitude": 4.411531279859928},
+        "instructie": "Loop rechtdoor door de Parochiestraat"
+    },
+    {
+        "coord": {"latitude": 51.219661114989876, "longitude": 4.411417085424764},
+        "instructie": "Aan het einde van de straat, steek over en ga de eerste straat links in"
+    },
+    {
+        "coord": {"latitude": 51.21953052825033, "longitude": 4.41064614731691},
+        "instructie": "Ga links de Eikenstraat in"
+    },
+    {
+        "coord": {"latitude": 51.21945764246718, "longitude": 4.410435230287402},
+        "instructie": "Loop rechtdoor door de Eikenstraat"
+    },
+    {
+        "coord": {"latitude": 51.21801299066869, "longitude": 4.410287681452647},
+        "instructie": "Loop rechtdoor door de Kolvenierstraat"
+    },
+    {
+        "coord": {"latitude": 51.216829762842025, "longitude": 4.41047965140539},
+        "instructie": "Steek aan het einde van de straat over naar de Meistraat"
+    },
+    {
+        "coord": {"latitude": 51.21657911751173, "longitude": 4.410423076430705},
+        "instructie": "Loop rechtdoor door de Meistraat"
+    },
+    {
+        "coord": {"latitude": 51.21606178528851, "longitude": 4.4105009731095235},
+        "instructie": "Loop omhoog naar het Theaterplein"
+    },
+    {
+        "coord": {"latitude": 51.21527660469196, "longitude": 4.410592483560769},
+        "instructie": "Klaar met je opdracht? Loop over het plein richting de bankjes en zoek het dambord."
+    },
+    {
+        "coord": {"latitude": 51.21437680680499, "longitude": 4.410037669132676},
+        "instructie": "Klaar met je opdracht?  Loop naar de linkerkant van de Zaterdagmarkt richting de Oudevaartplaats"
+    },
+    {
+        "coord": {"latitude": 51.21446522588176, "longitude": 4.409516277252791},
+        "instructie": "Ben je bij de straat? Ga linksaf"
+    },
+    {
+        "coord": {"latitude": 51.21432590244165, "longitude": 4.409795723550224},
+        "instructie": "Ben je bij de straat? Ga linksaf"
+    },
+    {
+        "coord": {"latitude": 51.21422130917408, "longitude": 4.4092381383270025},
+        "instructie": "Steek de straat over en ga de Henri van Heurckstraat in"
+    },
+    {
+        "coord": {"latitude": 51.21395502655545, "longitude": 4.40882619380086},
+        "instructie": "Loop rechtdoor door de Henri van Heurckstraat"
+    },
+    {
+        "coord": {"latitude": 51.21390810067468, "longitude": 4.407519266538887},
+        "instructie": "Ga rechts door de Vlaamsekaai"
+    },
+    {
+        "coord": {"latitude": 51.212353391358896, "longitude": 4.393887789111899},
+        "instructie": "Loop rechtdoor door de Vlaamsekaai"
+    },
+    {
+        "coord": {"latitude": 51.21225653751388, "longitude": 4.393779028406687},
+        "instructie": "Ga aan het einde van de straat rechts de Scheldenstraat in"
+    },
+    {
+        "coord": {"latitude": 51.21211947316906, "longitude": 4.393906331789431},
+        "instructie": "Steek de straat over en ga rechts de Graaf van Egmontstraat in"
+    },
+    {
+        "coord": {"latitude": 51.211819931718594, "longitude": 4.3941235725079375},
+        "instructie": "Loop rechtdoor door de Graaf van Egmontstraat"
+    },
+    {
+        "coord": {"latitude": 51.20991694237414, "longitude": 4.394257808738823},
+        "instructie": "Klaar met je opdracht? Ga naar het grote witte gebouw met standbeelden"
+    }
+    
 ]

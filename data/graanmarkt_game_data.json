@@ -2,20 +2,20 @@
 	"moves":[
 		{
 			"direction": "up",
-			"amount": 5
-		},
-		{
-			"direction": "right",
-			"amount": 4
-		},
-		{
-			"direction": "down",
 			"amount": 3
 		},
 		{
+			"direction": "right",
+			"amount": 6
+		},
+		{
+			"direction": "up",
+			"amount": 1
+		},
+		{
 			"direction": "left",
-			"amount": 2
+			"amount": 3
 		}
 	],
-	"winnende-locatie": {"x": 3, "y":6}
+	"winnende-locatie": {"x": 4, "y":5}
 }

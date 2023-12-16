@@ -1,8 +1,11 @@
 {
-	"count":2,
+	"count":,
 	"prompts":[
 		{
 			"text": "Het is de bedoeling dat jullie opzoek gaan naar het dambord, hier op het theaterplein. Kijk eens goed rond!"
+		},
+		{
+			"text": "Zorg ervoor dat je begint aan de kant van het dambord zo dat je naar de stadsschouwburg kijkt."
 		},
 		{
 			"text":"Hier heb ik men eten verstopt, maar ik weet niet meer waar. Willen jullie me helpen? "

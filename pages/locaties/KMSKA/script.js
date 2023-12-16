@@ -1,4 +1,4 @@
-/* onScreen(1, ()=>{
+ onScreen(1, ()=>{
 	setTimeout(nextScreen,3000)
 })
 
@@ -115,7 +115,6 @@ onScreen(10, ()=>{
 docReady(async ()=>{
 	gotoScreen(1)
 })
-*/ 
 gotoScreen(10)
 document.addEventListener("DOMContentLoaded", function() {
     const container = document.getElementById('container');

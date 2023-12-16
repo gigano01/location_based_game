@@ -2,19 +2,40 @@
 	"moves":[
 		{
 			"direction": "up",
-			"amount": 3
+			"amount": 6
 		},
 		{
 			"direction": "right",
-			"amount": 6
+			"amount": 5
+		
+		},
+		{
+			"direction": "down",
+			"amount": 4
+		},
+		{
+			"direction": "left",
+			"amount": 3
 		},
 		{
 			"direction": "up",
 			"amount": 1
 		},
 		{
+			"direction": "right",
+			"amount": 2
+		}
+		{
+			"direction": "up",
+			"amount": 2
+		},
+		{
 			"direction": "left",
-			"amount": 3
+			"amount": 1
+		},
+		{
+			"direction": "down",
+			"amount": 1
 		}
 	],
 	"winnende-locatie": {"x": 4, "y":5}

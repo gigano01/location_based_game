@@ -14,9 +14,9 @@ onScreen(2, ()=>{
 	})
 })
 
-// onScreen(3, ()=>{
-// 	setTimeout(nextScreen,800)
-// })
+onScreen(3, ()=>{
+	setTimeout(nextScreen,3000)
+})
 
 onScreen(4, ()=>{
 	let gansElement = document.querySelector("#uil-s4");

@@ -90,7 +90,7 @@ async function drawpage() {
 			if (distance <= 60) {
 				// Update the HTML content of the box with the corresponding instruction
 				console.log('hallo dit werkt')
-				document.getElementById('instructionbox').innerHTML = item.instructie;
+				document.getElementById('instructionboxtekst').innerHTML = item.instructie;
 			}
 		});
 	}

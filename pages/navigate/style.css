@@ -1,10 +1,9 @@
 #instructionbox{
     position: fixed;
-    top: 15dvh;
-    left: 50%;
     transform: translate(-50%, -50%);
     width: 358px;
     height: 88px;
     font-weight: var(--text-weight-light);
-    padding: 10px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }

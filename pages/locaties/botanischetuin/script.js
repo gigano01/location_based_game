@@ -33,13 +33,17 @@ onScreen(4, ()=>{
 //WE SKIPPEN HET SPEL EFFE
 onScreen(5, ()=>{
 	function callback(base64) {
-		nextScreen()
-		console.log('the image was captured');
-		console.log(base64);
-		setTimeout(nextScreen,1200)
+		console.log('the image was captured')
+		console.log(base64)
+		if(Math.random() * 10 > 4){
+			//setTimeout(nextScreen,1200)
+			console.log("epic")
+		} else {
+			console.log("not epic")
+		}
 	  }
 	  
-	  startCamera(true, '#video', '#canvas', '#capture', callback);
+	  startCamera(false, '#video', '#canvas', '#capture', callback);
 })
 onScreen(6, ()=>{
 	setTimeout(nextScreen, 200)

@@ -1,4 +1,4 @@
-let quizData = {}
+ let quizData = {}
 let wrongCount = 0
 //SCHERM 1
 //TODO MAAK DIT DYNAMISCH
@@ -123,6 +123,12 @@ onScreen(7, ()=>{
 		dialogueloc = "dialogue/scherm7_fout.json"
 		aftertext = `Het juiste antwoord is "${quizData["juist-antwoord"]}"`
 	}
+
+	const questionDiv = document.querySelector("#rood-vak h1")
+	const amountWrongDiv = document.querySelector("#rood-vak p")
+
+	questionDiv.textContent = quizData["vraag"]
+	amountWrongDiv.textContent = `${wrongCount} keer fout`
 
 	createDialogueObject(dialogueloc).then((dialogue)=>{
 		assignDialogueToContainer(dialogue,document.getElementById("muisje-s7-tekstbubbel"))

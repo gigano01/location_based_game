@@ -209,6 +209,15 @@
     animation: uilEntrance 1.5s ease-in-out forwards, uilRotate1 1s alternate 0.5s ease-in-out infinite;
 }
 
+#onafgemaakt{
+	font-size: 3rem;
+	top: 2rem;
+	color: red;
+	font-family: var(--text-font);
+	font-weight: var(--text-weight-bold);
+	text-align: center;
+}
+
 @keyframes uilEntrance {
     0% {
         scale: 50%;

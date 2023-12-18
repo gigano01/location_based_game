@@ -5,4 +5,6 @@
     transform: translate(-50%, -50%);
     width: 358px;
     height: 88px;
+    font-weight: var(--text-weight-light);
+    padding: 20px;
 }

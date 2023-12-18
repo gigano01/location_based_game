@@ -14,8 +14,8 @@ onScreen(2, ()=>{
 	})
 })
 
-onScreen(3, ()=>{
-	setTimeout(nextScreen,3000)
+ onScreen(3, ()=>{
+ 	setTimeout(nextScreen,800)
 })
 
 onScreen(4, ()=>{

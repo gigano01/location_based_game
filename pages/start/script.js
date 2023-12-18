@@ -6,6 +6,7 @@ onScreen(1, ()=>{
 
 onScreen(2, ()=>{
 	const video = document.getElementById("start-video-s2")
+	video.play()
 	video.onended = (event) => {
 		nextScreen()
 	};

@@ -6,6 +6,8 @@ async function load_json_data() {
 	return data
 }
 
+var audio = new Audio('../../media/sound/ank_loc.wav'); //speelaankomst geluidje
+
 //we moeten wachten tot alle JSON data geladen werd.
 //hierna kan de rest van de code geladen worden
 //Javascript is hier echt dom om, maar dit is de beste manier om het te doen :c
@@ -79,8 +81,11 @@ async function drawpage() {
 	
 		// de afstand tussen mijn locatie en die van mijn doel is minder dan 20 meter, rekeninghoudend met de accuraatheid van gps?
 		if (distance < successRadiusInMeter + Math.min(position.coords.accuracy/2, successRadiusInMeter)) {
+			audio.play();
 			// navigeer naar de pagina die getoond moet worden als ik in 20 meter van locatie ben
-			location.assign(`../${nextPage}`)
+			setTimeout(()=>{
+				location.assign(`../${nextPage}`)
+			},800)
 		}
 
 		//update de navigator
@@ -128,6 +133,7 @@ async function drawpage() {
 }
 
 drawpage()
+
 
 /*  OUDE CODE
 load_json_data().then( (json_data) => {

@@ -190,6 +190,17 @@
     transform: translate3d(-50%, -50%, 0);
   }
 
+  #onafgemaakt{
+	font-size: 3rem;
+	bottom: 2rem;
+	color: red;
+	font-family: var(--text-font);
+	font-weight: var(--text-weight-bold);
+	text-align: center;
+
+	z-index: 120000;
+}
+
   #boompje-7-s9 {
     top: 70dvh;
     left: 50%;

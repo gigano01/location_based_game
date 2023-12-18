@@ -36,6 +36,10 @@ const flower3 = document.getElementById("bloemspel-3-s5")
 const flower3T = flower3.style.top
 const flower3L = flower3.style.left
 
+let swipedAmount = 0
+let totalSwipedAmount = 0
+let requiredAmount = 4*3
+
 const maxTimeInMinutes = 1 //make dynamic!!
 const maxTimeInSeconds = maxTimeInMinutes * 60
 let time = maxTimeInSeconds
@@ -68,7 +72,11 @@ function flowerBehaviour(flower, flowerT, flowerL){
 	}else{
 		if(overlaps(flower, fountain)){
 			flower.style.display = "none"
-			console.log("disabled")
+			//console.log("disabled")
+			swipedAmount++
+			totalSwipedAmount++
+			flower.style.top = `${getMTPosition().y}px`
+			flower.style.left = `${getMTPosition().x}px`
 		}
 		flower.style.top = flowerT
 		flower.style.left = flowerL
@@ -83,8 +91,19 @@ function gameLoop(){
 	flowerBehaviour(flower2, flower2T, flower2L)
 	flowerBehaviour(flower3, flower3T, flower3L)
 
+	if(swipedAmount === 3){
+		swipedAmount = 0
+		flower1.style.display = "block"
+		flower2.style.display = "block"
+		flower3.style.display = "block"
+	}
 
-	requestAnimationFrame(gameLoop)
+	if (totalSwipedAmount === requiredAmount) {
+		nextScreen()
+	} else {
+		requestAnimationFrame(gameLoop)
+	}
+
 }
 
 onScreen(5, ()=>{
@@ -107,7 +126,7 @@ onScreen(10, ()=>{
 	createDialogueObject("dialogue/scherm10.json").then((dialogue)=>{
 		assignDialogueToContainer(dialogue,document.getElementById("muisjetekst-s10"))
 		setDialogueEndHandler(dialogue,()=>{
-			console.log("Door jullie is de stad terug groen!! Dankjewel om mij te helpen!! ")
+			location.assign("../../start");
 		})
 	})
 })

@@ -120,7 +120,7 @@ async function drawpage() {
 			if (distance <= 60) {
 				// Update the HTML content of the box with the corresponding instruction
 				console.log('hallo dit werkt')
-				document.getElementById('instructionboxtekst').innerHTML = item.instructie;
+				document.getElementById('instructionbox').innerHTML = item.instructie;
 			}
 		});
 	}
@@ -146,7 +146,7 @@ async function drawpage() {
 	
 		// options for geolocation
 		const options = {
-			enableHighAccuracy: true,
+			enableHighAccuracy: false,
 			timeout: 20000,
 			maximumAge: 0
 		};

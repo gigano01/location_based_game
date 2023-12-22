@@ -24,7 +24,7 @@
 		{
 			"direction": "right",
 			"amount": 2
-		}
+		},
 		{
 			"direction": "up",
 			"amount": 2
@@ -38,5 +38,5 @@
 			"amount": 1
 		}
 	],
-	"winnende-locatie": {"x": 4, "y":5}
+	"winnende-locatie": {"x": 4, "y":4}
 }

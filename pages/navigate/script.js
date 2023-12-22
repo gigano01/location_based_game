@@ -6,6 +6,7 @@ async function load_json_data() {
 	return data
 }
 
+
 //we moeten wachten tot alle JSON data geladen werd.
 //hierna kan de rest van de code geladen worden
 //Javascript is hier echt dom om, maar dit is de beste manier om het te doen :c
@@ -13,6 +14,7 @@ async function drawpage() {
 	const json_data = await load_json_data()
 	const gps_data_raw = await fetch('../../data/gps_data.json')
 	const gps_data = await gps_data_raw.json()
+	const audio = new Audio('../../media/sound/ank_loc.wav'); //speelaankomst geluidje
 
 
 	const locationData = json_data[getQueryParam("locationID")]
@@ -56,8 +58,33 @@ async function drawpage() {
 	// deze functie wordt opgeroepen elke keer een nieuwe locatie doorkomt
 	function success(position) {
 		if (map) {
+			let midLongitude = (position.coords.longitude + coordinates.longitude) / 2
+			let midLatitude = (position.coords.latitude + coordinates.latitude) / 2
+
+			// Fly to midpoint
 			map.flyTo({
-			  center: [position.coords.longitude, position.coords.latitude]
+				center: [midLongitude, midLatitude]
+			})
+
+			let bounds = [
+				[Math.min(position.coords.longitude, coordinates.longitude), Math.min(position.coords.latitude, coordinates.latitude)], // Southwest coordinates
+				[Math.max(position.coords.longitude, coordinates.longitude), Math.max(position.coords.latitude, coordinates.latitude)]  // Northeast coordinates
+			]
+
+			let padding = {top: 50, bottom:50, left: 50, right: 50}
+			let maxZoom = 17
+			
+			// Fit map to bounds
+			map.fitBounds(bounds, {padding: padding});
+
+			console.log("zoom "+map.getZoom())
+
+			map.once('moveend', function() {
+				// If the zoom level is more than the maximum
+				if (map.getZoom() > maxZoom) {
+					// Reset the zoom level to the maximum
+					map.zoomTo(maxZoom);
+				}
 			});
 		  } else {
 			map = createMap("myID", position.coords.latitude, position.coords.longitude, 15, 'mapbox://styles/noahvanleemput/clpgydb7a00jt01poe8ucfwgw');
@@ -79,8 +106,11 @@ async function drawpage() {
 	
 		// de afstand tussen mijn locatie en die van mijn doel is minder dan 20 meter, rekeninghoudend met de accuraatheid van gps?
 		if (distance < successRadiusInMeter + Math.min(position.coords.accuracy/2, successRadiusInMeter)) {
+			audio.play();
 			// navigeer naar de pagina die getoond moet worden als ik in 20 meter van locatie ben
-			location.assign(`../${nextPage}`)
+			setTimeout(()=>{
+				location.assign(`../${nextPage}`)
+			},800)
 		}
 
 		//update de navigator
@@ -128,6 +158,7 @@ async function drawpage() {
 }
 
 drawpage()
+
 
 /*  OUDE CODE
 load_json_data().then( (json_data) => {

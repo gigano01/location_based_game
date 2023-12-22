@@ -124,6 +124,12 @@ onScreen(7, ()=>{
 		aftertext = `Het juiste antwoord is "${quizData["juist-antwoord"]}"`
 	}
 
+	const questionDiv = document.querySelector("#rood-vak h1")
+	const amountWrongDiv = document.querySelector("#rood-vak p")
+
+	questionDiv.textContent = quizData["vraag"]
+	amountWrongDiv.textContent = `${wrongCount} keer fout`
+
 	createDialogueObject(dialogueloc).then((dialogue)=>{
 		assignDialogueToContainer(dialogue,document.getElementById("muisje-s7-tekstbubbel"))
 		let i = 0

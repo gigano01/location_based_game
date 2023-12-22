@@ -62,13 +62,11 @@ function turnOffAllDirections(arrow){
 }
 
 function gameDialoguePopup() {
-	let gansElement = document.querySelector("#eekhoorntje-s7");
-    gansElement.addEventListener('animationend', () => {
-		document.getElementById("popup-s7").classList.remove("invisible")
-		createDialogueObject("dialogue/scherm7.json").then((dialogue)=>{
-			assignDialogueToContainer(dialogue,document.getElementById("eekhoorntjetekst-s7"))
-			removeDialogueFromContainer(dialogue) //maakt het onklikbaar
-		})
+	document.getElementById("popup-s7").classList.remove("invisible")
+	createDialogueObject("dialogue/scherm7.json").then((dialogue)=>{
+		assignDialogueToContainer(dialogue,document.getElementById("eekhoorntjetekst-s7"))
+		document.getElementById("eekhoorntjetekst-s7").classList.remove("invisible")
+		removeDialogueFromContainer(dialogue) //maakt het onklikbaar
 	})
 }
 
@@ -96,14 +94,15 @@ function game(){
 	}
 
 	count.textContent = move["amount"]
-	console.log(`${gameIteration} / ${gamedata["moves"].length}`)
+	console.log(`${gameIteration+1} / ${gamedata["moves"].length}`)
 	console.log()
 	gameIteration++
 
 	if(gameIteration >= gamedata["moves"].length) {
-		clearInterval(gameInterval)
+		console.log("done")
 		gameAcceptInput = true
 		gameDialoguePopup()
+		clearInterval(gameInterval)
 	}
 }
 
@@ -111,6 +110,8 @@ function setupBoard() {
 	let tbody = document.getElementById("chessboard-s7")
 	let y = 0
 	let x = 0
+
+	document.getElementById("eekhoorntjetekst-s7").classList.add("invisible")
 	//lord forgive me for i have sinned
 	for (tr of tbody.children) {
 		y++

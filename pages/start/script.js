@@ -5,7 +5,11 @@ onScreen(1, ()=>{
 })
 
 onScreen(2, ()=>{
-	setTimeout(nextScreen,3000)
+	const video = document.getElementById("start-video-s2")
+	video.play()
+	video.onended = (event) => {
+		nextScreen()
+	};
 })
 
 onScreen(3, ()=>{

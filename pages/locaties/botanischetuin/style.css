@@ -38,26 +38,36 @@
     left: 75%;
     transform: translate3d(-50%, -50%, 0); 
 
-    animation: uilVliegen 1.5s ease-in-out forwards, uilRotate0 2s alternate 0.5s ease-in-out infinite;
+    animation: uilRotate0 2s alternate 0s ease-in-out infinite, uilVliegen1 3s ease-in-out forwards;
 }
 
-@keyframes uilVliegen {
+@keyframes uilVliegen1 {
     0% {
-        scale: 50%;
-        left: 160%;
+        /* animation-delay: 5s; */
+        scale: 70%;
+        left: -10%;
+        top: 10%;
     }
-
+    25% {
+        left: 90%;
+    }
+    50% {
+        left: 15%;
+    }
     100% {
-        left: 75%;
+        scale: 210%;
+        left: 95%;
+        top: 69%;
     }
 }
 
 @keyframes uilRotate0 {
     0% {
-        transform: translate3d(-50%, -50%, 0) scaleX(-1) rotate(0deg);
+        transform: translate3d(-50%, -50%, 0) scaleX(-1) rotate(-20deg);
     }
+    
     100% {
-        transform: translate3d(-50%, -50%, 0) scaleX(-1) rotate(-3deg);
+        transform: translate3d(-50%, -50%, 0) scaleX(-1) rotate(20deg);
     }
 }
 
@@ -197,6 +207,15 @@
     transform: translate3d(-50%, -50%, 0);
     
     animation: uilEntrance 1.5s ease-in-out forwards, uilRotate1 1s alternate 0.5s ease-in-out infinite;
+}
+
+#onafgemaakt{
+	font-size: 3rem;
+	top: 2rem;
+	color: red;
+	font-family: var(--text-font);
+	font-weight: var(--text-weight-bold);
+	text-align: center;
 }
 
 @keyframes uilEntrance {

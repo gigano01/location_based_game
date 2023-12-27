@@ -14,7 +14,7 @@ onScreen(2, ()=>{
 	})
 })
 
-onScreen(3, ()=>{
+ onScreen(3, ()=>{
  	setTimeout(nextScreen,800)
 })
 
@@ -30,22 +30,34 @@ onScreen(4, ()=>{
 	})
 })
 
+let firstTime = true
+
 //WE SKIPPEN HET SPEL EFFE
 onScreen(5, ()=>{
+	
 	function callback(base64) {
-		nextScreen()
-		console.log('the image was captured');
-		console.log(base64);
-		setTimeout(nextScreen,1200)
+		console.log('the image was captured')
+		console.log(base64)
+		if(Math.random() * 10 > 4 && !firstTime){
+			setTimeout(nextScreen,800)
+			console.log("epic")
+		} else {
+			firstTime = false
+			console.log("not epic")
+		}
 	  }
+
+	  document.getElementById("capture").onclick = nextScreen
 	  
-	  startCamera(true, '#video', '#canvas', '#capture', callback);
+	  startCamera(false, '#video', '#canvas', '#capture', callback);
+
+
 })
 onScreen(6, ()=>{
-	setTimeout(nextScreen, 200)
+	setTimeout(nextScreen, 1200)
 })
 onScreen(7, ()=>{
-	setTimeout(nextScreen, 200)
+	setTimeout(nextScreen, 1200)
 })
 
 onScreen(8, ()=>{

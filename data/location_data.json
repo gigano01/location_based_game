@@ -11,7 +11,7 @@
         "name": "begijnhof",
         "distance": 1234,
         "minimumRadius": 20,
-        "coordinates": {"latitude": 51.223388, "longtitude": 4.413865},
+        "coordinates": {"latitude": 51.225584, "longtitude": 4.416092},
         "nextPage": "kranen/kluis/index.html?id=begijnhof"
     },
 
@@ -35,7 +35,7 @@
         "name": "theaterplein",
         "distance": 1234,
         "minimumRadius": 20,
-        "coordinates": {"latitude": 51.215276, "longtitude": 4.410593},
+        "coordinates": {"latitude": 51.216560, "longtitude": 4.410433},
         "nextPage": "kranen/kluis/index.html?id=theaterplein"
     },
 
@@ -51,7 +51,7 @@
         "name": "botanische tuin",
         "distance": 1234,
         "minimumRadius": 20,
-        "coordinates": {"latitude": 51.213909, "longtitude": 4.407520},
+        "coordinates": {"latitude": 51.213961, "longtitude": 4.408733},
         "nextPage":"kranen/kluis/index.html?id=botanischetuin"
     },
 

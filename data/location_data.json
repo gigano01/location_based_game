@@ -67,7 +67,7 @@
         "name": "speeltuin",
         "distance": 1234,
         "minimumRadius": 20,
-        "coordinates": {"latitude": 51.214846, "longtitude":4.397548},
+        "coordinates": {"latitude": 51.214183, "longtitude":4.400423},
         "nextPage": "kranen/kluis/index.html?id=speeltuin"
     },
 
@@ -83,7 +83,7 @@
         "name": "KMSKA",
         "distance": 1234,
         "minimumRadius": 20,
-        "coordinates": {"latitude": 51.209911, "longtitude":4.394259},
+        "coordinates": {"latitude": 51.211945, "longtitude":4.394125},
         "nextPage": "kranen/kluis/index.html?id=kmska"
     },
 

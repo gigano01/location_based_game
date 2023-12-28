@@ -14,7 +14,7 @@ async function drawpage() {
 	const json_data = await load_json_data()
 	const gps_data_raw = await fetch('../../data/gps_data.json')
 	const gps_data = await gps_data_raw.json()
-	const audio = new Audio('../../media/sound/ank_loc.wav'); //speelaankomst geluidje
+	const audio = new Audio('../../media/sound/ank_loc.wav'); //spelaankomst geluidje
 
 
 	const locationData = json_data[getQueryParam("locationID")]

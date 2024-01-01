@@ -232,4 +232,3 @@ docReady(async ()=>{
 	}
 	gotoScreen(1)
 })
-

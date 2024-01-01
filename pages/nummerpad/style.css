@@ -1,0 +1,43 @@
+
+.cijferscode{
+    font: var(--text-font);
+}
+#nummerlock{
+    width: 117.517px;
+    height: 163px; 
+}
+#codecijfers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 74.6%; /* 87.728px / 117.517px * 100 */
+    height: 19.9%; /* 32.502px / 163px * 100 */
+    position: absolute;
+    top: 10.4%; /* 17px / 163px * 100 */
+    left: 12.8%; /* 15px / 117.517px * 100 */
+    padding-left: 7.7%; /* 9px / 117.517px * 100 */
+    padding-right: 5.1%; /* 6px / 117.517px * 100 */
+    transform: rotate(2deg);
+}
+#padcijfers{
+    transform: rotate(2deg);
+    width: 60.4%; /* 71px / 117.517px * 100 */
+    height: 61.3%; /* 100px / 163px * 100 */
+    top: 30.7%; /* 50px / 163px * 100 */
+    left: 17%; /* 20px / 117.517px * 100 */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+    align-items: center;
+    font-size: 100%;
+}
+.pad {
+    width: 28.2%; /* 20px / 71px * 100 */
+    height: 19%; /* 19px / 100px * 100 */
+    text-align: center;
+    padding-top: 2%; /* 2px / 100px * 100 */
+    color: var(--text-color);
+    font-size: 100%;
+}

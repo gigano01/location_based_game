@@ -9,15 +9,19 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;700&display=swap" rel="stylesheet">
-
-    <link href="../../../styles/reset.css" type="text/css" rel="stylesheet">
+	<link href="../../../styles/reset.css" type="text/css" rel="stylesheet">
     <link href="../../../styles/variables.css" type="text/css" rel="stylesheet">
     <link href="../../../styles/general.css" type="text/css" rel="stylesheet">
     <link href="../../../styles/components/button.css" type="text/css" rel="stylesheet">
 	<link href="../../../styles/components/hamburger.css" type="text/css" rel="stylesheet">
 	<link href="../../../styles/components/background.css" type="text/css" rel="stylesheet">
-	<!--VERGEET NIET OM TE CHECKEN OF DEZE LINKJES WERKEN-->
+	<link href="../../../styles/components/locatiebord.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="../../../styles/components/spraak-bubbel.css">
+	<link rel="stylesheet" href="../../../styles/components/loading.css">
+	<link href="../../../styles/components/groenvaktekst.css" type="text/css" rel="stylesheet">
+	<link rel="stylesheet" href="../../../styles/components/vierkantwit.css">
     <link href="style.css" type="text/css" rel="stylesheet">
+
 
 	<script defer src="../../../scripts/dialogue.js"></script>
 	<script defer src="../../../scripts/page-manager.js"></script>
@@ -25,22 +29,30 @@
 
   </head>
   <body>
-
-	<header>
-		<a href="../menu" class="hamburger-a positioned">
-			<div class="hamburger">
-				<div class="hamburger-line"></div>
-				<div class="hamburger-line"></div>
-				<div class="hamburger-line"></div>
-			</div>
-		</a>
-	</header>
-
-	<div id="scherm-1">
-		<img src="../../../media/bg/bg_riool_sch1.jpg" alt="" class="positioned background">
+<div id="nummerlock" style="position: relative;">
+	<img src="../../media/prop/prop_nummerlock.svg" class="">
+	<div id="codecijfers">
+		<div id="codecijfer-1" class="cijferscode">0</div>
+		<div id="codecijfer-2" class="cijferscode">0</div>
+		<div id="codecijfer-3" class="cijferscode">0</div>
+		<div id="codecijfer-4" class="cijferscode">0</div>
 	</div>
-    <h1>Welkom!</h1>
-    <button id="start-button">Start</button>
+	<div id="padcijfers">
+		<div id="codepad-1" class="cijferscode pad">1</div>
+		<div id="codepad-2" class="cijferscode pad">2</div>
+		<div id="codepad-3" class="cijferscode pad">3</div>
+		<div id="codepad-4" class="cijferscode pad">4</div>
+		<div id="codepad-5" class="cijferscode pad">5</div>
+		<div id="codepad-6" class="cijferscode pad">6</div>
+		<div id="codepad-7" class="cijferscode pad">7</div>
+		<div id="codepad-8" class="cijferscode pad">8</div>
+		<div id="codepad-9" class="cijferscode pad">9</div>
+		<div id="codepad-rood" class="cijferscode pad"></div>
+		<div id="codepad-0" class="cijferscode pad">0</div>
+		<div id="codepad-groen" class="cijferscode pad"></div>
+	</div>
+</div>
+
 
   </body>
 </html>

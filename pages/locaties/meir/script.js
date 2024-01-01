@@ -1,4 +1,4 @@
-onScreen(1,()=>{
+/* onScreen(1,()=>{
 	setTimeout(nextScreen, 1000)
 })
 
@@ -28,3 +28,5 @@ onScreen(4, ()=>{
 docReady(async ()=>{
 	gotoScreen(1)
 })
+*/
+gotoScreen(4)

@@ -1,4 +1,4 @@
- let quizData = {}
+/* let quizData = {}
 let wrongCount = 0
 //SCHERM 1
 //TODO MAAK DIT DYNAMISCH
@@ -233,3 +233,5 @@ docReady(async ()=>{
 	gotoScreen(1)
 })
 
+*/
+gotoScreen(9)

@@ -71,21 +71,13 @@ async function drawpage() {
 				[Math.max(position.coords.longitude, coordinates.longitude), Math.max(position.coords.latitude, coordinates.latitude)]  // Northeast coordinates
 			]
 
-			let padding = {top: 50, bottom:50, left: 50, right: 50}
-			let maxZoom = 17
+			let padding = {top: 100, bottom:100, left: 100, right: 100}
 			
 			// Fit map to bounds
 			map.fitBounds(bounds, {padding: padding});
 
 			console.log("zoom "+map.getZoom())
 
-			map.once('moveend', function() {
-				// If the zoom level is more than the maximum
-				if (map.getZoom() > maxZoom) {
-					// Reset the zoom level to the maximum
-					map.zoomTo(maxZoom);
-				}
-			});
 		  } else {
 			map = createMap("myID", position.coords.latitude, position.coords.longitude, 15, 'mapbox://styles/noahvanleemput/clpgydb7a00jt01poe8ucfwgw');
 			markerEnd = createMarker(map, 'markerEnd', 42, 42, 'https://vaw.be/cacher/pin-454.png',coordinates.latitude, coordinates.longitude, false);

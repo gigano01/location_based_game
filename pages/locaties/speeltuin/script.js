@@ -179,4 +179,4 @@ onScreen(7, ()=>{
 
 docReady(async ()=>{
 	gotoScreen(1)
-})
+}) 

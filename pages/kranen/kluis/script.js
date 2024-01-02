@@ -1,4 +1,4 @@
- let quizData = {}
+let quizData = {}
 let wrongCount = 0
 //SCHERM 1
 //TODO MAAK DIT DYNAMISCH
@@ -199,7 +199,7 @@ onScreen(12, ()=>{
 		//console.log(rotation)
 		img.style.transform = 'rotate(' + rotation + 'deg)'
 
-		if(rotation > 800) {
+		if(rotation > 800 || rotation < -800) {
 			onDragHandler = () => {}
 			nextScreen()
 		}
@@ -232,4 +232,3 @@ docReady(async ()=>{
 	}
 	gotoScreen(1)
 })
-

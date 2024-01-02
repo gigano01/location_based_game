@@ -249,7 +249,55 @@
 #up-s5 {
     position: fixed;
 }
-
+/* scherm6 */
+/* één punt */
+#boom-1-1{
+    position: fixed;
+    bottom: 25dvh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* twee punt */
+#boom-2-1{
+    position: fixed;
+    bottom: 30dvh;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+#boom-2-2{
+    position: fixed;
+    bottom: 30dvh;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+/* drie punten */
+#boom-3-1{
+    position: fixed;
+    bottom: 28dvh;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+#boom-3-2{
+    position: fixed;
+    bottom: 30dvh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#boom-3-3{
+    position: fixed;
+    bottom: 28dvh;
+    left: 90%;
+    transform: translate(-50%, -50%);
+}
+#eendje-s6{
+    position: fixed;
+    bottom: -48dvh;
+    left: 25%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    width: 284px;
+    height: 447.879px;
+    z-index: 99;
+}
 /* scherm7 */
 #eendje-s7{
     position: fixed;

@@ -14,7 +14,7 @@ async function drawpage() {
 	const json_data = await load_json_data()
 	const gps_data_raw = await fetch('../../data/gps_data.json')
 	const gps_data = await gps_data_raw.json()
-	const audio = new Audio('../../media/sound/ank_loc.wav'); //speelaankomst geluidje
+	const audio = new Audio('../../media/sound/ank_loc.wav'); //spelaankomst geluidje
 
 
 	const locationData = json_data[getQueryParam("locationID")]
@@ -112,7 +112,7 @@ async function drawpage() {
 			if (distance <= 60) {
 				// Update the HTML content of the box with the corresponding instruction
 				console.log('hallo dit werkt')
-				document.getElementById('instructionboxtekst').innerHTML = item.instructie;
+				document.getElementById('instructionbox').innerHTML = item.instructie;
 			}
 		});
 	}
@@ -138,7 +138,7 @@ async function drawpage() {
 	
 		// options for geolocation
 		const options = {
-			enableHighAccuracy: true,
+			enableHighAccuracy: false,
 			timeout: 20000,
 			maximumAge: 0
 		};

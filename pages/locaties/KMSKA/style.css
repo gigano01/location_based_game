@@ -3,6 +3,33 @@
     top: 80dvh;
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
+
+    animation: muisRun 2.4s ease-in-out forwards, muisRotate 1s alternate 1ms ease-in-out infinite;
+}
+
+@keyframes muisRun {
+    0% {
+        scale: 100%;
+        top: 83dvh;
+        left: -30%;
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+        top: 83dvh;
+        left: 130%;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes muisRotate {
+    0% {
+        transform: translate3d(-50%, -50%, 0) rotate(3deg);
+    }
+    100% {
+        transform: translate3d(-50%, -50%, 0) rotate(-3deg);
+    }
 }
 /* scherm3 */
 #muisje-s3{

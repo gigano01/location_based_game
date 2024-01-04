@@ -270,12 +270,12 @@
 	transform: translate3d(-26.5%, -50%, 0);
 }
 
-#muisje-s12, #kraan-s12, #kraan-s13{
+#muisje-s12, #kraan-s12, #kraan-s13, #kraan-s14{
 	left: 50%;
 	transform: translateX(-50%);
 }
 
-#kraan-s12, #kraan-s13 {
+#kraan-s12, #kraan-s13, #kraan-s14 {
 	bottom: 15dvh;
 	left: 17vw;
 	--transform-origin: 49%;
@@ -374,5 +374,64 @@
 	100% {
 		transform: rotate(30rad);
 	}
+}
+/* scherm14 */
+#muisje-s14 {
+	bottom: calc(15dvh + 250px);
+		/* animation */
+		animation: muisLopen 1.5s ease-in-out forwards, muisRotate5 1.5s alternate 1ms ease-in-out infinite;
+}
+
+#muisje-s14-tekstbubbel {
+	bottom: calc(15dvh + 480px);
+}
+
+#tekstblok-s14{
+	bottom: calc(15dvh + 480px);
+	left: 50%;
+	transform: translateX(-50%);
+}
+#schuifbar-s14{
+	width: 318px;
+	height: 52px;
+	border-radius: 20px;
+	background: var(--grijs, #E8E8E8);
+	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25) inset, 0px -1px 2px 0px rgba(255, 255, 255, 0.10) inset;
+	bottom: 9dvh;
+	left: 10%;
+	display: flex;
+	align-items: center;
+	padding: 5px;
+
+}
+#schuifpijltje-s14{
+	width: 46px;
+}
+#tekstschuifbar-s14{
+	font-family: var(--text-font);
+	font-size: 1.5rem;
+	padding: 20px;
+
+}
+
+
+
+
+@keyframes muisLopen{
+    0% {
+		left: -120%;
+    }
+    100% {
+		left: 30%;
+    }
+}
+
+@keyframes muisRotate5 {
+    0% {
+		transform: rotate(-6deg);
+    }
+    100% {
+		transform: rotate(3deg);
+    }
 }
 

@@ -3,6 +3,33 @@
     bottom: 0dvh;
     left: 70%;
     transform: translate3d(-50%, -50%, 0);
+    
+    animation: wasbeerJump 2.4s ease-in-out forwards, wasbeerSpin 1s alternate 1ms ease-in-out infinite;
+}
+
+@keyframes wasbeerJump {
+    0% {
+        scale: 90%;
+        top: 70dvh;
+        left: 120%;
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+        top: 83dvh;
+        left: -30%;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes wasbeerSpin {
+    0% {
+        transform: translate3d(-50%, -50%, 0) rotate(3deg);
+    }
+    100% {
+        transform: translate3d(-50%, -50%, 0) rotate(-3deg);
+    }
 }
 /* scherm 3 */
 #wasbeer-s3{
@@ -10,7 +37,7 @@
     left: 30%;
     transform: translate3d(-50%, -50%, 0);
 
-    animation: wasbeerEntrance 1.4s ease-in-out forwards, wasbeerRotate 1s alternate 1ms ease-in-out infinite;;
+    animation: wasbeerEntrance 1.4s ease-in-out forwards, wasbeerRotate 2s alternate 1ms ease-in-out infinite;
 }
 #wasbeertekst-s3{
     bottom: 34dvh;
@@ -19,15 +46,15 @@
 @keyframes wasbeerEntrance {
     0% {
         scale: 90%;
-        top: 70dvh;
-        left: 30%;
+        top: 80dvh;
+        left: -30%;
         transform: rotate(0deg);
 
     }
 
     100% {
-        top: 75dvh;
-        left: 30%;
+        top: 77dvh;
+        left: 27%;
         transform: rotate(0deg);
     }
 }
@@ -50,14 +77,25 @@
     transform: translate3d(-50%, -50%, 0);
 }
 #wasbeer-s4{
-    bottom: 0dvh;
-    left: 30%;
-    transform: translate3d(-50%, -50%, 0);
+    top: 77dvh;
+    left: 27%;
+    transform: rotate(0deg);
     z-index: 999;
+
+    animation: wasbeerRotate 2s alternate 1ms ease-in-out infinite;
 }
 #wasbeertekst-s4{
     bottom: 33dvh;
     z-index: 999;
+}
+
+@keyframes wasbeerRotate {
+    0% {
+        transform: translate3d(-50%, -50%, 0) rotate(3deg);
+    }
+    100% {
+        transform: translate3d(-50%, -50%, 0) rotate(-3deg);
+    }
 }
 #kapstok-s4{
     bottom: 30dvh;
@@ -187,6 +225,8 @@
     left: 60%;
     transform: translate3d(-50%, -50%, 0);   
     z-index: 999;
+
+    animation: wasbeerEntrance1 1.5s ease-in-out forwards, wasbeerRotate1 1.5s alternate 1ms ease-in-out infinite;
 }
 #wasbeertekst-s7{
     bottom: 45dvh;
@@ -200,7 +240,26 @@
     left: 60%;
     transform: translate3d(-50%, -50%, 0);   
     z-index: 999;
+
+    animation: wasbeerEntrance3 1.5s ease-in-out forwards, wasbeerRotate1 1.5s alternate 1ms ease-in-out infinite;
 }
+
+@keyframes wasbeerEntrance3 {
+    0% {
+        scale: 40%;
+        top: 150dvh;
+        left: 50%;
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+        top: 75dvh;
+        left: 55%;
+        transform: rotate(0deg);
+    }
+}
+
 /* één punt */
 #boom-1-1{
     position: fixed;

@@ -3,7 +3,7 @@ onScreen(1,()=>{
 })
 
 onScreen(2,()=>{
-	setTimeout(nextScreen, 800)
+	setTimeout(nextScreen, 2500)
 })
 
 onScreen(3, ()=>{

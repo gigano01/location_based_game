@@ -74,3 +74,4 @@ onScreen(8, ()=>{
 docReady(async ()=>{
 	gotoScreen(1)
 })
+

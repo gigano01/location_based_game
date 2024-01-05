@@ -2,9 +2,9 @@
 	setTimeout(nextScreen,3000)
 })
 
-// onScreen(2, ()=>{
-// 	setTimeout(nextScreen,800)
-// })
+onScreen(2, ()=>{
+	setTimeout(nextScreen, 2200)
+})
 
 onScreen(3, ()=>{
 	createDialogueObject("dialogue/scherm3.json").then((dialogue)=>{

@@ -176,32 +176,48 @@ onScreen(9, ()=>{
 onScreen(10, nextScreen) //we skippen dees effe
 
 onScreen(11, ()=>{
-	setTimeout(nextScreen,1500)
+	setTimeout(()=>{gotoScreen(14)},1500)
 })
 
-onScreen(12, ()=>{
+onScreen(14, ()=>{
 	createDialogueObject("dialogue/scherm12.json").then((dialogue)=>{
 		assignDialogueToContainer(dialogue,document.getElementById("muisje-s12-tekstbubbel"))
 		setDialogueEndHandler(dialogue,()=>{
 			makeDialogueInvisible(dialogue)
 			removeDialogueFromContainer(dialogue)
-			document.getElementById("tekstblok-s12").classList.remove("invisible")
+			document.getElementById("tekstblok-s14").classList.remove("invisible")
 		})
 	})
 
-	let img = document.getElementById('kraan-s12')
-	let accum = 0
-	onDragHandler= () => {
-		//console.log(getCurrentDrag().x)
-		//console.log(__DX)
-		accum = accum + getCurrentDrag().x
-		let rotation = (accum / 1400) * 180 / Math.PI
-		//console.log(rotation)
-		img.style.transform = 'rotate(' + rotation + 'deg)'
+	const img = document.getElementById('kraan-s14')
+	const arrow = document.getElementById('schuifpijltje-s14')
+	let isDragging = false;
+	let initialMousePosition = null;
+	let accum = 0;
+	let speed = 1; // adjust this value to your needs
+	const goal = 400;
 
-		if(rotation > 800 || rotation < -800) {
-			onDragHandler = () => {}
-			nextScreen()
+	/*
+	document.addEventListener('mousemove', (event) => {
+		if (isDragging) {
+			
+		}
+	});
+	*/
+	onDragHandler= () => {
+		console.log("uwu")
+		const dx = getMTPosition().x - initialMousePosition;
+		accum += dx * speed;
+		let rotation = (accum / 1400) * 180 / Math.PI;
+		img.style.transform = `rotate(${rotation}deg)`;
+		arrow.style.left = `calc(${rotation / goal * 100}% - 50px)`
+		
+		
+		console.log(rotation)
+
+		if (rotation > goal) {
+			isDragging = false;
+			gotoScreen(13)
 		}
 	}
 })

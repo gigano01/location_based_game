@@ -44,6 +44,16 @@
 }
 
 /* scherm 2 */
+#riool-mask {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
+	height: 100%;
+	mask: url('../../../media/tunnelmask.svg') no-repeat center / contain;
+}
+
 #muisje-s2 {
 	left: 47vw;
 	bottom: 22dvh;
@@ -51,6 +61,36 @@
 	/*flip de img*/
 	-webkit-transform: scaleX(-1);
   	transform: scaleX(-1);
+	
+	animation: muisRun 3s ease-in-out forwards, muisRotate 1s alternate 1ms ease-in-out infinite;
+}
+
+@keyframes muisRun {
+    0% {
+        scale: 100%;
+        top: 40dvh;
+        left: 130%;
+
+		/* -webkit-transform: scaleX(-1);
+		transform: scaleX(-1); */
+    }
+
+    100% {
+        top: 80dvh;
+        left: -80%;
+
+		/* -webkit-transform: scaleX(-1);
+		transform: scaleX(-1); */
+    }
+}
+
+@keyframes muisRotate {
+    0% {
+        transform: translate3d(-50%, -50%, 1) rotate(3deg);
+    }
+    100% {
+        transform: translate3d(-50%, -50%, 1) rotate(-3deg);
+    }
 }
 
 /* scherm 4*/

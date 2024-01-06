@@ -18,10 +18,10 @@ onScreen(1, ()=>{
 	})
 })
 
-// //SCHERM 2
-// onScreen(2, ()=>{
-// 	setTimeout(nextScreen, 1200)
-// })
+//SCHERM 2
+onScreen(2, ()=>{
+	setTimeout(nextScreen, 1200)
+})
 
 //SCHERM 3
 onScreen(3, ()=>{
@@ -210,7 +210,7 @@ onScreen(14, ()=>{
 		accum += dx * speed;
 		let rotation = (accum / 1400) * 180 / Math.PI;
 		img.style.transform = `rotate(${rotation}deg)`;
-		arrow.style.left = `calc(${rotation / goal * 100}% - 50px)`
+		arrow.style.left = `calc(${rotation / goal * 100}% - ${Math.min(rotation / goal * 50, 50)}px)`
 		
 		
 		console.log(rotation)

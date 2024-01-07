@@ -199,6 +199,11 @@ onScreen(7, ()=>{
 
 onScreen(8, ()=>{
 	showStars(Math.max(1, 3 - tries))
+	saveStars()
+	document.onclick = ()=> {
+		const nextlocID = "kmska-01"
+		location.assign(`../../navigate/index.html?locationID=${nextlocID}`)
+	}
 })
 
 docReady(async ()=>{

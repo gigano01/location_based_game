@@ -20,5 +20,6 @@ onScreen(3, ()=>{
 })
 
 docReady(async ()=>{
+	localStorage.setItem("score-global", 0)
 	gotoScreen(1)
 })

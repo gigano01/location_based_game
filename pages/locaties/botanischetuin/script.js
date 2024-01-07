@@ -83,11 +83,14 @@ onScreen(7, ()=>{
 })
 
 onScreen(8, ()=>{
-	createDialogueObject("dialogue/scherm8.json").then((dialogue)=>{
-		assignDialogueToContainer(dialogue,document.getElementById("uiltekst-s8"))
-		setDialogueEndHandler(dialogue,()=>{
-			const nextlocID = "speeltuin-01"
-			location.assign(`../../navigate/index.html?locationID=${nextlocID}`)
+	let gansElement = document.querySelector("#uil-s8");
+    gansElement.addEventListener('animationend', () => {
+		createDialogueObject("dialogue/scherm8.json").then((dialogue)=>{
+			assignDialogueToContainer(dialogue,document.getElementById("uiltekst-s8"))
+			setDialogueEndHandler(dialogue,()=>{
+				const nextlocID = "speeltuin-01"
+				location.assign(`../../navigate/index.html?locationID=${nextlocID}`)
+			})
 		})
 	})
 })

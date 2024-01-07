@@ -122,11 +122,14 @@ onScreen(6,()=>{
 })
 
 onScreen(7,()=>{
-	createDialogueObject("dialogue/scherm7.json").then((dialogue)=>{
-		assignDialogueToContainer(dialogue,document.getElementById("eendjetekst-s7"))
-		setDialogueEndHandler(dialogue,()=>{
-			const nextlocID = "theaterplein-01"
-			location.assign(`../../navigate/index.html?locationID=${nextlocID}`)
+	let gansElement = document.querySelector("#eendje-s7");
+    gansElement.addEventListener('animationend', () => {
+		createDialogueObject("dialogue/scherm7.json").then((dialogue)=>{
+			assignDialogueToContainer(dialogue,document.getElementById("eendjetekst-s7"))
+			setDialogueEndHandler(dialogue,()=>{
+				const nextlocID = "theaterplein-01"
+				location.assign(`../../navigate/index.html?locationID=${nextlocID}`)
+			})
 		})
 	})
 })

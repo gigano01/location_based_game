@@ -10,10 +10,13 @@ onScreen(1, ()=>{
 	} else {
 		firstdialogue = "dialogue/dialogue_repeat.json"
 	}
-	createDialogueObject(firstdialogue).then((dialogue)=>{
-		assignDialogueToContainer(dialogue,document.getElementById("muisje-s1-tekstbubbel"))
-		setDialogueEndHandler(dialogue,()=>{
-			nextScreen()
+	let gansElement = document.querySelector("#muisje-s1");
+    gansElement.addEventListener('animationend', () => {
+		createDialogueObject(firstdialogue).then((dialogue)=>{
+			assignDialogueToContainer(dialogue,document.getElementById("muisje-s1-tekstbubbel"))
+			setDialogueEndHandler(dialogue,()=>{
+				nextScreen()
+			})
 		})
 	})
 })
@@ -35,10 +38,13 @@ onScreen(3, ()=>{
 
 //SCHERM 4
 onScreen(4, ()=>{
-	createDialogueObject("dialogue/scherm4.json").then((dialogue)=>{
-		assignDialogueToContainer(dialogue,document.getElementById("muisje-s4-tekstbubbel"))
-		setDialogueEndHandler(dialogue,()=>{
-			nextScreen()
+	let gansElement = document.querySelector("#muisje-s4");
+    gansElement.addEventListener('animationend', () => {
+		createDialogueObject("dialogue/scherm4.json").then((dialogue)=>{
+			assignDialogueToContainer(dialogue,document.getElementById("muisje-s4-tekstbubbel"))
+			setDialogueEndHandler(dialogue,()=>{
+				nextScreen()
+			})
 		})
 	})
 })
@@ -50,10 +56,13 @@ onScreen(5, ()=>{
 	} else {
 		firstdialogue = "dialogue/scherm5_repeat.json"
 	}
-	createDialogueObject(firstdialogue).then((dialogue)=>{
-		assignDialogueToContainer(dialogue,document.getElementById("muisje-s5-tekstbubbel"))
-		setDialogueEndHandler(dialogue,()=>{
-			nextScreen()
+	let gansElement = document.querySelector("#muisje-s5");
+    gansElement.addEventListener('animationend', () => {
+		createDialogueObject(firstdialogue).then((dialogue)=>{
+			assignDialogueToContainer(dialogue,document.getElementById("muisje-s5-tekstbubbel"))
+			setDialogueEndHandler(dialogue,()=>{
+				nextScreen()
+			})
 		})
 	})
 })
@@ -160,11 +169,20 @@ onScreen(7, ()=>{
 })
 
 onScreen(8, ()=>{
-	createDialogueObject("dialogue/scherm8.json").then((dialogue)=>{
-		assignDialogueToContainer(dialogue,document.getElementById("muisje-s8-tekstbubbel"))
-		setDialogueEndHandler(dialogue,()=>{
-			document.getElementById("code-visibility").classList.remove("invisible");
-			dialogue,document.getElementById("muisje-s8-tekstbubbel").onclick = ()=> {nextScreen()}
+
+	for (let i = 0; i < 4; i++) {
+		document.getElementById(`code-${i + 1}`).textContent = Math.round(Math.random() * 8) + 1
+		
+	}
+
+	let gansElement = document.querySelector("#muisje-s8");
+    gansElement.addEventListener('animationend', () => {
+		createDialogueObject("dialogue/scherm8.json").then((dialogue)=>{
+			assignDialogueToContainer(dialogue,document.getElementById("muisje-s8-tekstbubbel"))
+			setDialogueEndHandler(dialogue,()=>{
+				document.getElementById("code-visibility").classList.remove("invisible");
+				dialogue,document.getElementById("muisje-s8-tekstbubbel").onclick = ()=> {nextScreen()}
+			})
 		})
 	})
 })
@@ -180,12 +198,15 @@ onScreen(11, ()=>{
 })
 
 onScreen(14, ()=>{
-	createDialogueObject("dialogue/scherm12.json").then((dialogue)=>{
-		assignDialogueToContainer(dialogue,document.getElementById("muisje-s12-tekstbubbel"))
-		setDialogueEndHandler(dialogue,()=>{
-			makeDialogueInvisible(dialogue)
-			removeDialogueFromContainer(dialogue)
-			document.getElementById("tekstblok-s14").classList.remove("invisible")
+	let gansElement = document.querySelector("#muisje-s14");
+    gansElement.addEventListener('animationend', () => {
+		createDialogueObject("dialogue/scherm12.json").then((dialogue)=>{
+			assignDialogueToContainer(dialogue,document.getElementById("muisje-s14-tekstbubbel"))
+			setDialogueEndHandler(dialogue,()=>{
+				makeDialogueInvisible(dialogue)
+				removeDialogueFromContainer(dialogue)
+				document.getElementById("tekstblok-s14").classList.remove("invisible")
+			})
 		})
 	})
 
@@ -223,10 +244,13 @@ onScreen(14, ()=>{
 })
 
 onScreen(13, ()=>{
-	createDialogueObject("dialogue/scherm13.json").then((dialogue)=>{
-		assignDialogueToContainer(dialogue,document.getElementById("muisje-s13-tekstbubbel"))
-		setDialogueEndHandler(dialogue,()=>{
-			location.assign(`../../navigate/index.html?locationID=${quizData["mapLocationID"]}`)
+	let gansElement = document.querySelector("#muisje-s13");
+    gansElement.addEventListener('animationend', () => {
+		createDialogueObject("dialogue/scherm13.json").then((dialogue)=>{
+			assignDialogueToContainer(dialogue,document.getElementById("muisje-s13-tekstbubbel"))
+			setDialogueEndHandler(dialogue,()=>{
+				location.assign(`../../navigate/index.html?locationID=${quizData["mapLocationID"]}`)
+			})
 		})
 	})
 })

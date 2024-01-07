@@ -7,10 +7,13 @@ onScreen(2,()=>{
 })
 
 onScreen(3, ()=>{
-	createDialogueObject("dialogue/scherm3.json").then((dialogue)=>{
-		assignDialogueToContainer(dialogue,document.getElementById("wasbeertekst-s3"))
-		setDialogueEndHandler(dialogue,()=>{
-			nextScreen()
+	let gansElement = document.querySelector("#wasbeer-s3");
+    gansElement.addEventListener('animationend', () => {
+		createDialogueObject("dialogue/scherm3.json").then((dialogue)=>{
+			assignDialogueToContainer(dialogue,document.getElementById("wasbeertekst-s3"))
+			setDialogueEndHandler(dialogue,()=>{
+				nextScreen()
+			})
 		})
 	})
 })
@@ -44,6 +47,8 @@ let tries = 0
 let fail = false
 let timerID = null
 
+let playing = false
+
 
 const maxTimeInMinutes = 1 //make dynamic!!
 const maxTimeInSeconds = maxTimeInMinutes * 60
@@ -69,6 +74,11 @@ function timer(){
 }
 
 function game() {
+	if(!playing){
+		console.log("?????")
+		return
+	} //zorgt er voor dat ie niet ineens willekeurig alle schermen skipt om een of andere domme redene.
+
 	const randomNum = Math.round(Math.random()*(trashObjects.length-1))
 	
 	if (fallingItem === null){
@@ -89,6 +99,7 @@ function game() {
 			document.getElementById("kader-s6").textContent = `${Math.floor(time/60)}:${time % 60}`
 			document.getElementById("kader-s5").textContent = `start!`
 			fail = true
+			playing = false
 			gotoScreen(6)
 			return
 		}
@@ -103,6 +114,7 @@ function game() {
 			document.getElementById("kader-s6").textContent = `${Math.floor(time/60)}:${time % 60}`
 			document.getElementById("kader-s5").textContent = `start!`
 			fail = true
+			playing = false
 			gotoScreen(6)
 			return
 		}
@@ -125,7 +137,8 @@ onScreen(5,()=>{
 	fallingX = 0
 	fallingY = -50
 	time = maxTimeInSeconds
-	timer = setInterval(timer, 1000)
+	playing = true
+	timerID = setInterval(timer, 1000)
 
 	const trashcan = document.getElementById("vuilbakgroen-s5")
 	onMovementHandler = () => {
@@ -168,13 +181,24 @@ onScreen(6, ()=>{
 })
 
 onScreen(7, ()=>{
-	createDialogueObject("dialogue/scherm7.json").then((dialogue)=>{
+	let dialogueText
+	if(fail){
+		dialogueText = "dialogue/scherm7_fail.json"
+	}else{
+		dialogueText = "dialogue/scherm7.json"
+	}
+	createDialogueObject(dialogueText).then((dialogue)=>{
 		assignDialogueToContainer(dialogue,document.getElementById("wasbeertekst-s7"))
 		setDialogueEndHandler(dialogue,()=>{
-			const nextlocID = "kmska-01"
-			location.assign(`../../navigate/index.html?locationID=${nextlocID}`)
+			// const nextlocID = "kmska-01"
+			// location.assign(`../../navigate/index.html?locationID=${nextlocID}`)
+			nextScreen()
 		})
 	})
+})
+
+onScreen(8, ()=>{
+	showStars(Math.max(1, 3 - tries))
 })
 
 docReady(async ()=>{

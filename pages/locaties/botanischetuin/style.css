@@ -104,13 +104,14 @@
 }
 
 /* scherm 5 */
-#video {
+/* #video {
 	top: 50%;
 	left: 50%;
 	transform: translateX(-50%) translateY(-50%);
 	min-width: 100dvw;
-	height: 100dvw; /*same height as width*/
-}
+	height: 100dvw; /*same height as width
+} 
+*/
 
 #capture {
 	bottom: 20dvh;
@@ -129,7 +130,17 @@
     height: 170px;
     width: 314px;
 }
+#video{
+    width: 358px;
+    height: 358px;
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.60); 
+    bottom: 0dvh;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
 #vlak-2-s5{
+	display: none;
     width: 358px;
     height: 358px;
     border-radius: 40px;

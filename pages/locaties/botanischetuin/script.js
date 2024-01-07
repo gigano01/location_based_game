@@ -31,33 +31,55 @@ onScreen(4, ()=>{
 })
 
 let firstTime = true
+const canvas = document.getElementById("vlak-2-s5")
+const prompt_text = document.getElementById("vlak-s5")
+
+const prompts = ["Lavendel, Lamiaceae", "Emerald 'N Gold, Celastraceae", "Bosviooltje, Violacceae"]
+let offset = 1
 
 //WE SKIPPEN HET SPEL EFFE
 onScreen(5, ()=>{
-	
+	prompt_text.textContent = prompts[offset - 1]
 	function callback(base64) {
+		canvas.style.display = "block";
+
 		console.log('the image was captured')
 		console.log(base64)
-		if(Math.random() * 10 > 4 && !firstTime){
+		if(Math.random() * 10 > 3 && !firstTime){
 			setTimeout(nextScreen,800)
 			console.log("epic")
+			prompt_text.textContent = prompts[offset - 1]
+			prompt_text.style.backgroundColor = "var(--groen)"
 		} else {
 			firstTime = false
 			console.log("not epic")
+			prompt_text.textContent = "Probeer opnieuw"
+			prompt_text.style.backgroundColor = "var(--eye-bleed-red)"
+			setTimeout(()=>{
+				canvas.style.display = "none"
+				prompt_text.textContent = prompts[offset - 1]
+				prompt_text.style.backgroundColor = "var(--groen)"
+			},800)
 		}
 	  }
 
-	  document.getElementById("capture").onclick = nextScreen
+	  document.getElementById("fotobutton-s5").onclick = nextScreen
 	  
-	  startCamera(false, '#video', '#canvas', '#capture', callback);
+	  startCamera(true, '#video', '#vlak-2-s5', '#fotobutton-s5', callback);
 
 
 })
 onScreen(6, ()=>{
-	setTimeout(nextScreen, 1200)
+	canvas.style.display = "none"
+	offset++
+	if (offset > 3) {
+		gotoScreen(7)
+	}else {
+		setTimeout(()=>{gotoScreen(5)}, 1200)
+	}
 })
 onScreen(7, ()=>{
-	setTimeout(nextScreen, 1200)
+	setTimeout(nextScreen, 4000)
 })
 
 onScreen(8, ()=>{

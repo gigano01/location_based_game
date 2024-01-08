@@ -111,14 +111,20 @@ onScreen(5, ()=>{
 	createDialogueObject(dialogueLoc).then((dialogue)=>{
 		assignDialogueToContainer(dialogue,document.getElementById("eendjetekst-s5"))
 		setDialogueEndHandler(dialogue,()=>{
-			nextScreen()
+			gotoScreen(7)
 		})
 	})
 })
 
 onScreen(6,()=>{
-	//TODO: punten
-	nextScreen()
+	let points = (gameFail) ? 1 : 3 //als ze falen krijgen ze maar 1 ster, anders 3 sterren.. (er is niet genoeg om te scoren ;^;)
+	
+	console.log(points)
+	showReward(points)
+	document.getElementById("scherm-6").onclick = ()=> {
+		const nextlocID = "meir"
+		location.assign(`../../navigate/index.html?locationID=${nextlocID}`)
+	}
 })
 
 onScreen(7,()=>{
@@ -127,8 +133,7 @@ onScreen(7,()=>{
 		createDialogueObject("dialogue/scherm7.json").then((dialogue)=>{
 			assignDialogueToContainer(dialogue,document.getElementById("eendjetekst-s7"))
 			setDialogueEndHandler(dialogue,()=>{
-				const nextlocID = "theaterplein-01"
-				location.assign(`../../navigate/index.html?locationID=${nextlocID}`)
+				gotoScreen(6)
 			})
 		})
 	})

@@ -26,11 +26,16 @@
 	<link rel="stylesheet" href="../../../styles/components/vierkantwit.css">
 	<link href="style.css" type="text/css" rel="stylesheet">
 
+
+	<script defer src="../../../scripts/reward.js"></script>
 	<script defer src="../../../scripts/docReady.js"></script>
 	<script defer src="../../../scripts/dialogue.js"></script>
 	<script defer src="../../../scripts/page-manager.js"></script>
+	<script defer src="../../../scripts/get-distance.js"></script>
 	<!-- <script defer src="../../../scripts/get-query-param.js"></script> -->
 	<script defer src="../../../scripts/movement.js"></script>
+	<script defer src="../../../scripts/get-query-param.js"></script>
+	<script defer src="../../../scripts/is-in-iframe.js"></script>
 	<script defer src="script.js"></script>
 
 </head>
@@ -66,8 +71,9 @@
 	<div id="scherm-3" class="invisible">
 		<img src="../../../media/bg/bg_meir_sch2.jpg" alt="" class="positioned background">
 		<img src="../../../media/chrt/chrt_muis_ballon.png" al="" class="positioned" id="muisje-s3">
-		<p class="positioned" id="timer-s3">0:00</p>
-		<div class="positioned groenvaktekst" id="tekst-s3">Ontsnap aan de contractor voor hij jou ziet</div>
+		<p class="positioned" id="timer-s3">0:45</p>
+		<div class="positioned groenvaktekst" id="tekst-s3">Ontsnap aan de contractor voor hij jou ziet! Steek de meir recht over</div>
+		<div  class="positioned groenvaktekst" id="afstand-s3">...m</div>
 	</div>
 	<div id="scherm-4" class="invisible">
 		<img src="../../../media/bg/bg_inkompark.jpg" alt="" class="positioned background">
@@ -81,7 +87,7 @@
 			<img src="../../../media/prop/prop_boompjeklein.svg" id="boom-2-2" class="positioned">
 			<p>YAY! Super gedaan! Jullie hebben de buit gevonden. Jullie krijgen extra bomen om te planten!</p>
 		</div>
-		<div class="positioned centered vierkantwit driebomen">
+		<div class="positioned centered vierkantwit driebomen invisible">
 			<img src="../../../media/prop/prop_boompjeklein.svg" id="boom-3-1" class="positioned">
 			<img src="../../../media/prop/prop_boompjegroot.svg" id="boom-3-2" class="positioned">
 			<img src="../../../media/prop/prop_boompjeklein.svg" id="boom-3-3" class="positioned">

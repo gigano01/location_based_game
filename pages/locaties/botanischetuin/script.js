@@ -37,7 +37,7 @@ const prompt_text = document.getElementById("vlak-s5")
 const prompts = ["Lavendel, Lamiaceae", "Emerald 'N Gold, Celastraceae", "Bosviooltje, Violacceae"]
 let offset = 1
 
-//WE SKIPPEN HET SPEL EFFE
+
 onScreen(5, ()=>{
 	prompt_text.textContent = prompts[offset - 1]
 	function callback(base64) {
@@ -88,11 +88,21 @@ onScreen(8, ()=>{
 		createDialogueObject("dialogue/scherm8.json").then((dialogue)=>{
 			assignDialogueToContainer(dialogue,document.getElementById("uiltekst-s8"))
 			setDialogueEndHandler(dialogue,()=>{
-				const nextlocID = "speeltuin-01"
-				location.assign(`../../navigate/index.html?locationID=${nextlocID}`)
+				// const nextlocID = "speeltuin-01"
+				// location.assign(`../../navigate/index.html?locationID=${nextlocID}`)
+				nextScreen()
 			})
 		})
 	})
+})
+
+onScreen(9, ()=>{
+	const score = math.round(Math.random()*2) + 1 //shhhh, niks te zien hier
+	showReward(score)
+	document.getElementById("scherm-8").onclick = ()=> {
+		const nextlocID = "speeltuin-01"
+		location.assign(`../../navigate/index.html?locationID=${nextlocID}`)
+	}
 })
 
 

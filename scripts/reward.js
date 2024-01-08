@@ -11,7 +11,7 @@ function showReward(count){
 			document.getElementsByClassName("driebomen")[0].classList.remove("invisible")
 	}
 
-	const currentScore = localStorage.getItem("score-global")
+	const currentScore = Number(localStorage.getItem("score-global"))
 	localStorage.setItem("score-global",currentScore + count)
 }
 

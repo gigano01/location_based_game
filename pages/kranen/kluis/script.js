@@ -23,7 +23,7 @@ onScreen(1, ()=>{
 
 //SCHERM 2
 onScreen(2, ()=>{
-	setTimeout(nextScreen, 1200)
+	setTimeout(nextScreen, 2000)
 })
 
 //SCHERM 3

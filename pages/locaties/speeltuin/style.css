@@ -98,27 +98,27 @@
     }
 }
 #kapstok-s4{
-    bottom: 28dvh;
+    bottom: 26dvh;
     left: 15%;
     transform: translate3d(-50%, -50%, 0);
 }
 #fles-1-s4{
-    bottom: 25dvh;
+    bottom: 21dvh;
     left: 33%;
     transform: translate3d(-50%, -50%, 0);  
 }
 #fles-2-s4{
-    bottom: 17dvh;
+    bottom: 13dvh;
     left: 30%;
     transform: translate3d(-50%, -50%, 0);  
 }
 #tandpasta-s4{
-    bottom: 20dvh;
+    bottom: 18dvh;
     left: 15%;
     transform: translate3d(-50%, -50%, 0);  
 }
 #beker-s4{
-    bottom: 10dvh;
+    bottom: 8dvh;
     left: 15%;
     transform: translate3d(-50%, -50%, 0);  
 }
@@ -128,17 +128,17 @@
     transform: translate3d(-50%, -50%, 0);  
 }
 #kaas-s4{
-    bottom: 25dvh;
+    bottom: 23dvh;
     left: 69%;
     transform: translate3d(-50%, -50%, 0);  
 }
 #brood-s4{
-    bottom: 18dvh;
+    bottom: 15dvh;
     left: 80%;
     transform: translate3d(-50%, -50%, 0);  
 }
 #broccoli-s4{
-    bottom:15dvh;
+    bottom:10dvh;
     left:70%;
     transform: translate3d(-50%, -50%, 0);  
 }

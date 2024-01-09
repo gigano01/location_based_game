@@ -1,4 +1,4 @@
-onScreen(1, ()=>{
+/* onScreen(1, ()=>{
 	document.getElementById("startbutton-s1").onclick = ()=>{
 		nextScreen()
 	}
@@ -22,4 +22,5 @@ onScreen(3, ()=>{
 docReady(async ()=>{
 	localStorage.setItem("score-global", 0)
 	gotoScreen(1)
-})
+}) */
+gotoScreen(4)

@@ -65,7 +65,7 @@ onScreen(5, ()=>{
 
 	  document.getElementById("fotobutton-s5").onclick = nextScreen
 	  
-	  startCamera(true, '#video', '#vlak-2-s5', '#fotobutton-s5', callback);
+	  startCamera(false, '#video', '#vlak-2-s5', '#fotobutton-s5', callback);
 
 
 })

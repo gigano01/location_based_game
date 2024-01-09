@@ -2,6 +2,7 @@ let gamedata = {}
 let gameIteration //i variabele voor het spel :D
 let gameInterval
 let gameAcceptInput
+let tries = 0
 
 onScreen(1, ()=>{
 	setTimeout(nextScreen,3000)
@@ -146,6 +147,7 @@ onScreen(7, ()=>{
 	gameIteration = 0 //i variabele voor het spel :D
 	gameInterval = null
 	gameAcceptInput = false
+	tries++
 
 	setupBoard()
 	game() //we doen het al een keer zodat je de placeholders niet ziet
@@ -177,10 +179,19 @@ onScreen(10,()=>{
 	createDialogueObject("dialogue/scherm10.json").then((dialogue)=>{
 		assignDialogueToContainer(dialogue,document.getElementById("eekhoorntjetekst-s10"))
 		setDialogueEndHandler(dialogue,()=>{
-			const nextlocID = "botanischetuin-01"
-			location.assign(`../../navigate/index.html?locationID=${nextlocID}`)
+			// const nextlocID = "botanischetuin-01"
+			// location.assign(`../../navigate/index.html?locationID=${nextlocID}`)
+			nextScreen()
 		})
 	})
+})
+
+onScreen(11, ()=>{
+	showReward(Math.max(1, 3 - (tries - 1)))
+	document.getElementById("scherm-11").onclick = ()=> {
+		const nextlocID = "botanischetuin-01"
+		location.assign(`../../navigate/index.html?locationID=${nextlocID}`)
+	}
 })
 
 docReady(async ()=>{

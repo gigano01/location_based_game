@@ -441,3 +441,74 @@
 #chessboard-s7 tr:nth-child(8) td:nth-child(1) {
     border: black 2px solid;
 }
+
+/* scherm11 */
+#eekhoorntje-s11 {
+    top: 80dvh;
+    transform: translate3d(-50%, -50%, 0);
+    width: 360px;
+    /* animation */
+    animation: eekhoorntjeJump 1s ease-in-out forwards, eekhoorntjeRotate1 1.5s alternate 1ms ease-in-out infinite;
+}
+
+@keyframes eekhoorntjeJump {
+    0% {
+        scale: 20%;
+        top: 100dvh;
+        left: 0%;
+    }
+    100% {
+        scale: 100%;
+        top: 59dvh;
+        left: 5%;
+    }
+}
+
+@keyframes eekhoorntjeRotate1 {
+    0% {
+        transform: rotate(-3deg);
+    }
+    100% {
+        transform: rotate(3deg);
+    }
+}
+
+/* één punt */
+#boom-1-1{
+    position: fixed;
+    bottom: 25dvh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/* twee punt */
+#boom-2-1{
+    position: fixed;
+    bottom: 30dvh;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+#boom-2-2{
+    position: fixed;
+    bottom: 30dvh;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+/* drie punten */
+#boom-3-1{
+    position: fixed;
+    bottom: 28dvh;
+    left: 10%;
+    transform: translate(-50%, -50%);
+}
+#boom-3-2{
+    position: fixed;
+    bottom: 30dvh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#boom-3-3{
+    position: fixed;
+    bottom: 28dvh;
+    left: 90%;
+    transform: translate(-50%, -50%);
+}

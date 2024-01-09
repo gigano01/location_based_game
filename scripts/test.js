@@ -1,7 +1,7 @@
 // iframe
 
 const iframeElement = document.querySelector('#iframe');
-iframeElement.src = "pages/start";
+iframeElement.src = "pages/locaties/meir";
 
 // simulator
 

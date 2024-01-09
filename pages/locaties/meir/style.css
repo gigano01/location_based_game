@@ -61,6 +61,13 @@
     transform: translate3d(-50%, -50%, 0);
     width: 400px;
     height: 88px;
+	z-index: 10;
+}
+#afstand-s3 {
+    top: 82dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+	padding: 3rem;
 }
 
 #timer-s3 {

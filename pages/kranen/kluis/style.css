@@ -447,6 +447,7 @@
 #schuifpijltje-s14{
 	position: relative;
 	width: 46px;
+	left:0;
 }
 #tekstschuifbar-s14{
 	font-family: var(--text-font);

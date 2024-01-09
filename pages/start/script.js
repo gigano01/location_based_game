@@ -1,4 +1,4 @@
-onScreen(1, ()=>{
+ onScreen(1, ()=>{
 	document.getElementById("startbutton-s1").onclick = ()=>{
 		nextScreen()
 	}
@@ -14,11 +14,13 @@ onScreen(2, ()=>{
 
 onScreen(3, ()=>{
 	setTimeout(()=>{
-		const nextlocID = "begijnhof-01"
-		location.assign(`../navigate/index.html?locationID=${nextlocID}`)
+		// const nextlocID = "begijnhof-01"
+		// location.assign(`../navigate/index.html?locationID=${nextlocID}`)
+		nextScreen()
 	},3000)
 })
 
 docReady(async ()=>{
+	localStorage.setItem("score-global", 0)
 	gotoScreen(1)
-})
+}) 

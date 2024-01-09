@@ -7,10 +7,13 @@ onScreen(2, ()=>{
 })
 
 onScreen(3, ()=>{
-	createDialogueObject("dialogue/scherm3.json").then((dialogue)=>{
-		assignDialogueToContainer(dialogue,document.getElementById("muisjetekst-s3"))
-		setDialogueEndHandler(dialogue,()=>{
-			nextScreen()
+	let gansElement = document.querySelector("#muisje-s3");
+    gansElement.addEventListener('animationend', () => {
+		createDialogueObject("dialogue/scherm3.json").then((dialogue)=>{
+			assignDialogueToContainer(dialogue,document.getElementById("muisjetekst-s3"))
+			setDialogueEndHandler(dialogue,()=>{
+				nextScreen()
+			})
 		})
 	})
 })
@@ -44,6 +47,11 @@ const maxTimeInMinutes = 1 //make dynamic!!
 const maxTimeInSeconds = maxTimeInMinutes * 60
 let time = maxTimeInSeconds
 
+let contractorOnScreen = false
+const contractor = document.getElementById("contractor-s5")
+
+let fail = false
+
 function timer(){
 	let timerDiv = document.getElementById("timer-s5")
 
@@ -62,6 +70,24 @@ function timer(){
 
 const fountain = document.getElementById("fontijn-s5")
 
+function triggerContractor() {
+	if(contractorOnScreen){
+		//als de contractor al op het scherm was...
+		fail = true
+		gotoScreen(8)
+	}
+
+	//komt de contractor eens piepen??
+	contractorOnScreen = (Math.random()*10 < 4)
+	if(contractorOnScreen){
+		contractor.style.display= "block"
+		setTimeout(()=>{
+			contractor.style.display = "none"
+			contractorOnScreen = false
+		}, 2000)
+	}
+}
+
 function flowerBehaviour(flower, flowerT, flowerL){
 
 	if(overlaps(mouseTracker, flower) && __DRAGGING){
@@ -77,6 +103,8 @@ function flowerBehaviour(flower, flowerT, flowerL){
 			totalSwipedAmount++
 			flower.style.top = `${getMTPosition().y}px`
 			flower.style.left = `${getMTPosition().x}px`
+
+			triggerContractor()
 		}
 		flower.style.top = flowerT
 		flower.style.left = flowerL
@@ -108,16 +136,26 @@ function gameLoop(){
 
 onScreen(5, ()=>{
 	time = maxTimeInSeconds
+
+	swipedAmount = 3
+	totalSwipedAmount = 0
+	fail = false
 	setInterval(timer, 1000)
 	gameLoop()
 })
 onScreen(6,nextScreen)
 onScreen(7, nextScreen)
 onScreen(8, ()=>{
-	createDialogueObject("dialogue/scherm8.json").then((dialogue)=>{
+	let dialogueText = (!fail) ? "dialogue/scherm8.json" : "dialogue/scherm8_fail.json"
+
+	createDialogueObject(dialogueText).then((dialogue)=>{
 		assignDialogueToContainer(dialogue,document.getElementById("muisjetekst-s8"))
 		setDialogueEndHandler(dialogue,()=>{
-			nextScreen()
+			if(fail) {
+				gotoScreen(5)
+			} else {
+				nextScreen()
+			}
 		})
 	})
 })
@@ -134,6 +172,7 @@ onScreen(10, ()=>{
 docReady(async ()=>{
 	gotoScreen(1)
 })
+
 gotoScreen(10)
 document.addEventListener("DOMContentLoaded", function() {
     const container = document.getElementById('container');

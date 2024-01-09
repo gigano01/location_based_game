@@ -70,7 +70,7 @@
     transform: translate3d(-50%, -50%, 0);
 }
 #muisje-s4-tekstbubbel{
-    top: -30dvh;
+    bottom: 58dvh;
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
     

@@ -14,8 +14,9 @@ onScreen(2, ()=>{
 
 onScreen(3, ()=>{
 	setTimeout(()=>{
-		const nextlocID = "begijnhof-01"
-		location.assign(`../navigate/index.html?locationID=${nextlocID}`)
+		// const nextlocID = "begijnhof-01"
+		// location.assign(`../navigate/index.html?locationID=${nextlocID}`)
+		nextScreen()
 	},3000)
 })
 

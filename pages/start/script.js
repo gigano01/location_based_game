@@ -20,6 +20,16 @@ onScreen(3, ()=>{
 	},3000)
 })
 
+onScreen(4, ()=>{
+	createDialogueObject("dialogue/scherm-4.json").then((dialogue)=>{
+		assignDialogueToContainer(dialogue,document.getElementById("muisje-s4-tekstbubbel"))
+		setDialogueEndHandler(dialogue,()=>{
+			const nextlocID = "begijnhof-01"
+			location.assign(`../navigate/index.html?locationID=${nextlocID}`)
+		})
+	})
+})
+
 docReady(async ()=>{
 	localStorage.setItem("score-global", 0)
 	gotoScreen(1)

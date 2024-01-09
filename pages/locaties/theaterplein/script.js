@@ -143,7 +143,7 @@ function setupBoard() {
 }
 
 onScreen(7, ()=>{
-	const delay = 3000
+	const delay = 4500
 	gameIteration = 0 //i variabele voor het spel :D
 	gameInterval = null
 	gameAcceptInput = false

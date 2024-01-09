@@ -61,3 +61,17 @@
 #start-video-s2 {
 	width: 100%;
 }
+/* scherm4 */
+#muisje-s4{
+    width: 195px;
+    height: 203.806px;  
+    top: 50dvh;
+    left: 77%;
+    transform: translate3d(-50%, -50%, 0);
+}
+#muisje-s4-tekstbubbel{
+    top: -30dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    
+}

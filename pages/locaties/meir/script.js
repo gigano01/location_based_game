@@ -1,5 +1,5 @@
 onScreen(1,()=>{
-	setTimeout(nextScreen, 1000)
+	setTimeout(nextScreen, 2000)
 })
 
 onScreen(2, ()=>{

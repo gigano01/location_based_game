@@ -1,12 +1,38 @@
 /* scherm1 */
+#muisje-s1 {
+    top: 80dvh;
+    left: 40%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 460px;
+    animation: muisEntrance2 2s ease-in-out forwards, muisRotate2 2s alternate 1ms ease-in-out infinite;
+}
+
+@keyframes muisEntrance2 {
+    0% {
+        top: 56dvh;
+        left: -100%;
+    }
+    100% {
+        top: 56dvh;
+        left: 120%;
+    }
+}
+
+@keyframes muisRotate2 {
+    0% {
+        transform: rotate(-3deg);
+    }
+    100% {
+        transform: rotate(3deg);
+    }
+}
 /* scherm2 */
 #muisje-s2 {
     top: 80dvh;
     left: 40%;
     transform: translate3d(-50%, -50%, 0);
     width: 460px;
-    /* animation */
-    animation: muisEntrance 1s ease-in-out forwards, muisRotate 1.5s alternate 1ms ease-in-out infinite;
+    animation: muisEntrance 1.2s ease-in-out forwards, muisRotate 1.5s alternate 1ms ease-in-out infinite;
 }
 
 #muisjetekst-s2 {

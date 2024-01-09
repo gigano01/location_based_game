@@ -353,3 +353,25 @@
 #contractor-s5{
 	display: none;
 }
+/* scherm11 */
+h1{
+    font-family: var(--text-font);
+    font-size: 36px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+p{
+    font-family: var(--text-font);
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+#vaktekst-s11{
+    top: 55dvh;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+    width: 100%;
+}
+.spatie-s11{
+    padding: 10px;
+}

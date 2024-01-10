@@ -132,7 +132,6 @@
 #muisje-s5 {
 	left: 50vw;
 	bottom: 2dvh;
-	z-index:20;
 
 	/*flip de img*/
 	-webkit-transform: scaleX(-1.3) scaleY(1.3);

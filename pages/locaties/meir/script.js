@@ -13,8 +13,8 @@ onScreen(2, ()=>{
 
  let timerID = null
  let stopid = null
- const maxTimeInMinutes = 0.75 //make dynamic!!
- const maxTimeInSeconds = maxTimeInMinutes * 60
+
+ const maxTimeInSeconds = 70
  let time = maxTimeInSeconds
 
  let inTime = false

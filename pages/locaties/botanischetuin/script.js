@@ -97,7 +97,7 @@ onScreen(8, ()=>{
 })
 
 onScreen(9, ()=>{
-	const score = math.round(Math.random()*2) + 1 //shhhh, niks te zien hier
+	const score = Math.round(Math.random()*2) + 1 //shhhh, niks te zien hier
 	showReward(score)
 	document.getElementById("scherm-9").onclick = ()=> {
 		const nextlocID = "speeltuin-01"

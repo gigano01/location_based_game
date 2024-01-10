@@ -1,13 +1,15 @@
 .hamburger-a {
+	display: none; /* dit krijg ik helaas niet af :c*/
+	/* display: block; */
 	z-index: 12;
 	top: 12px;
 	left: 12px;
-	display: block;
 	height: 20px;
 }
 
 .hamburger {
-	display: flex;
+	display: none; /* dit krijg ik helaas niet af :c*/
+	/* display: flex; */
 	justify-content: space-between;
 	flex-direction: column;
 	height: 30px;

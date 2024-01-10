@@ -417,7 +417,9 @@
 }
 
 #contractor-s5{
-	display: none;}
+	display: none;
+	animation: contractorRun 2.3s ease-in-out forwards, contractorRotate 1s alternate 1ms ease-in-out infinite;
+}
 
 @keyframes contractorRun {
     0% {

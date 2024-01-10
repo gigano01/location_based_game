@@ -51,12 +51,16 @@ let contractorOnScreen = false
 const contractor = document.getElementById("contractor-s5")
 
 let fail = false
+let timerID = null
 
 function timer(){
 	let timerDiv = document.getElementById("timer-s5")
 
 	if(time > 0) {
 		time--
+	} else {
+		fail = true
+		gotoScreen(8)
 	}
 
 	if(time < 10) {
@@ -65,7 +69,6 @@ function timer(){
 		timerDiv.textContent = `${Math.floor(time/60)}:${time % 60}`
 	}
 
-	clearInterval(timer)
 }
 
 const fountain = document.getElementById("fontijn-s5")
@@ -113,6 +116,8 @@ function flowerBehaviour(flower, flowerT, flowerL){
 }
 
 function gameLoop(){
+	if (fail) {return} //fixt rare bug, anders loopt logica een paar keer te vaak
+
 	mouseTracker.style.left = `${getMTPosition().x}px`
 	mouseTracker.style.top = `${getMTPosition().y}px`
 	flowerBehaviour(flower1, flower1T, flower1L)
@@ -128,6 +133,7 @@ function gameLoop(){
 
 	if (totalSwipedAmount === requiredAmount) {
 		nextScreen()
+		console.log("yes")
 	} else {
 		requestAnimationFrame(gameLoop)
 	}
@@ -140,20 +146,23 @@ onScreen(5, ()=>{
 	swipedAmount = 3
 	totalSwipedAmount = 0
 	fail = false
-	setInterval(timer, 1000)
+	timerID = setInterval(timer, 1000)
 	gameLoop()
 })
 onScreen(6,nextScreen)
 onScreen(7, nextScreen)
 onScreen(8, ()=>{
+	clearInterval(timerID)
 	let dialogueText = (!fail) ? "dialogue/scherm8.json" : "dialogue/scherm8_fail.json"
 
 	createDialogueObject(dialogueText).then((dialogue)=>{
 		assignDialogueToContainer(dialogue,document.getElementById("muisjetekst-s8"))
 		setDialogueEndHandler(dialogue,()=>{
 			if(fail) {
+				removeDialogueFromContainer(dialogue)
 				gotoScreen(5)
 			} else {
+				console.log("mmmmhhhhh")
 				nextScreen()
 			}
 		})
@@ -164,92 +173,106 @@ onScreen(10, ()=>{
 	createDialogueObject("dialogue/scherm10.json").then((dialogue)=>{
 		assignDialogueToContainer(dialogue,document.getElementById("muisjetekst-s10"))
 		setDialogueEndHandler(dialogue,()=>{
-			location.assign("../../start");
+			//DECLAN DOE WAT JE HIER MOET DOEN
+			setTimeout(nextScreen, 100) //verwijder dit :) 
+			// const video = document.getElementById("VIDEOIDHIER")
+			// video.style.display = "block"
+			// video.play()
+			// video.onended = (event) => {
+			// 	nextScreen()
+			// };
 		})
 	})
+})
+
+onScreen(11, ()=>{
+	document.getElementById("loading-div").style.display = "none"
+	document.getElementById("scherm-11").onclick = ()=>{
+		location.assign("../../start");
+	}
 })
 
 docReady(async ()=>{
 	gotoScreen(1)
 })
 
-gotoScreen(10)
-document.addEventListener("DOMContentLoaded", function() {
-    const container = document.getElementById('container');
-    const maxDiameter = 200; // Max size of the circle
-    let objects = [];
-    let intervalId;
+//gotoScreen(10)
+// document.addEventListener("DOMContentLoaded", function() {
+//     const container = document.getElementById('container');
+//     const maxDiameter = 200; // Max size of the circle
+//     let objects = [];
+//     let intervalId;
 
 
-    function addObject() {
-        const diameter = Math.random() * (maxDiameter - 10) + 10; // Random diameter between 10 and maxDiameter
-        const obj = {
-            width: diameter,
-            height: diameter,
-            x: Math.random() * (container.offsetWidth - diameter), // Random x position
-            y: 0
-        };
+//     function addObject() {
+//         const diameter = Math.random() * (maxDiameter - 10) + 10; // Random diameter between 10 and maxDiameter
+//         const obj = {
+//             width: diameter,
+//             height: diameter,
+//             x: Math.random() * (container.offsetWidth - diameter), // Random x position
+//             y: 0
+//         };
 
-        placeObject(obj);
+//         placeObject(obj);
 
-        objects.push(obj);
-        renderObject(obj);
+//         objects.push(obj);
+//         renderObject(obj);
 
-        if (obj.y + obj.height >= container.offsetHeight) {
-            setTimeout(onFull, 500); // Delay for the last animation to complete
-        }
-    }
+//         if (obj.y + obj.height >= container.offsetHeight) {
+//             setTimeout(onFull, 500); // Delay for the last animation to complete
+//         }
+//     }
 
-    function placeObject(newObj) {
-        let minY = 0;
-        let allX = Array.from({length: container.offsetWidth - newObj.width}, (_, i) => i);
+//     function placeObject(newObj) {
+//         let minY = 0;
+//         let allX = Array.from({length: container.offsetWidth - newObj.width}, (_, i) => i);
         
-        // Shuffle the X positions
-        allX.sort(() => Math.random() - 0.5);
+//         // Shuffle the X positions
+//         allX.sort(() => Math.random() - 0.5);
 
-        for (let x of allX) {
-            let maxYAtX = 0;
+//         for (let x of allX) {
+//             let maxYAtX = 0;
 
-            for (let other of objects) {
-                if (checkOverlap(newObj, other, x)) {
-                    maxYAtX = Math.max(maxYAtX, other.y + other.height);
-                }
-            }
+//             for (let other of objects) {
+//                 if (checkOverlap(newObj, other, x)) {
+//                     maxYAtX = Math.max(maxYAtX, other.y + other.height);
+//                 }
+//             }
 
-            if (maxYAtX < minY || minY === 0) {
-                minY = maxYAtX;
-                newObj.x = x;
-            }
-        }
+//             if (maxYAtX < minY || minY === 0) {
+//                 minY = maxYAtX;
+//                 newObj.x = x;
+//             }
+//         }
 
-        newObj.y = minY;
-    }
+//         newObj.y = minY;
+//     }
 
-    function checkOverlap(objA, objB, x) {
-        let aLeft = x;
-        let aRight = x + objA.width;
-        let bLeft = objB.x;
-        let bRight = objB.x + objB.width;
+//     function checkOverlap(objA, objB, x) {
+//         let aLeft = x;
+//         let aRight = x + objA.width;
+//         let bLeft = objB.x;
+//         let bRight = objB.x + objB.width;
 
-        return !(aRight <= bLeft || aLeft >= bRight);
-    }
+//         return !(aRight <= bLeft || aLeft >= bRight);
+//     }
 
-	function renderObject(obj) {
-		const img = document.createElement('img');
-		img.className = 'object';
-		img.style.width = `${obj.width}px`;
-		img.style.height = `${obj.height}px`;
-		img.style.left = `${obj.x}px`;
-		img.style.bottom = `${obj.y}px`;
-		container.style.position = 'absolute'; // Make sure the image is positioned correctly
-		container.style.zIndex = '1'; // Set a lower z-index
-		img.src = '../../../media/prop/prop_boompjegroot.svg'; // Replace with the actual path to your SVG file
-		container.appendChild(img);
-	}
+// 	function renderObject(obj) {
+// 		const img = document.createElement('img');
+// 		img.className = 'object';
+// 		img.style.width = `${obj.width}px`;
+// 		img.style.height = `${obj.height}px`;
+// 		img.style.left = `${obj.x}px`;
+// 		img.style.bottom = `${obj.y}px`;
+// 		container.style.position = 'absolute'; // Make sure the image is positioned correctly
+// 		container.style.zIndex = '1'; // Set a lower z-index
+// 		img.src = '../../../media/prop/prop_boompjegroot.svg'; // Replace with the actual path to your SVG file
+// 		container.appendChild(img);
+// 	}
 
-    function onFull() {
-        clearInterval(intervalId); // Stop adding more objects
-    }
+//     function onFull() {
+//         clearInterval(intervalId); // Stop adding more objects
+//     }
 
-    intervalId = setInterval(addObject, 600);
-});
+//     intervalId = setInterval(addObject, 600);
+// });

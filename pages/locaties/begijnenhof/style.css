@@ -250,6 +250,7 @@
     position: fixed;
 }
 /* scherm6 */
+
 /* één punt */
 #boom-1-1{
     position: fixed;
@@ -297,7 +298,36 @@
     width: 284px;
     height: 447.879px;
     z-index: 99;
+
+    animation: eendjeEntrance5 1.4s ease-in-out forwards, eendjeRotate5 2.2s alternate 1ms ease-in-out infinite;
 }
+
+@keyframes eendjeEntrance5 {
+    0% {
+        scale: 40%;
+        top: 140dvh;
+        left: 20%;
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+        scale: 100%;
+        top: 87dvh;
+        left: 30%;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes eendjeRotate5 {
+    0% {
+        transform: translate3d(-50%, -50%, 0) rotate(3deg);
+    }
+    100% {
+        transform: translate3d(-50%, -50%, 0) rotate(-3deg);
+    }
+}
+
 /* scherm7 */
 #eendje-s7{
     position: fixed;

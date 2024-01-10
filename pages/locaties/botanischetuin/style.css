@@ -160,7 +160,35 @@
     top: 70dvh;
     left: 50%;
     transform: translate3d(-50%, -50%, 0);  
+    animation: uilEntrance5 1s ease-in-out forwards, uilRotate5 2.2s alternate 1ms ease-in-out infinite;
 }
+   
+    @keyframes uilEntrance5 {
+        0% {
+            scale: 40%;
+            top: 140dvh;
+            left: 20%;
+            transform: rotate(0deg);
+    
+        }
+    
+        100% {
+            scale: 100%;
+            top: 60dvh;
+            left: 50%;
+            transform: rotate(0deg);
+        }
+    }
+    
+    @keyframes uilRotate5 {
+        0% {
+            transform: translate3d(-50%, -50%, 0) rotate(3deg);
+        }
+        100% {
+            transform: translate3d(-50%, -50%, 0) rotate(-3deg);
+        }
+    }
+
 #gefeliciteerd-s6{
     font-size: 28px;
     font-family: var(--text-font);
@@ -203,8 +231,37 @@
 #uil-s7{
     top: 70dvh;
     left: 50%;
-    transform: translate3d(-50%, -50%, 0);  
+    transform: translate3d(-50%, -50%, 0);
+    animation: uilEntrance4 1.4s ease-in-out forwards, uilRotate4 2.2s alternate 1ms ease-in-out infinite;
+
 }
+   
+    @keyframes uilEntrance4 {
+        0% {
+            scale: 40%;
+            top: 140dvh;
+            left: 20%;
+            transform: rotate(0deg);
+    
+        }
+    
+        100% {
+            scale: 100%;
+            top: 60dvh;
+            left: 50%;
+            transform: rotate(0deg);
+        }
+    }
+    
+    @keyframes uilRotate4 {
+        0% {
+            transform: translate3d(-50%, -50%, 0) rotate(3deg);
+        }
+        100% {
+            transform: translate3d(-50%, -50%, 0) rotate(-3deg);
+        }
+    }
+
 #uiltekst-s7{
     top: 0dvh;
     left: 50%;
@@ -280,7 +337,36 @@
     transform: translate3d(-50%, -50%, 0);
     width: 341px;
     height: 270px;
+
+    animation: uilEntrance3 1.4s ease-in-out forwards, uilRotate3 2.2s alternate 1ms ease-in-out infinite;
 }
+
+@keyframes uilEntrance3 {
+    0% {
+        scale: 40%;
+        top: 140dvh;
+        left: 20%;
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+        scale: 100%;
+        top: 80dvh;
+        left: 50%;
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes uilRotate3 {
+    0% {
+        transform: translate3d(-50%, -50%, 0) rotate(3deg);
+    }
+    100% {
+        transform: translate3d(-50%, -50%, 0) rotate(-3deg);
+    }
+}
+
 /* één punt */
 #boom-1-1{
     position: fixed;

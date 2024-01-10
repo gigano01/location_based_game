@@ -169,18 +169,18 @@ onScreen(8, ()=>{
 	})
 })
 onScreen(9, nextScreen)
+
 onScreen(10, ()=>{
 	createDialogueObject("dialogue/scherm10.json").then((dialogue)=>{
 		assignDialogueToContainer(dialogue,document.getElementById("muisjetekst-s10"))
 		setDialogueEndHandler(dialogue,()=>{
 			//DECLAN DOE WAT JE HIER MOET DOEN
-			setTimeout(nextScreen, 100) //verwijder dit :) 
-			// const video = document.getElementById("VIDEOIDHIER")
-			// video.style.display = "block"
-			// video.play()
-			// video.onended = (event) => {
-			// 	nextScreen()
-			// };
+			const video = document.getElementById("eind-video-s10")
+			video.style.display = "block"
+			video.play()
+			video.onended = (event) => {
+				nextScreen()
+			};
 		})
 	})
 })
